@@ -1,27 +1,70 @@
-.t-r {
-	@include use-font($I-r, 400);
+//.t-r {
+//	@include use-font($I-r, 400);
+//	&.t-1 {
+//		@include use-size(14px, 17px);
+//		@media screen and (max-width: 768px) {
+//			@include use-size(12px, 15px);
+//		}
+//	}
+//}
+//.t-m {
+//	@include use-font($I-m, 500);
+//	&.t-1 {
+//		@include use-size(14px, 17px);
+//		@media screen and (max-width: 768px) {
+//			@include use-size(12px, 15px);
+//		}
+//	}
+//}
+//.t-sb {
+//	@include use-font($I-sb, 600);
+//	&.t-1 {
+//		@include use-size(14px, 17px);
+//		@media screen and (max-width: 768px) {
+//			@include use-size(12px, 15px);
+//		}
+//	}
+//}
+
+.t-bold {
+	@include use-font($I-b, 700);
 	&.t-1 {
-		@include use-size(14px, 17px);
-		@media screen and (max-width: 768px) {
-			@include use-size(12px, 15px);
-		}
+		@include use-size(36px, 44px);
+	}
+	&.t-2 {
+		@include use-size(32px, 36px);
 	}
 }
-.t-m {
-	@include use-font($I-m, 500);
-	&.t-1 {
-		@include use-size(14px, 17px);
-		@media screen and (max-width: 768px) {
-			@include use-size(12px, 15px);
-		}
-	}
-}
-.t-sb {
+.t-semiBold {
 	@include use-font($I-sb, 600);
 	&.t-1 {
-		@include use-size(14px, 17px);
-		@media screen and (max-width: 768px) {
-			@include use-size(12px, 15px);
-		}
+		@include use-size(24px, 28px);
+	}
+}
+.t-medium {
+	@include use-font($I-m, 500);
+	&.t-1 {
+		@include use-size(16px, 24px);
+	}
+	&.t-2 {
+		@include use-size(12px, 16px);
+	}
+}
+.t-regular {
+	@include use-font($I-r, 400);
+	&.t-1 {
+		@include use-size(32px, 36px);
+	}
+	&.t-2 {
+		@include use-size(20px, 28px);
+	}
+	&.t-3 {
+		@include use-size(16px, 24px);
+	}
+	&.t-4 {
+		@include use-size(14px, 20px);
+	}
+	&.t-5 {
+		@include use-size(10px, 16px);
 	}
 }

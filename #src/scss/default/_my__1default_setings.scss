@@ -35,4 +35,8 @@ input[type='search']::-webkit-search-results-decoration {
 }
 /*---контейнер сайта ---*/
 .container {
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	max-width: 1170px;
 }

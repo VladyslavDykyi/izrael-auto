@@ -4,6 +4,8 @@
 
 
 .block {
+	//margin-bottom: 50px;
+	max-width: 910px;
 	&.blog {
 		& .block-cart {
 			grid-gap: 15px;
@@ -38,12 +40,10 @@
 			}
 		}
 	}
-
 	&.comment {
 		& .block-cart {
 			grid-gap: 18px;
 		}
-
 		& .image {
 			max-height: 246px;
 
@@ -55,7 +55,6 @@
 				max-height: 246px;
 			}
 		}
-
 		& .info {
 			padding: 6px 11px 9px;
 
@@ -64,7 +63,7 @@
 			}
 		}
 	}
-
+	&.detail,
 	&.details {
 		& .block-cart {
 			grid-gap: 25px;
@@ -90,18 +89,13 @@
 			}
 		}
 	}
-
 	&-title {
 		text-align: center;
 	}
-
-	max-width: 910px;
-
 	&-cart {
 		display: flex;
 		margin-top: 43px;
 	}
-
 	&-item {
 		background: #F0F0F0;
 		display: inline-flex;
@@ -173,7 +167,6 @@
 			}
 		}
 	}
-
 	&-link {
 		margin-top: 25px;
 
@@ -192,9 +185,8 @@
 		}
 	}
 }
-
 .banner {
-
+	margin: 0 0 15px 15px;
 	&-link {
 		border-radius: 16px;
 		display: block;
@@ -220,7 +212,6 @@
 			}
 		}
 	}
-
 	&-title {
 		padding: 16px 20px;
 		position: absolute;
@@ -241,13 +232,13 @@
 		object-fit: cover;
 	}
 }
-
 .mini-blog {
 	max-width: 216px;
 	background: #EDEDED;
 	border-radius: 16px;
 	padding: 16px 20px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 0 0 15px 15px;
 	&-title {
 		margin-bottom: 26px;
 	}
@@ -275,5 +266,80 @@
 	}
 	&-link {
 		margin-top: 32px;
+	}
+}
+.follow {
+	background: #F0F0F0;
+	border-radius: 7px;
+	padding: 30px 42px 13px 49px;
+	max-width: 910px;
+	&-title {
+		margin-bottom: 25px;
+	}
+	&-text {
+		margin-bottom: 25px;
+	}
+	&-form {
+		margin-bottom: 17px;
+		display: flex;
+		align-items: flex-start;
+		grid-gap: 16px;
+		& .btn {
+			max-width: 247px;
+		}
+	}
+	&-text-info {
+		text-align: center;
+		color: $dark_grey;
+	}
+}
+
+.block {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	&-grid {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+	&.search {
+		grid-row: 1/  10;
+	}
+	&.comment {
+		grid-row: 10/  20;
+	}
+	&.category {
+		grid-row: 20/  30;
+	}
+	&.details {
+		grid-row: 30/  40;
+	}
+	&.detail {
+		grid-row: 40/  50;
+	}
+	&.blog {
+		grid-row: 50/  60;
+	}
+	&.follow {
+	}
+}
+.follow {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row: 60/  70;
+}
+.banner {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 1/  12;
+	& ~ .banner {
+		grid-row: 22/  32;
+	}
+}
+.mini-blog {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 12/  22;
+	& ~ .mini-blog {
+		grid-row: 32/  42;
 	}
 }
