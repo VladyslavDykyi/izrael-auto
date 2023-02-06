@@ -4,37 +4,44 @@ $(document).ready(function(){
 	$('.slider-car').slick({
 		centerMode: true,
 		centerPaging: '50px',
-		slidesToShow: 9,
+		slidesToShow: 10,
 		slidesToScroll: 1,
 		infinite: true,
 		dots: false,
 		arrows: false,
 		responsive: [
 			{
-				breakpoint: 580,
+				breakpoint: 1920,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 8,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 580,
+				breakpoint: 1680,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 6,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 580,
+				breakpoint: 1440,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 5,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 580,
+				breakpoint: 1024,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},

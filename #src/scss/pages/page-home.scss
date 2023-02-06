@@ -31,6 +31,48 @@
 			flex: 0 1 100%;
 		}
 	}
+	&.category {
+		& .block-cart {
+			flex-wrap: wrap;
+			grid-gap: 15px;
+		}
+		& .block-item {
+			width: 100%;
+			max-width: calc(25% - 11.25px);
+			height: 97px;
+			border-radius: 7px;
+			@media screen and (max-width: 620px) {
+				max-width: calc(33.33333% - 11.25px);
+			}
+			@media screen and (max-width: 480px) {
+				max-width: calc(50% - 7.5px);
+			}
+			&:hover {
+				& a {
+					color: $red;
+					& svg {
+						transform: scale(1.7) translate(-13px, 2px);
+						& path {
+							fill: #01264E;
+						}
+					}
+				}
+			}
+			& a {
+				height: 100%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				overflow: hidden;
+				border-radius: 7px;
+				color: $heavy_black;
+				& svg {
+					transition: all .2s linear;
+				}
+			}
+		}
+	}
 	&.slider {
 		max-width: none;
 		margin-bottom: 52px;
