@@ -11,8 +11,8 @@
 	&-list {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-
+		grid-gap: 35px;
+		flex-wrap: wrap;
 	}
 	&-item {
 		@include use-font($I-r, 400);

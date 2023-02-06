@@ -1,0 +1,34 @@
+.my-dots-bot {
+	position: absolute;
+	bottom: -10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	& li {
+		& button {
+			font-size: 0;
+			line-height: 0;
+			display: block;
+			width: 35px;
+			height: 6px;
+			padding: 15px 0;
+			cursor: pointer;
+			color: transparent;
+			border: 0;
+			outline: none;
+			background: transparent;
+			&::before {
+				content: "";
+				display: block;
+				width: 35px;
+				border: 4px solid $heavy_blue;
+				border-radius: 3px;
+			}
+		}
+		&.slick-active button:before {
+			border: 4px solid $blue;
+		}
+	}
+}
