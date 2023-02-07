@@ -39,4 +39,7 @@ input[type='search']::-webkit-search-results-decoration {
 	padding: 0 15px;
 	width: 100%;
 	max-width: 1170px;
+	@media screen and (max-width: 768px) {
+		padding: 0 8px;
+	}
 }
