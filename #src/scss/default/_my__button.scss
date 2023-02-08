@@ -5,6 +5,7 @@
 	border: 0;
 	border-radius: 0;
 }
+
 .btn {
 	width: 100%;
 	padding: 0 7px;
@@ -15,16 +16,55 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+
 	&:disabled {
 		cursor: auto;
 	}
+
 	&.red {
 		height: 47px;
 		background-color: $red;
 		color: $white;
 		@include use-size(16px, 19px);
+
 		&:hover {
 			background-color: $burgundy;
 		}
+
+		&.m {
+			height: 37px;
+		}
+		&.l {
+			height: 25px;
+		}
+	}
+
+}
+
+.login {
+	position: relative;
+	width: 91px;
+	height: 26px;
+	color: $white;
+	cursor: pointer;
+
+	&:hover {
+		& svg {
+			fill: #BF1616;
+
+			& path {
+				stroke: #BF1616;
+			}
+		}
+	}
+	& span {
+		position: relative;
+		z-index: 5;
+	}
+	& svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
 	}
 }

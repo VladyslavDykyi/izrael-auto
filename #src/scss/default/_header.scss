@@ -1,6 +1,118 @@
 .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	&-bg {
+
+		padding: 17px 0;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		&.fix {
+			background-color: $black;
+			position: fixed;
+		}
 	}
 	&-container {
+		margin: 0 auto;
+		padding: 0 15px;
+		width: 100%;
+		max-width: 1440px;
+		@media screen and (max-width: 768px) {
+			padding: 0 8px;
+		}
+	}
+	&-nav {
+		width: 100%;
+		max-width: 850px;
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-item {
+			color: $white;
+			margin-right: 10px;
+			position: relative;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				color: $blue;
+				& path {
+					stroke: $blue;
+				}
+			}
+			& > a,
+			& > button {
+				color: inherit;
+				cursor: pointer;
+			}
+		}
+	}
+	&-buttons {
+		display: flex;
+		align-items: center;
+		grid-gap: 12px;
+		& a.l {
+			width: 180px;
+			grid-gap: 10px;
+		}
+	}
+}
+
+.drop-btn {
+	display:flex;
+	align-items: center;
+	grid-gap: 10px;
+	&.active {
+		color:  $blue;
+		& + .drop-list {
+			display: block;
+		}
+		& svg {
+			transform: rotateX(180deg);
+			& path {
+				stroke: $blue;
+			}
+		}
+	}
+	& span {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 14px;
+		height: 14px;
+		background: $blue;
+		border-radius: 50%;
+		color: $white;
+		padding: 0 2px 2px;
+	}
+}
+
+.drop-list {
+	display: none;
+	position: absolute;
+	background: $dark_grey2;
+	border-radius: 0 0 10px 10px;
+	padding: 6px 10px 24px 7px;
+	z-index: 10;
+	top: 30px;
+	&-item {
+		color: $white;
+		margin-bottom: 12px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:hover {
+			cursor: pointer;
+			color: $blue2;
+		}
+		& a {
+			color: inherit;
+
+		}
 	}
 }

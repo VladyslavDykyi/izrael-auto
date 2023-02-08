@@ -1,3 +1,9 @@
+.M-bold {
+	@include use-font($M-b-i, 700);
+	&.t-1 {
+		@include use-size(57px, 69px);
+	}
+}
 .t-bold {
 	@include use-font($I-b, 700);
 	&.t-1 {
@@ -41,6 +47,9 @@
 	}
 	&.t-3 {
 		@include use-size(16px, 24px);
+		&.s {
+			line-height: 19px;
+		}
 	}
 	&.t-4 {
 		@include use-size(14px, 20px);
