@@ -89,4 +89,33 @@ document.addEventListener('click', e => {
 	}
 });
 // мобілка язик кінець
+// мобілка burger початок
+const burger = document.querySelector('.header-burger button');
+const headerMob = document.querySelector('.header-mob');
+const body = document.querySelector('body');
+const toggleBurgerActive = () => {
+	body.classList.toggle('lock');
+	headerMob.classList.toggle('active');
+}
+burger.addEventListener('click', e => {
+	e.stopPropagation();
+	toggleBurgerActive();
+});
 
+document.addEventListener('click', e => {
+	let target = e.target;
+	let its_menu = target === burger || burger.contains(target);
+	let its_btn = target === headerMob;
+	let menu_is_active = headerMob.classList.contains('active');
+
+	if (!its_menu && !its_btn && menu_is_active) {
+		toggleBurgerActive();
+	}
+});
+// мобілка burger кінець
+// const burger = document.querySelector('.header-burger button');
+// const headerMob = document.querySelector('.header-mob');
+// burger.addEventListener('click',() => {
+// 	headerMob.classList.toggle('active');
+// });
+// console.log(burger);
