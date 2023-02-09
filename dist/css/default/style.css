@@ -1061,7 +1061,7 @@ input[type='search']::-webkit-search-results-decoration {
   text-align: left;
 }
 
-.header-mob-lang .lang-text:hover + .lang-drop-mob {
+.header-mob-lang .lang-text.active + .lang-drop-mob {
   display: block;
 }
 

@@ -66,3 +66,27 @@ function openDropMenu(elem) {
 		}
 	});
 }
+// мобілка язик початок
+const container = document.querySelector('.lang-text');
+const menu = document.querySelector('.lang-drop-mob');
+
+const toggleActive = () => {
+	container.classList.toggle('active');
+}
+container.addEventListener('click', e => {
+	e.stopPropagation();
+	toggleActive();
+});
+
+document.addEventListener('click', e => {
+	let target = e.target;
+	let its_menu = target === menu || menu.contains(target);
+	let its_btn = target === container;
+	let menu_is_active = container.classList.contains('active');
+
+	if (!its_menu && !its_btn && menu_is_active) {
+		toggleActive();
+	}
+});
+// мобілка язик кінець
+

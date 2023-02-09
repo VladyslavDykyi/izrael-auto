@@ -316,7 +316,7 @@
 				cursor: pointer;
 				width: 100%;
 				text-align: left;
-				&:hover + .lang-drop-mob{
+				&.active + .lang-drop-mob{
 					display: block;
 				}
 				&-ico {
