@@ -40,14 +40,18 @@ function openDropMenu(elem) {
 		let a = document.querySelector('.else');
 		let b = document.querySelector('.lang');
 
-
-		// if (b.firstElementChild.classList.contains('active')) {
-		// 	a.firstElementChild.classList.remove('active');
-		// } else if(a.firstElementChild.classList.contains('active')) {
-		// 	b.firstElementChild.classList.remove('active');
-		// }
-
 		toggleActive();
+		if (b.firstElementChild.classList.contains('active')) {
+
+			a.firstElementChild.classList.remove('active');
+
+		} else if(a.firstElementChild.classList.contains('active')) {
+
+			b.firstElementChild.classList.remove('active');
+
+		}
+
+
 
 	});
 

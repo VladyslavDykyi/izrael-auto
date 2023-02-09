@@ -24,9 +24,53 @@
 			padding: 0 8px;
 		}
 	}
+	&-burger {
+		height: 26px;
+		width: 35px;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		@media screen and (max-width: 1024px) {
+			display: flex;
+		}
+		& button {
+			height: 100%;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& span {
+				display: inline-block;
+				width: 35px;
+				height: 4px;
+				background-color: $white;
+				&:before{
+					top: 0;
+				}
+				&:after {
+					bottom: 0;
+				}
+				&:before,
+				&:after {
+					content: '';
+					display: block;
+					width: 35px;
+					height: 4px;
+					background-color: $white;
+					position: absolute;
+				}
+			}
+		}
+	}
+	&-logo {
+		margin-right: 10px;
+	}
 	&-nav {
 		width: 100%;
 		max-width: 850px;
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
 		&-list {
 			display: flex;
 			align-items: center;
@@ -55,10 +99,54 @@
 	&-buttons {
 		display: flex;
 		align-items: center;
-		grid-gap: 12px;
+		grid-gap: 15px;
+		margin-left: 10px;
+		& .icons-bar {
+
+			&-list {
+				display: flex;
+				align-items: center;
+				grid-gap: 15px;
+			}
+			&-item {
+				position: relative;
+				& span:first-of-type {
+					cursor: pointer;
+				}
+				& .count {
+					position: absolute;
+					right: -5px;
+					top: -5px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					min-width: 10px;
+					height: 10px;
+					background: $blue;
+					border-radius: 5px;
+					color: $white;
+					padding: 0 2px 2px;
+				}
+			}
+		}
 		& a.l {
 			width: 180px;
 			grid-gap: 10px;
+			@media screen and (max-width: 1100px) {
+				font-size: 0;
+				width: 50px;
+				grid-gap: 0;
+			}
+		}
+		& > div {
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
+		}
+		& form {
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
 		}
 	}
 }
@@ -112,7 +200,163 @@
 		}
 		& a {
 			color: inherit;
-
 		}
 	}
+}
+.header-mob {
+	display: none;
+
+	height: 100vh;
+	background-color: $black;
+	position: relative;
+	z-index: 1000;
+	@media screen and (max-width: 1024px) {
+		display: block;
+		width: 40%;
+	}
+	@media screen and (max-width: 580px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 425px) {
+		width: 75%;
+	}
+	&:before {
+		content: '';
+		display: block;
+
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		background-color: $heavy_black-45;
+		@media screen and (max-width: 1024px) {
+			width: 250%;
+		}
+		@media screen and (max-width: 580px) {
+			width: 200%;
+		}
+		@media screen and (max-width: 425px) {
+			width: 133.333333333%;
+		}
+	}
+	&-bar {
+		padding: 16px;
+		border-bottom: 1px solid $white;
+		& .icons-bar-list {
+			margin-top: 20px;
+		}
+		& .icons-bar-item {
+			margin-bottom: 16px;
+			position: relative;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& a {
+				display: inline-flex;
+				align-items: center;
+				grid-gap: 10px;
+				color: $white;
+				&:hover {
+					color: $blue;
+					& path {
+						stroke: $blue;
+						fill: $blue;
+					}
+				}
+				& span:first-of-type {
+					flex: 0 1 20px;
+					width: 20px;
+				}
+				& .text {
+
+				}
+				& .count {
+					position: absolute;
+					right: 0;
+					top: calc(50% - 8px);
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					min-width: 16px;
+					height: 16px;
+					background: $blue;
+					border-radius: 8px;
+					color: $white;
+					padding: 0 2px;
+				}
+			}
+		}
+	}
+	&-nav {
+		&-list {
+			padding: 16px;
+			border-bottom: 1px solid $white;
+		}
+		&-item {
+			color: $white;
+			margin-bottom: 16px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& a {
+				color: inherit;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+	&-lang {
+		padding: 16px;
+		& .lang {
+			position: relative;
+			&-text {
+				color: $white;
+				cursor: pointer;
+				width: 100%;
+				text-align: left;
+				&:hover + .lang-drop-mob{
+					display: block;
+				}
+				&-ico {
+					position: absolute;
+					top: calc(50% - 8px);
+					right: 0;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					min-width: 16px;
+					height: 16px;
+					background: $blue;
+					border-radius: 8px;
+					color: $white;
+					padding: 0 4px;
+					margin-left: 10px;
+				}
+			}
+			&-drop-mob {
+				display: none;
+				position: absolute;
+				top: 20px;
+				width: 100%;
+				background-color: $black;
+				padding: 8px;
+				border-radius: 8px;
+				&-item {
+					color: $white;
+					margin-bottom: 8px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					&:hover {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+}
+[dir="rtl"] {
+	text-align: right;
 }
