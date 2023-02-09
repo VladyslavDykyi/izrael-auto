@@ -50,9 +50,6 @@ function openDropMenu(elem) {
 			b.firstElementChild.classList.remove('active');
 
 		}
-
-
-
 	});
 
 	document.addEventListener('click', e => {
@@ -113,9 +110,3 @@ document.addEventListener('click', e => {
 	}
 });
 // мобілка burger кінець
-// const burger = document.querySelector('.header-burger button');
-// const headerMob = document.querySelector('.header-mob');
-// burger.addEventListener('click',() => {
-// 	headerMob.classList.toggle('active');
-// });
-// console.log(burger);
