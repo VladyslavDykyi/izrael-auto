@@ -192,3 +192,22 @@
     height: 40px;
   }
 }
+
+@media screen and (max-height: 690px) {
+  .bg-site {
+    background-image: none;
+  }
+
+  .block .svg svg {
+    width: 45%;
+  }
+
+  .block > p {
+    margin-bottom: 31px;
+    margin-top: 18px;
+  }
+
+  .right-svg {
+    display: none;
+  }
+}
