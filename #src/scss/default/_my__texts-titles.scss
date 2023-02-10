@@ -12,6 +12,9 @@
 	&.t-2 {
 		@include use-size(32px, 36px);
 	}
+	&.t-3 {
+		@include use-size(20px, 24px);
+	}
 }
 .t-semiBold {
 	@include use-font($I-sb, 600);

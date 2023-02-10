@@ -12,19 +12,6 @@ window.addEventListener('scroll', function() {
 	else { remove_class_on_scroll() }
 });
 
-
-////////////////////
-
-
-// function openDropMenu(container) {
-// 	container =  document.querySelector(container);
-// 	const btn = container.querySelector('.drop-btn');
-//
-// 	btn.addEventListener('click', e => {
-// 		e.target.classList.toggle('active')
-// 	});
-// }
-
 ///
 openDropMenu('.lang');
 openDropMenu('.else');
@@ -51,7 +38,6 @@ function openDropMenu(elem) {
 
 		}
 	});
-
 	document.addEventListener('click', e => {
 		let target = e.target;
 		let its_menu = target === btn || btn.contains(target);
@@ -74,7 +60,6 @@ container.addEventListener('click', e => {
 	e.stopPropagation();
 	toggleActive();
 });
-
 document.addEventListener('click', e => {
 	let target = e.target;
 	let its_menu = target === menu || menu.contains(target);
@@ -98,7 +83,6 @@ burger.addEventListener('click', e => {
 	e.stopPropagation();
 	toggleBurgerActive();
 });
-
 document.addEventListener('click', e => {
 	let target = e.target;
 	let its_menu = target === burger || burger.contains(target);
