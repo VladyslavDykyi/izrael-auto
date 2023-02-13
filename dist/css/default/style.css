@@ -793,6 +793,10 @@ input[type='search']::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
+.header-nav-item.lang .drop-list {
+  left: 5px;
+}
+
 .header-buttons {
   display: -webkit-box;
   display: -webkit-flex;
@@ -916,6 +920,7 @@ input[type='search']::-webkit-search-results-decoration {
   padding: 6px 10px 24px 7px;
   z-index: 10;
   top: 30px;
+  left: -15px;
 }
 
 .drop-list-item {
@@ -948,9 +953,9 @@ input[type='search']::-webkit-search-results-decoration {
   -webkit-transform: translateX(-1000px);
       -ms-transform: translateX(-1000px);
           transform: translateX(-1000px);
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
   padding-bottom: 50px;
 }
 

@@ -94,6 +94,9 @@
 				color: inherit;
 				cursor: pointer;
 			}
+			&.lang .drop-list{
+				left: 5px;
+			}
 		}
 	}
 	&-buttons {
@@ -150,7 +153,6 @@
 		}
 	}
 }
-
 .drop-btn {
 	display:flex;
 	align-items: center;
@@ -179,7 +181,6 @@
 		padding: 0 2px 2px;
 	}
 }
-
 .drop-list {
 	display: none;
 	position: absolute;
@@ -188,6 +189,7 @@
 	padding: 6px 10px 24px 7px;
 	z-index: 10;
 	top: 30px;
+	left: -15px;
 	&-item {
 		color: $white;
 		margin-bottom: 12px;
@@ -213,7 +215,7 @@
 	z-index: 2000;
 	overflow: auto;
 	transform: translateX(-1000px);
-	transition: all .2s linear;
+	transition: all .3s linear;
 	padding-bottom: 50px;
 	@media screen and (max-width: 1024px) {
 		display: block;

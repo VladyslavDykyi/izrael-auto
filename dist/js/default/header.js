@@ -1,3 +1,4 @@
+// скрол для шапки
 let scrollPos = window.scrollY;
 
 const header = document.querySelector("header");
@@ -8,47 +9,57 @@ const remove_class_on_scroll = () => header.classList.remove("fix");
 
 window.addEventListener('scroll', function() {
 	scrollPos = window.scrollY;
-	if (scrollPos >= scrollChange) { add_class_on_scroll() }
-	else { remove_class_on_scroll() }
+	if (scrollPos >= scrollChange) {
+		add_class_on_scroll()
+	} else {
+		remove_class_on_scroll()
+	}
 });
+// скрол для шапки
 
-///
-openDropMenu('.lang');
-openDropMenu('.else');
-function openDropMenu(elem) {
-	const container = document.querySelector(elem);
-	const btn = container.querySelector('.drop-btn');
-
+// откритие випадашки еще
+openDropMenu();
+function openDropMenu() {
+	const btn = document.querySelector('.else > .drop-btn');
 	const toggleActive = () => {
 			btn.classList.toggle('active');
 	}
 	btn.addEventListener('click', e => {
 		e.stopPropagation();
-		let a = document.querySelector('.else');
-		let b = document.querySelector('.lang');
-
 		toggleActive();
-		if (b.firstElementChild.classList.contains('active')) {
-
-			a.firstElementChild.classList.remove('active');
-
-		} else if(a.firstElementChild.classList.contains('active')) {
-
-			b.firstElementChild.classList.remove('active');
-
-		}
 	});
 	document.addEventListener('click', e => {
 		let target = e.target;
 		let its_menu = target === btn || btn.contains(target);
 		let its_btn = target === btn;
 		let menu_is_active = btn.classList.contains('active');
-
 		if (!its_menu && !its_btn && menu_is_active) {
 			toggleActive();
 		}
 	});
 }
+openDropMenu2();
+function openDropMenu2() {
+	const btn = document.querySelector('.lang > .drop-btn');
+	console.log(btn);
+	const toggleActive = () => {
+			btn.classList.toggle('active');
+	}
+	btn.addEventListener('click', e => {
+		e.stopPropagation();
+		toggleActive();
+	});
+	document.addEventListener('click', e => {
+		let target = e.target;
+		let its_menu = target === btn || btn.contains(target);
+		let its_btn = target === btn;
+		let menu_is_active = btn.classList.contains('active');
+		if (!its_menu && !its_btn && menu_is_active) {
+			toggleActive();
+		}
+	});
+}
+// відкриття випадашки еще кінець
 // мобілка язик початок
 const container = document.querySelector('.lang-text');
 const menu = document.querySelector('.lang-drop-mob');
