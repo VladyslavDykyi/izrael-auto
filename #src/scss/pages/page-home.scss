@@ -3,6 +3,7 @@
 @import "../default/mixins";
 @import "./_page-home-side-bar";
 @import "./_page-home-slider";
+@import "./_big-slider";
 
 .block {
 	max-width: 909px;
@@ -56,6 +57,9 @@
 				& svg {
 					transition: all .2s linear;
 					padding: 0 2px;
+				}
+				& span {
+					max-width: 103px;
 				}
 			}
 			&:hover {
@@ -254,42 +258,6 @@
 	}
 	&.slider {
 		 max-width: none;
-		 margin-bottom: 52px;
-		 & .block-item.image {
-			 position: relative;
-			 & .price {
-				 position: absolute;
-				 bottom: 8px;
-				 left: 8px;
-				 background-color: $red;
-				 border-radius: 7px;
-				 padding: 2px 10px;
-				 color: $white;
-			 }
-		 }
-		 & .block-cart {
-			 grid-gap: 18px;
-			 margin-top: 13px;
-			 & .block-item:hover h3{
-				 color: $red;
-			 }
-		 }
-		 & .image {
-			 max-height: 215px;
-			 height: 215px;
-			 & picture {
-				 max-height: 215px;
-			 }
-			 & img {
-				 max-height: 215px;
-			 }
-		 }
-		 & .info {
-			 padding: 8px 11px 11px;
-			 & h3 {
-				 -webkit-line-clamp: 1;
-			 }
-		 }
 	 }
 }
 .follow {
