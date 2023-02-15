@@ -371,6 +371,11 @@
   -webkit-flex: 0 1 216px;
       -ms-flex: 0 1 216px;
           flex: 0 1 216px;
+  max-width: 216px;
+  width: 100%;
+}
+
+.block-side-bar-sticky {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -852,6 +857,14 @@
   color: #00AFE9;
 }
 
+@media screen and (min-width: 768px) {
+  .block-side-bar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 74px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .banner-link {
     max-width: 100%;
@@ -870,6 +883,14 @@
   }
 
   .block-side-bar {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+  .block-side-bar-sticky {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;

@@ -41,7 +41,6 @@ function openDropMenu() {
 openDropMenu2();
 function openDropMenu2() {
 	const btn = document.querySelector('.lang > .drop-btn');
-	console.log(btn);
 	const toggleActive = () => {
 			btn.classList.toggle('active');
 	}
@@ -105,3 +104,43 @@ document.addEventListener('click', e => {
 	}
 });
 // мобілка burger кінець
+
+//чат Ші нижче
+
+// const header = document.querySelector("header");
+// const scrollChange = 1;
+// scrollHandler()
+// function scrollHandler() {
+// 	const scrollPos = window.scrollY;
+// 	scrollPos >= scrollChange ? header.classList.add("fix") : header.classList.remove("fix");
+// };
+//
+// function openMenu(btnSelector, menuSelector) {
+// 	const btn = document.querySelector(btnSelector);
+// 	const menu = document.querySelector(menuSelector);
+//
+// 	const toggleActive = () => {
+// 		menu.classList.toggle("active");
+// 	};
+//
+// 	btn.addEventListener("click", (e) => {
+// 		e.stopPropagation();
+// 		toggleActive();
+// 	});
+//
+// 	document.addEventListener("click", (e) => {
+// 		const isBtnClicked = e.target === btn || btn.contains(e.target);
+// 		const isMenuActive = menu.classList.contains("active");
+//
+// 		if (!isBtnClicked && isMenuActive) {
+// 			toggleActive();
+// 		}
+// 	});
+// }
+
+// function init() {
+// 	openMenu(".else > .drop-btn", ".else > .drop-btn.active");
+// 	openMenu(".lang > .drop-btn", ".lang > .drop-btn.active");
+//
+// 	const container = document.querySelector(".lang-text");
+// 	const menu
