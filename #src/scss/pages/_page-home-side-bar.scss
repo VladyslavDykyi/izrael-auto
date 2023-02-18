@@ -2,7 +2,7 @@
 	&-link {
 		border-radius: 16px;
 		display: block;
-		max-width: 216px;
+		max-width: 237px;
 		height: 339px;
 		width: 100%;
 		position: relative;
@@ -57,7 +57,7 @@
 }
 
 .mini-blog {
-	max-width: 216px;
+	max-width: 237px;
 	background: #EDEDED;
 	border-radius: 16px;
 	padding: 16px 20px;
@@ -65,16 +65,12 @@
 	@media screen and (max-width: 768px) {
 		max-width: 100%;
 	}
-
 	&-title {
 		margin-bottom: 26px;
-		color: $heavy_black;
+		color: $black_new;
 	}
-
 	&-list {
-
 	}
-
 	&-item {
 		display: inline-flex;
 		grid-gap: 13px;
@@ -99,7 +95,7 @@
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 				margin-bottom: 4px;
-				color: $heavy_black;
+				color: $black_new;
 				& > a {
 					color: inherit;
 				}
@@ -111,7 +107,7 @@
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 				margin-bottom: 4px;
-				color: $heavy_black;
+				color: $black_new;
 				& > a {
 					color: inherit;
 				}
@@ -124,14 +120,12 @@
 				}
 			}
 		}
-
 	}
-
 	&-link {
 		margin-top: 25px;
 
 		& a {
-			color: $heavy_black;
+			color: $black_new;
 			display: inline-flex;
 			align-items: center;
 			grid-gap: 10px;

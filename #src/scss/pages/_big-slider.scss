@@ -42,7 +42,7 @@
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
 				overflow: hidden;
-				color: $heavy_black;
+				color: $black_new;
 			}
 			& p {
 				display: -webkit-box;
@@ -95,6 +95,7 @@
 			height: 215px;
 			& picture {
 				max-height: 215px;
+				height: 215px;
 			}
 			& img {
 				max-height: 215px;

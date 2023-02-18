@@ -1,0 +1,60 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+@import "../default/mixins";
+
+.seo-text {
+	&-block {
+		position: relative;
+		max-height: 278px;
+		overflow: hidden;
+		&.open {
+			max-height: 100%;
+			&:last-child div {
+				display: none;
+			}
+		}
+		&:last-child div {
+			width: 100%;
+			height: 25%;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(0,0,0,0) 100%);
+			cursor: pointer;
+		}
+		& h1,
+		& h2,
+		& h3,
+		& h4 {
+			@include use-font($I-sb, 600);
+			text-align: center;
+			margin-bottom: 14px;
+		}
+		& h1 {
+			@include use-size(22px, 27px);
+		}
+		& h2 {
+			@include use-size(14px, 20px);
+		}
+		& h3 {
+			@include use-size(14px, 20px);
+		}
+		& h4 {
+			@include use-size(14px, 20px);
+		}
+		& p {
+			@include use-font($I-r, 400);
+			@include use-size(16px, 125%);
+			text-align: justify;
+		}
+		& strong {
+			@include use-font($I-b, 700);
+		}
+		& ul {
+			& li {
+
+			}
+		}
+	}
+}
