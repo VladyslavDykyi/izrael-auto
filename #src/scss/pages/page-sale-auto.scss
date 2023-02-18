@@ -2,7 +2,13 @@
 @import "../default/_my__color";
 @import "../default/mixins";
 @import "../default/_my__pagination";
+@import "./_page-home-first-block";
 @import "./_big-slider";
+@import "./_seo-text";
+
+.bg-site {
+	padding-bottom: 60px;
+}
 
 .adverts-filter {
 	display: flex;
@@ -15,7 +21,7 @@
 	&-info {
 		padding-top: 18px;
 		padding-bottom: 17px;
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid $black_new;
 		@media screen and (max-width: 580px) {
 			width: 100%;
 		}
@@ -83,7 +89,7 @@
 .adverts-item {
 	padding: 13px 14px 10px;
 	border-radius: 6px;
-	background-color: #FAFAFA;
+	background-color: $white3;
 	&-img {
 		max-height: 155px;
 		@media screen and (max-width: 580px) {
