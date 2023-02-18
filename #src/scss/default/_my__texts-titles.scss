@@ -24,6 +24,9 @@
 	&.t-2 {
 		@include use-size(28px, 34px);
 	}
+	&.t-3 {
+		@include use-size(22px, 27px);
+	}
 }
 .t-medium {
 	@include use-font($I-m, 500);

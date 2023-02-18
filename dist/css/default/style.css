@@ -663,6 +663,11 @@ input[type='search']::-webkit-search-results-decoration {
   line-height: 34px;
 }
 
+.t-semiBold.t-3 {
+  font-size: 22px;
+  line-height: 27px;
+}
+
 .t-medium {
   font-family: "Inter-Medium", sans-serif;
   font-weight: 500;
