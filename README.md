@@ -7,26 +7,26 @@
 
 
 
-статуси продажі ![image](https://user-images.githubusercontent.com/68863569/219975387-7d24ab25-be41-46f1-a618-b0a0a55530bb.png)
+статуси продажі ![image](https://user-images.githubusercontent.com/68863569/219975387-7d24ab25-be41-46f1-a618-b0a0a55530bb.png) <br>
 
-перелік класів: 
-normal(нормальная цена),
-good(хорошая цена),
-expensive(высокая цена),
-withdrawn(снят с продажи),
-no-rating(без оценки),
-great(отличная цена),
-minimal(минимальная цена 4 500 900 ₽).
+перелік класів:  <br>
+normal(нормальная цена), <br>
+good(хорошая цена), <br>
+expensive(высокая цена), <br>
+withdrawn(снят с продажи), <br>
+no-rating(без оценки), <br>
+great(отличная цена), <br>
+minimal(минимальная цена 4 500 900 ₽). <br>
 
-![image](https://user-images.githubusercontent.com/68863569/219975511-ba0fce63-4d5f-434d-b7bb-21a90e14ecca.png)
+![image](https://user-images.githubusercontent.com/68863569/219975511-ba0fce63-4d5f-434d-b7bb-21a90e14ecca.png) <br>
 
-статуси стану ![image](https://user-images.githubusercontent.com/68863569/219975550-089eab2a-04ed-47e8-9e74-dc832877b37c.png)
+статуси стану ![image](https://user-images.githubusercontent.com/68863569/219975550-089eab2a-04ed-47e8-9e74-dc832877b37c.png) <br>
 
-різниця по клазу і додаванням тексту або позначки 
-![image](https://user-images.githubusercontent.com/68863569/219975596-9662ccc6-0626-41f4-b9ec-16d394dcda37.png)
+різниця по клазу і додаванням тексту або позначки  <br>
+![image](https://user-images.githubusercontent.com/68863569/219975596-9662ccc6-0626-41f4-b9ec-16d394dcda37.png) <br>
 
-перелік класів: 
+перелік класів:  <br>
 from-the-owner(от собственника), <br>
-no-run(без пробега),
-new-unofficial-dealer(новый от неофициального дилера),
+no-run(без пробега), <br>
+new-unofficial-dealer(новый от неофициального дилера), <br>
 repair(Требуется ремонт или не на ходу).
