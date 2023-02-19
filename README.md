@@ -2,8 +2,8 @@
 .d-n спеціальний клас який додає display:none;
 
 для зміни фаворіта товару ![image](https://user-images.githubusercontent.com/68863569/219976053-1f8ecfad-f1d2-4f1c-a4ab-cdc29b7356ca.png)
-для його блоку де він лежить додаеться спеціальний клас liked ![image](https://user-images.githubusercontent.com/68863569/219975324-a8a774fd-05f9-486d-95bf-1b5265926556.png)
-![image](https://user-images.githubusercontent.com/68863569/219975330-3f513102-1443-4938-9997-4d9e985ea894.png)
+для його блоку де він лежить додаеться спеціальний клас liked <br> ![image](https://user-images.githubusercontent.com/68863569/219975324-a8a774fd-05f9-486d-95bf-1b5265926556.png)
+![image](https://user-images.githubusercontent.com/68863569/219975330-3f513102-1443-4938-9997-4d9e985ea894.png)<br>
 
 
 
@@ -32,7 +32,7 @@ new-unofficial-dealer(новый от неофициального дилера)
 repair(Требуется ремонт или не на ходу).
 
 
-заголовки машин стандартно звичайний є ще закреслений
+заголовки машин стандартно звичайний є ще закреслений <br>
 ![image](https://user-images.githubusercontent.com/68863569/219977936-8915dcf6-d560-4b1c-836e-63a51700eae6.png) <br>
 
 різниця по клазу і додаванням тексту або позначки <br>
