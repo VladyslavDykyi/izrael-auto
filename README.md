@@ -30,3 +30,13 @@ from-the-owner(от собственника), <br>
 no-run(без пробега), <br>
 new-unofficial-dealer(новый от неофициального дилера), <br>
 repair(Требуется ремонт или не на ходу).
+
+
+заголовки машин стандартно звичайний є ще закреслений
+![image](https://user-images.githubusercontent.com/68863569/219977936-8915dcf6-d560-4b1c-836e-63a51700eae6.png) <br>
+
+різниця по клазу і додаванням тексту або позначки <br>
+![image](https://user-images.githubusercontent.com/68863569/219978121-027f3e34-7d8f-48bb-9adc-f6746d1b6e3b.png)
+<br>
+перелік класів: <br>
+withdrawn(це коли снят с продажи). <br>
