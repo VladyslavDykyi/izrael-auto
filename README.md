@@ -9,7 +9,14 @@
 
 статуси продажі ![image](https://user-images.githubusercontent.com/68863569/219975387-7d24ab25-be41-46f1-a618-b0a0a55530bb.png)
 
-перелік класів: normal(нормальная цена), good(хорошая цена), expensive(высокая цена), withdrawn(снят с продажи), no-rating(без оценки), great(отличная цена), minimal(минимальная цена 4 500 900 ₽).
+перелік класів: 
+normal(нормальная цена),
+good(хорошая цена),
+expensive(высокая цена),
+withdrawn(снят с продажи),
+no-rating(без оценки),
+great(отличная цена),
+minimal(минимальная цена 4 500 900 ₽).
 
 ![image](https://user-images.githubusercontent.com/68863569/219975511-ba0fce63-4d5f-434d-b7bb-21a90e14ecca.png)
 
@@ -18,4 +25,8 @@
 різниця по клазу і додаванням тексту або позначки 
 ![image](https://user-images.githubusercontent.com/68863569/219975596-9662ccc6-0626-41f4-b9ec-16d394dcda37.png)
 
-перелік класів: from-the-owner(от собственника), no-run(без пробега), new-unofficial-dealer(новый от неофициального дилера), repair(Требуется ремонт или не на ходу).
+перелік класів: 
+from-the-owner(от собственника),
+no-run(без пробега),
+new-unofficial-dealer(новый от неофициального дилера),
+repair(Требуется ремонт или не на ходу).
