@@ -26,7 +26,7 @@ minimal(минимальная цена 4 500 900 ₽).
 ![image](https://user-images.githubusercontent.com/68863569/219975596-9662ccc6-0626-41f4-b9ec-16d394dcda37.png)
 
 перелік класів: 
-from-the-owner(от собственника),
+from-the-owner(от собственника), <br>
 no-run(без пробега),
 new-unofficial-dealer(новый от неофициального дилера),
 repair(Требуется ремонт или не на ходу).
