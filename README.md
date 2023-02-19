@@ -8,11 +8,11 @@
 
 
 статуси продажі ![image](https://user-images.githubusercontent.com/68863569/219975387-7d24ab25-be41-46f1-a618-b0a0a55530bb.png)
-змінюється з додаванням класів і мають однакову структуру ![image](https://user-images.githubusercontent.com/68863569/219975411-83c8c080-a3ae-4652-a6a1-2ac8ca80673f.png)
 перелік класів: normal(нормальная цена), good(хорошая цена), expensive(высокая цена), withdrawn(снят с продажи), no-rating(без оценки), great(отличная цена), minimal(минимальная цена 4 500 900 ₽).
 ![image](https://user-images.githubusercontent.com/68863569/219975511-ba0fce63-4d5f-434d-b7bb-21a90e14ecca.png)
 
 статуси стану ![image](https://user-images.githubusercontent.com/68863569/219975550-089eab2a-04ed-47e8-9e74-dc832877b37c.png)
+
 різниця по клазу і додаванням тексту або позначки 
 ![image](https://user-images.githubusercontent.com/68863569/219975596-9662ccc6-0626-41f4-b9ec-16d394dcda37.png)
 перелік класів: from-the-owner(от собственника), no-run(без пробега), new-unofficial-dealer(новый от неофициального дилера), repair(Требуется ремонт или не на ходу).
