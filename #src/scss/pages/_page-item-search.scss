@@ -1,0 +1,58 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+@import "../default/mixins";
+.block {
+	&.search {
+		& .block-cart {
+			flex-wrap: wrap;
+			grid-gap: 19px;
+		}
+		& .block-item {
+			padding: 0 6px 0 12px;
+			border-radius: 7px;
+			flex: 0 1 calc(25% - 14.25px);
+			justify-content: center;
+			@media screen and (max-width: 768px) {
+				flex: 0 1 calc(33.3333% - 12.66667px);
+			}
+			@media screen and (max-width: 480px) {
+				flex: 0 1 calc(50% - 9.5px);
+			}
+			&:last-child {
+				background-color:transparent;
+				&:hover {
+					& path {
+						fill: transparent;
+						stroke: $red;
+					}
+				}
+			}
+			& div,
+			& a {
+				align-items: center;
+				display: flex;
+				grid-gap: 12px;
+				color: $black_new;
+				cursor: pointer;
+				@media screen and (max-width: 1100px) {
+					grid-gap: 6px;
+				}
+				@media screen and (max-width: 1024px) {
+					flex-direction: column;
+				}
+				& span {
+					max-width: 121px;
+				}
+			}
+			&:hover {
+				& a {
+					color: $red;
+				}
+				& path {
+					fill: $red;
+				}
+
+			}
+		}
+	}
+}

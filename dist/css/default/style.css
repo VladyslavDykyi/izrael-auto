@@ -668,6 +668,11 @@ input[type='search']::-webkit-search-results-decoration {
   line-height: 27px;
 }
 
+.t-semiBold.t-3 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .t-medium {
   font-family: "Inter-Medium", sans-serif;
   font-weight: 500;
@@ -695,6 +700,11 @@ input[type='search']::-webkit-search-results-decoration {
 .t-medium.t-4 {
   font-size: 20px;
   line-height: 24px;
+}
+
+.t-medium.t-5 {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .t-regular {
@@ -747,6 +757,16 @@ input[type='search']::-webkit-search-results-decoration {
 .t-regular.t-7 {
   font-size: 18px;
   line-height: 22px;
+}
+
+.t-light {
+  font-family: "Inter-Light", sans-serif;
+  font-weight: 300;
+}
+
+.t-light.t-1 {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer {
