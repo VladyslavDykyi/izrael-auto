@@ -50,6 +50,11 @@ HEADER
 список позначок<br> ![image](https://user-images.githubusercontent.com/68863569/220441047-531cbc17-e4fe-45e5-915d-84d910714327.png) <br>
 якщо немає увідобмлень то цей блочок не відрісовується<br> ![image](https://user-images.githubusercontent.com/68863569/220441164-ff489461-242c-4639-b2c5-2bd74c8ff055.png) <br><br><br><br>
 
+
+
+у мобілці форми якщо не залогінен відображається одна якщо залогіневся то інша <br>
+![image](https://user-images.githubusercontent.com/68863569/220460380-27a85457-60b6-4521-b8c4-92d50aefa198.png)<br>
+
 ______
 ![image](https://user-images.githubusercontent.com/68863569/220456846-06e5bbf0-757b-4e2e-a91b-a76601a01695.png)<br>
 
