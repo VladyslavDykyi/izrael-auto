@@ -48,7 +48,17 @@ withdrawn(це коли снят с продажи). <br>
 
 ![image](https://user-images.githubusercontent.com/68863569/220440882-39ff0a96-fb8e-4761-8de0-738ab52b814b.png)<br>
 список позначок<br> ![image](https://user-images.githubusercontent.com/68863569/220441047-531cbc17-e4fe-45e5-915d-84d910714327.png) <br>
-якщо немає увідобмлень то цей блочок не відрісовується<br> ![image](https://user-images.githubusercontent.com/68863569/220441164-ff489461-242c-4639-b2c5-2bd74c8ff055.png) <br>
+якщо немає увідобмлень то цей блочок не відрісовується<br> ![image](https://user-images.githubusercontent.com/68863569/220441164-ff489461-242c-4639-b2c5-2bd74c8ff055.png) <br><br><br><br>
+
+______
+![image](https://user-images.githubusercontent.com/68863569/220456846-06e5bbf0-757b-4e2e-a91b-a76601a01695.png)<br>
+
+перший блок на головній і сторінці фільтрів відрізніються нижними блоками  <br><br>
+на головний виглядає так <br>
+![image](https://user-images.githubusercontent.com/68863569/220457011-c8390d6d-5427-41bb-b4ac-021c6df0acee.png)<br>
+
+на фільтрах так <br>
+![image](https://user-images.githubusercontent.com/68863569/220457046-47cb58f8-983d-43d3-b3ba-3f87bd4af6ad.png)<br>
 
 
 
