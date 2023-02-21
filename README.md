@@ -40,3 +40,19 @@ repair(Требуется ремонт или не на ходу).
 <br>
 перелік класів: <br>
 withdrawn(це коли снят с продажи). <br>
+
+___________________HEADER_________________________
+![image](https://user-images.githubusercontent.com/68863569/220440212-a735f2f1-b3e0-4721-8f41-f032e6e89d3f.png) <br>
+блок кнопки ![image](https://user-images.githubusercontent.com/68863569/220440510-a6f610a5-733b-47ec-adbe-7e9b9a0d9e00.png) <br>
+працює наступним чином коли людина не залогінена вона відображається повна з текстом, якщо залогінена вона відображається без бексту <br><br><br><br>
+
+![image](https://user-images.githubusercontent.com/68863569/220440882-39ff0a96-fb8e-4761-8de0-738ab52b814b.png)
+список позначок ![image](https://user-images.githubusercontent.com/68863569/220441047-531cbc17-e4fe-45e5-915d-84d910714327.png) <br>
+якщо немає увідобмлень то цей блочок не відрісовується ![image](https://user-images.githubusercontent.com/68863569/220441164-ff489461-242c-4639-b2c5-2bd74c8ff055.png) <br>
+
+
+
+
+
+
+
