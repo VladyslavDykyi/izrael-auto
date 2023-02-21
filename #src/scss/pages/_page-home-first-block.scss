@@ -74,6 +74,18 @@
 			@media screen and (max-width: 1024px) {
 				align-items: center;
 			}
+			& > h4.t-1 {
+				color: $white3;
+				margin-top: 32px;
+				@media screen and (max-width: 1024px) {
+					font-size: 20px;
+					line-height: 28px;
+				}
+				@media screen and (max-width: 768px) {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
 			& > h2 {
 				margin-top: 31px;
 				font-family: sans-serif;
@@ -94,8 +106,8 @@
 					margin-top: 0;
 				}
 				@media screen and (max-width: 425px) {
-					font-size: 24px;
-					line-height: 32px;
+					font-size: 22px;
+					line-height: 28px;
 					-webkit-text-stroke: 1px $blue;
 					text-stroke: 1px $blue;
 				}
@@ -198,6 +210,9 @@
 				align-items: center;
 				grid-gap: 8px;
 				justify-content: center;
+				&:hover {
+					background: rgba(254, 254, 254, 0.3);
+				}
 				@media screen and (max-width: 1024px) {
 					margin-top: 16px;
 					max-width: 181px;

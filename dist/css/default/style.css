@@ -306,6 +306,14 @@ input[type='search']::-webkit-search-results-decoration {
   cursor: auto;
 }
 
+.btn.m {
+  height: 37px;
+}
+
+.btn.l {
+  height: 32px;
+}
+
 .btn.red {
   height: 47px;
   background-color: #BF1616;
@@ -318,40 +326,12 @@ input[type='search']::-webkit-search-results-decoration {
   background-color: #7D0606;
 }
 
-.btn.red.m {
-  height: 37px;
-}
-
-.btn.red.l {
-  height: 32px;
-}
-
-.login {
-  position: relative;
-  width: 91px;
-  height: 26px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-.login:hover svg {
-  fill: #BF1616;
-}
-
-.login:hover svg path {
-  stroke: #BF1616;
-}
-
-.login span {
-  position: relative;
-  z-index: 5;
-}
-
-.login svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+.btn.white {
+  background-color: transparent;
+  color: #FEFEFE;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #FEFEFE;
 }
 
 .check-box input {
@@ -992,19 +972,10 @@ input[type='search']::-webkit-search-results-decoration {
   color: #00AFE9;
 }
 
-.header-nav-item:hover path {
-  stroke: #00AFE9;
-}
-
 .header-nav-item > a,
 .header-nav-item > button {
   color: inherit;
   cursor: pointer;
-}
-
-.header-nav-item.lang:hover path {
-  fill: #FEFEFE;
-  stroke: transparent;
 }
 
 .header-nav-item.lang .drop-list {
@@ -1022,6 +993,24 @@ input[type='search']::-webkit-search-results-decoration {
           align-items: center;
   grid-gap: 15px;
   margin-left: 10px;
+}
+
+.header-buttons-user {
+  position: relative;
+}
+
+.header-buttons-user button {
+  cursor: pointer;
+}
+
+.header-buttons-user button.active svg {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.header-buttons-user .drop-list {
+  left: auto;
+  right: 0;
 }
 
 .header-buttons .icons-bar-list {
@@ -1046,8 +1035,8 @@ input[type='search']::-webkit-search-results-decoration {
 
 .header-buttons .icons-bar-item .count {
   position: absolute;
-  right: -5px;
-  top: -5px;
+  left: 11px;
+  top: -11px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1060,13 +1049,13 @@ input[type='search']::-webkit-search-results-decoration {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 14px;
-  height: 14px;
-  background: #00AFE9;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  min-width: 22px;
+  height: 22px;
+  background: #184E79;
+  -webkit-border-radius: 11px;
+          border-radius: 11px;
   color: #FFFFFF;
-  padding: 2px;
+  padding: 2px 7px 1px;
   line-height: 14px;
 }
 
@@ -1100,10 +1089,6 @@ input[type='search']::-webkit-search-results-decoration {
           transform: rotateX(180deg);
 }
 
-.drop-btn.active svg path {
-  stroke: #00AFE9;
-}
-
 .drop-btn span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1129,31 +1114,25 @@ input[type='search']::-webkit-search-results-decoration {
 .drop-list {
   display: none;
   position: absolute;
-  background: #646464;
-  -webkit-border-radius: 0 0 10px 10px;
-          border-radius: 0 0 10px 10px;
-  padding: 6px 10px 24px 7px;
+  background: #FEFEFE;
   z-index: 10;
   top: 30px;
   left: -15px;
 }
 
-.drop-list-item {
-  color: #FEFEFE;
-  margin-bottom: 12px;
-}
-
-.drop-list-item:last-child {
-  margin-bottom: 0;
-}
-
-.drop-list-item:hover {
-  cursor: pointer;
-  color: #00A4DA;
-}
-
+.drop-list-item span,
 .drop-list-item a {
-  color: inherit;
+  width: 100%;
+  color: #141414;
+  padding: 6px 9px;
+  display: inline-block;
+}
+
+.drop-list-item span:hover,
+.drop-list-item a:hover {
+  cursor: pointer;
+  background: #184E79;
+  color: #FEFEFE;
 }
 
 .header-mob {
@@ -1171,7 +1150,7 @@ input[type='search']::-webkit-search-results-decoration {
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .header-mob.active {
@@ -1187,6 +1166,14 @@ input[type='search']::-webkit-search-results-decoration {
 .header-mob-bar {
   padding: 16px;
   border-bottom: 1px solid #FEFEFE;
+}
+
+.header-mob-bar form button {
+  margin-bottom: 16px;
+}
+
+.header-mob-bar form button:last-child {
+  margin-bottom: 0;
 }
 
 .header-mob-bar-user {
@@ -1276,13 +1263,13 @@ input[type='search']::-webkit-search-results-decoration {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 16px;
-  height: 16px;
-  background: #00AFE9;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  min-width: 22px;
+  height: 22px;
+  background: #184E79;
+  -webkit-border-radius: 11px;
+          border-radius: 11px;
   color: #FEFEFE;
-  padding: 0 2px;
+  padding: 2px 7px;
 }
 
 .header-mob-nav-list {
@@ -1343,13 +1330,13 @@ input[type='search']::-webkit-search-results-decoration {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 16px;
-  height: 16px;
-  background: #00AFE9;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  min-width: 22px;
+  height: 22px;
+  background: #184E79;
+  -webkit-border-radius: 11px;
+          border-radius: 11px;
   color: #FFFFFF;
-  padding: 0 4px;
+  padding: 2px 7px;
   margin-left: 10px;
 }
 
@@ -1358,23 +1345,19 @@ input[type='search']::-webkit-search-results-decoration {
   position: absolute;
   top: 20px;
   width: 100%;
-  background-color: #646464;
-  padding: 8px;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
 }
 
-.header-mob-lang .lang-drop-mob-item {
-  color: #FEFEFE;
-  margin-bottom: 8px;
+.header-mob-lang .lang-drop-mob-item span {
+  width: 100%;
+  color: #141414;
+  padding: 6px 9px;
+  display: inline-block;
+  background-color: #FEFEFE;
 }
 
-.header-mob-lang .lang-drop-mob-item:last-child {
-  margin-bottom: 0;
-}
-
-.header-mob-lang .lang-drop-mob-item:hover {
-  color: #00AFE9;
+.header-mob-lang .lang-drop-mob-item span:hover {
+  color: #FFFFFF;
+  background: #184E79;
 }
 
 .bg-mob {
@@ -1401,7 +1384,14 @@ input[type='search']::-webkit-search-results-decoration {
 
 /*--- дефолтные стили по сайту ---*/
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1280px) {
+  .header-nav-item .t-3,
+  .header-nav-item .t-7 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
   .header-buttons a.l {
     font-size: 0;
     width: 35px;
@@ -1463,7 +1453,7 @@ input[type='search']::-webkit-search-results-decoration {
     margin-left: 0;
   }
 
-  .header-buttons .avatar {
+  .header-buttons-user {
     display: none;
   }
 

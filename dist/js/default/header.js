@@ -21,7 +21,11 @@ window.addEventListener('scroll', function() {
 openDropMenu();
 function openDropMenu() {
 	const btn = document.querySelector('.else > .drop-btn');
+	const btn2 = document.querySelector('.lang > .drop-btn');
+	const btn3 = document.querySelector('.header-buttons-user > .drop-btn');
 	const toggleActive = () => {
+		btn2.classList.remove('active');
+		btn3.classList.remove('active');
 			btn.classList.toggle('active');
 	}
 	btn.addEventListener('click', e => {
@@ -41,8 +45,38 @@ function openDropMenu() {
 openDropMenu2();
 function openDropMenu2() {
 	const btn = document.querySelector('.lang > .drop-btn');
+	const btn2 = document.querySelector('.else > .drop-btn');
+	const btn3 = document.querySelector('.header-buttons-user > .drop-btn');
 	const toggleActive = () => {
+		btn2.classList.remove('active');
+		btn3.classList.remove('active');
 			btn.classList.toggle('active');
+	}
+	btn.addEventListener('click', e => {
+		e.stopPropagation();
+
+		toggleActive();
+	});
+	document.addEventListener('click', e => {
+		let target = e.target;
+		let its_menu = target === btn || btn.contains(target);
+		let its_btn = target === btn;
+		let menu_is_active = btn.classList.contains('active');
+		if (!its_menu && !its_btn && menu_is_active) {
+			toggleActive();
+		}
+	});
+}
+
+openDropMenu3();
+function openDropMenu3() {
+	const btn = document.querySelector('.header-buttons-user > .drop-btn');
+	const btn2 = document.querySelector('.lang > .drop-btn');
+	const btn3 = document.querySelector('.else > .drop-btn');
+	const toggleActive = () => {
+		btn2.classList.remove('active');
+		btn3.classList.remove('active');
+		btn.classList.toggle('active');
 	}
 	btn.addEventListener('click', e => {
 		e.stopPropagation();
@@ -95,8 +129,8 @@ burger.addEventListener('click', e => {
 });
 document.addEventListener('click', e => {
 	let target = e.target;
-	let its_menu = target === burger || burger.contains(target);
-	let its_btn = target === headerMob;
+	let its_menu = target === headerMob || headerMob.contains(target);
+	let its_btn = target === burger;
 	let menu_is_active = headerMob.classList.contains('active');
 
 	if (!its_menu && !its_btn && menu_is_active) {

@@ -20,7 +20,12 @@
 	&:disabled {
 		cursor: auto;
 	}
-
+	&.m {
+		height: 37px;
+	}
+	&.l {
+		height: 32px;
+	}
 	&.red {
 		height: 47px;
 		background-color: $red;
@@ -31,40 +36,11 @@
 			background-color: $burgundy;
 		}
 
-		&.m {
-			height: 37px;
-		}
-		&.l {
-			height: 32px;
-		}
 	}
-
-}
-
-.login {
-	position: relative;
-	width: 91px;
-	height: 26px;
-	color: $white;
-	cursor: pointer;
-
-	&:hover {
-		& svg {
-			fill: #BF1616;
-
-			& path {
-				stroke: #BF1616;
-			}
-		}
-	}
-	& span {
-		position: relative;
-		z-index: 5;
-	}
-	& svg {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 0;
+	&.white {
+		background-color: transparent;
+		color: $white3;
+		@include use-size(16px, 19px);
+		border: 1px solid $white3;
 	}
 }
