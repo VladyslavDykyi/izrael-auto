@@ -642,7 +642,7 @@
 }
 
 .block.slider {
-  margin-bottom: 52px;
+  margin-bottom: 60px;
 }
 
 .block.slider .block-item.image {
@@ -839,6 +839,7 @@
 }
 
 .block-side-bar-sticky {
+  margin-top: 86px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1065,11 +1066,6 @@
           border-radius: 10px;
   padding: 11px;
   text-align: center;
-}
-
-.block-link a:hover {
-  background-color: #646464;
-  color: #FFFFFF;
 }
 
 .block.slider {

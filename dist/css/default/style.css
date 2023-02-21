@@ -306,14 +306,6 @@ input[type='search']::-webkit-search-results-decoration {
   cursor: auto;
 }
 
-.btn.m {
-  height: 37px;
-}
-
-.btn.l {
-  height: 32px;
-}
-
 .btn.red {
   height: 47px;
   background-color: #BF1616;
@@ -332,6 +324,14 @@ input[type='search']::-webkit-search-results-decoration {
   font-size: 16px;
   line-height: 19px;
   border: 1px solid #FEFEFE;
+}
+
+.btn.m {
+  height: 37px;
+}
+
+.btn.l {
+  height: 32px;
 }
 
 .check-box input {

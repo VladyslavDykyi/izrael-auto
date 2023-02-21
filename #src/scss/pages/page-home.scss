@@ -43,6 +43,7 @@
 		}
 
 		&-sticky {
+			margin-top: 86px;
 			display: flex;
 			flex-direction: column;
 			grid-gap: 16px;
@@ -255,7 +256,6 @@
 
 	&-link {
 		margin-top: 20px;
-
 		& a {
 			display: block;
 			background: #DEE7ED;
@@ -263,11 +263,6 @@
 			border-radius: 10px;
 			padding: 11px;
 			text-align: center;
-
-			&:hover {
-				background-color: $dark_grey2;
-				color: $white;
-			}
 		}
 	}
 

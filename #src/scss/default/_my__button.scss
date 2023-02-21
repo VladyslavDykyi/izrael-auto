@@ -20,12 +20,7 @@
 	&:disabled {
 		cursor: auto;
 	}
-	&.m {
-		height: 37px;
-	}
-	&.l {
-		height: 32px;
-	}
+
 	&.red {
 		height: 47px;
 		background-color: $red;
@@ -42,5 +37,11 @@
 		color: $white3;
 		@include use-size(16px, 19px);
 		border: 1px solid $white3;
+	}
+	&.m {
+		height: 37px;
+	}
+	&.l {
+		height: 32px;
 	}
 }
