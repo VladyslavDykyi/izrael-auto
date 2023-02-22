@@ -326,6 +326,29 @@ input[type='search']::-webkit-search-results-decoration {
   border: 1px solid #FEFEFE;
 }
 
+.btn.blue {
+  background-color: #015B90;
+  color: #FEFEFE;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.btn.blue:hover {
+  background-color: #00AFE9;
+}
+
+.btn.blue:active {
+  background-color: #00A4DA;
+}
+
+.btn.blue:disabled {
+  background-color: #666666;
+}
+
+.btn.s {
+  height: 40px;
+}
+
 .btn.m {
   height: 37px;
 }

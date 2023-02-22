@@ -26,17 +26,32 @@
 		background-color: $red;
 		color: $white;
 		@include use-size(16px, 19px);
-
 		&:hover {
 			background-color: $burgundy;
 		}
-
 	}
 	&.white {
 		background-color: transparent;
 		color: $white3;
 		@include use-size(16px, 19px);
 		border: 1px solid $white3;
+	}
+	&.blue {
+		background-color: $heavy_blue;
+		color: $white3;
+		@include use-size(16px, 19px);
+		&:hover {
+			background-color: $blue;
+		}
+		&:active {
+			background-color: $blue2;
+		}
+		&:disabled {
+			background-color: #666666;
+		}
+	}
+	&.s {
+		height: 40px;
 	}
 	&.m {
 		height: 37px;

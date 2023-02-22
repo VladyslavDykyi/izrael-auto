@@ -1,0 +1,82 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+@import "../default/mixins";
+
+.block-form {
+	& form {
+
+	}
+	&-city {
+		display: flex;
+		align-items: center;
+		grid-gap: 15px;
+		padding-left: 23px;
+		margin-top: 12px;
+		margin-bottom: 30px;
+		& .radio-group {
+			& input {
+				display: none;
+				&:checked + label {
+					color: $black_new;
+				}
+			}
+			& label {
+				color: $heavy_blue;
+				cursor: pointer;
+			}
+		}
+		& .all-city {
+			&-btn {
+				color: $heavy_blue;
+				cursor: pointer;
+			}
+		}
+	}
+	&-cars {
+		display: flex;
+		align-items: center;
+		grid-gap: 22px;
+		padding-left: 23px;
+		& .radio-group {
+			& input {
+				display: none;
+				&:checked + label {
+					border-color: $black_new;
+				}
+			}
+			& label {
+				color: $black_new;
+				padding-bottom: 6px;
+				border-bottom: 2px solid transparent;
+				cursor: pointer;
+				display: inline-block;
+			}
+		}
+	}
+	&-main {
+		background: #F0F0F0;
+		box-shadow: 0 4px 4px #C1C4CD;
+		border-radius: 21px;
+		padding: 32px 26px;
+		& .main-btn {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			& div {
+				flex: 0 1 max(355px);
+				text-align: center;
+				& button {
+					cursor: pointer;
+				}
+			}
+			& [type="button"] {
+				& svg {
+					transform: rotateX(180deg);
+				}
+				&.active {
+					transform: rotateX(0);
+				}
+			}
+		}
+	}
+}
