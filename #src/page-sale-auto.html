@@ -53,93 +53,7 @@
 		@@include('./html/_page-home-slider-big.html')
 	</div>
 	<div class="container">
-		<section class="block-form">
-			<form action="#">
-				<div class="block-form-city">
-					<div class="radio-group">
-						<input type="radio" name="cites" id="all-city" checked>
-						<label class="t-regular t-4 s" for="all-city">Все города</label>
-					</div>
-					<div class="radio-group">
-						<input type="radio" name="cites" id="city">
-						<label class="t-regular t-4 s" for="city">
-							Город
-						</label>
-					</div>
-					<div class="radio-group">
-						<input type="radio" name="cites" id="range_50">
-						<label class="t-regular t-4 s" for="range_50">
-							+50 км
-						</label>
-					</div>
-					<div class="radio-group">
-						<input type="radio" name="cites" id="range_100">
-						<label class="t-regular t-4 s" for="range_100">
-							+100 км
-						</label>
-					</div>
-					<div class="radio-group">
-						<input type="radio" name="cites" id="range_200">
-						<label class="t-regular t-4 s" for="range_200">
-							+200 км
-						</label>
-					</div>
-					<div class="all-city">
-						<button class="all-city-btn reset-btn" type="button">
-							Другой город
-						</button>
-					</div>
-				</div>
-				<div class="block-form-cars">
-					<div class="radio-group">
-						<input type="radio" name="cars" id="all-auto" checked>
-						<label class="t-regular t-3 s" for="all-auto">
-							Все
-						</label>
-					</div>
-					<div class="radio-group">
-						<input type="radio" name="cars" id="by-auto">
-						<label class="t-regular t-3 s" for="by-auto">
-							Б/у авто
-						</label>
-					</div>
-					<div class="radio-group">
-						<input type="radio" name="cars" id="new-auto">
-						<label class="t-regular t-3 s" for="new-auto">
-							Новые
-						</label>
-					</div>
-				</div>
-				<div class="block-form-main">
-					<div class="main-inputs">
-
-					</div>
-					<div class="main-btn">
-						<div>
-							<button class="reset-btn t-regular t-3 s" type="reset">
-								Сбросить все
-								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M7.71255 0.479852C7.45962 0.748178 6.64928 1.63648 5.91182 2.45373C5.17437 3.27099 4.53626 3.90771 4.4936 3.86864C4.45105 3.82956 3.57927 2.9984 2.55647 2.02161C1.53354 1.04482 0.61934 0.207771 0.524751 0.161494C0.30327 0.0531081 0 0.259427 0 0.518619C0 0.628934 0.874218 1.54595 1.98077 2.59662C3.07025 3.63106 3.94739 4.51946 3.9302 4.57101C3.9129 4.62257 3.09341 5.55826 2.10912 6.65034C0.649813 8.26953 0.343008 8.66715 0.447104 8.80466C0.623484 9.03787 0.90847 9.06507 1.14141 8.87113C1.24916 8.78142 2.05902 7.91149 2.94104 6.93784C3.82306 5.9642 4.57977 5.16764 4.62256 5.16764C4.66534 5.16764 5.51335 5.944 6.50703 6.89289C7.57518 7.91301 8.4021 8.61813 8.53009 8.61813C8.79777 8.61813 9.06935 8.36076 8.98402 8.18814C8.94916 8.11761 8.07128 7.25651 7.03336 6.27454L5.14621 4.48901L6.85394 2.62108C9.0468 0.222588 8.96257 0.331075 8.77583 0.143633C8.50925 -0.12378 8.18489 -0.0211788 7.71255 0.479852Z" fill="black"/>
-								</svg>
-							</button>
-						</div>
-						<div>
-							<button class="reset-btn t-regular t-3 s" type="button">
-								Обычный поиск
-								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14 7L7.5 0.999999L1 7" stroke="#646464"/>
-								</svg>
-							</button>
-						</div>
-						<div>
-							<button class="btn blue s" type="submit">
-								Показать
-							</button>
-						</div>
-					</div>
-				</div>
-			</form>
-		</section>
+		@@include('./html/_page-sale-auto-form.html')
 	</div>
 	<div class="container">
 		<section class="block search">
@@ -394,7 +308,7 @@
 <script src="./js/lib/jquery.min.js"></script>
 <script src="./js/lib/slick.min.js"></script>
 <script src="./js/lib/select2.min.js"></script>
-<script src="./js/pages/page-home.min.js"></script>
+<script src="./js/pages/page-sale-auto.min.js"></script>
 <script src="./js/default/header.min.js"></script>
 <script src="./js/pages/seo-text.js"></script>
 <script src="./js/default/select.min.js"></script>

@@ -1,0 +1,483 @@
+<section class="block-form">
+	<form action="#">
+		<div class="block-form-city">
+			<div class="radio-group">
+				<input type="radio" name="cites" id="all-city" checked>
+				<label class="t-regular t-4 s" for="all-city">Все города</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="cites" id="city">
+				<label class="t-regular t-4 s" for="city">
+					Город
+				</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="cites" id="range_50">
+				<label class="t-regular t-4 s" for="range_50">
+					+50 км
+				</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="cites" id="range_100">
+				<label class="t-regular t-4 s" for="range_100">
+					+100 км
+				</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="cites" id="range_200">
+				<label class="t-regular t-4 s" for="range_200">
+					+200 км
+				</label>
+			</div>
+			<div class="all-city">
+				<button class="all-city-btn reset-btn" type="button">
+					Другой город
+				</button>
+			</div>
+		</div>
+		<div class="block-form-cars">
+			<div class="radio-group">
+				<input type="radio" name="cars" id="all-auto" checked>
+				<label class="t-regular t-3 s" for="all-auto">
+					Все
+				</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="cars" id="by-auto">
+				<label class="t-regular t-3 s" for="by-auto">
+					Б/у авто
+				</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="cars" id="new-auto">
+				<label class="t-regular t-3 s" for="new-auto">
+					Новые
+				</label>
+			</div>
+		</div>
+		<div class="block-form-main">
+			<div class="main-inputs">
+				<div class="main-inputs-car">
+					<div class="wrapper-select">
+						<label>
+							<select class="select-search" name="marc">
+								<option value="" >Марка</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+					<div class="wrapper-select">
+						<label>
+							<select class="select-search" name="model" disabled>
+								<option value="" >Модель</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">11111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+					<div class="wrapper-select">
+						<label>
+							<select class="select-search" name="generation">
+								<option value="" >Поколение</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="main-inputs">
+				<div class="main-inputs-params">
+					<div class="wrapper-input">
+						<label class="wrapper-input-left">
+							<input class="t-regular t-3 s" type="number" name="price-start" placeholder="Цена от, ₽">
+						</label>
+						<label class="wrapper-input-right">
+							<input class="t-regular t-3 s" type="number" name="price-end" placeholder="до">
+						</label>
+					</div>
+					<div class="wrapper-input">
+						<label class="wrapper-input-left">
+							<input class="t-regular t-3 s" type="number" name="year-start" placeholder="Год от">
+						</label>
+						<label class="wrapper-input-right">
+							<input class="t-regular t-3 s" type="number" name="year-end" placeholder="до">
+						</label>
+					</div>
+					<div class="wrapper-select">
+						<label>
+							<select class="select-no-search" name="gearbox-boxes">
+								<option value="" >КПП</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+						<label>
+							<select class="select-no-search" name="fuel">
+								<option value="" >Топливо</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="main-inputs">
+				<div class="main-inputs-params">
+					<div class="wrapper-input">
+						<label class="wrapper-input-left">
+							<input class="t-regular t-3 s" type="number" name="volume-start" placeholder="Объем от, л">
+						</label>
+						<label class="wrapper-input-right">
+							<input class="t-regular t-3 s" type="number" name="volume-end" placeholder="до">
+						</label>
+					</div>
+					<div class="wrapper-input">
+						<label>
+							<select class="select-no-search" name="drive">
+								<option value="" >Привод</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+					<div class="wrapper-input">
+						<div class="check-box">
+							<input type="checkbox" name="with-photo" id="with-photo">
+							<label for="with-photo">С фото</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-inputs">
+				<div class="main-inputs-params">
+					<div class="wrapper-input">
+						<label>
+							<select class="select-no-search" name="body-type">
+								<option value="" >Тип кузова</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+					<div class="wrapper-color">
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-dear" id="color-dear">
+							<label for="color-dear">
+							<span class="t-regular t-3 s">
+								Любой
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="black" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-white" id="color-white">
+							<label for="color-white">
+							<span class="white">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="black" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-black" id="color-black">
+							<label for="color-black">
+							<span class="black">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-brown" id="color-brown">
+							<label for="color-brown">
+							<span class="brown">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-purple" id="color-purple">
+							<label for="color-purple">
+							<span class="purple">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-green" id="color-green">
+							<label for="color-green">
+							<span class="green">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-grey_silver" id="color-grey_silver">
+							<label for="color-grey_silver">
+							<span class="grey">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+								<span class="silver">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-blue_dark-blue" id="color-blue_dark-blue">
+							<label for="color-blue_dark-blue">
+							<span class="blue">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+								<span class="dark-blue">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-yellow_gold_beige" id="color-yellow_gold_beige">
+							<label for="color-yellow_gold_beige">
+							<span class="yellow">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+								<span class="gold">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+								<span class="beige">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+						<div class="wrapper-color-item">
+							<input type="checkbox" name="color-red_burgundy_orange_pink" id="color-red_burgundy_orange_pink">
+							<label for="color-red_burgundy_orange_pink">
+							<span class="red">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+								<span class="burgundy">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+								<span class="pink">
+								<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5868 1.05408L13.5867 1.05416L7.11227 8.28726L3.45235 3.60447L3.45233 3.60444C2.94429 2.95451 1.99656 2.83354 1.33724 3.32558L1.33679 3.32592L1.09876 3.50397C1.09865 3.50405 1.09854 3.50414 1.09843 3.50422C1.09839 3.50425 1.09835 3.50428 1.09831 3.50431C0.432491 4.00158 0.30006 4.94539 0.813446 5.60216L5.7013 11.8568L5.70256 11.8584L5.70254 11.8585L5.70569 11.8625L5.73638 11.9016C5.73657 11.9019 5.73676 11.9021 5.73696 11.9024C5.94138 12.1641 6.21704 12.336 6.50812 12.4203L6.51503 12.423L6.54354 12.4305L6.54378 12.4305C6.5441 12.4306 6.54469 12.4308 6.54563 12.431L6.55324 12.4332L6.55441 12.4335C6.55999 12.4351 6.56989 12.4379 6.5806 12.4407C7.16999 12.6006 7.83697 12.4364 8.27476 11.9472L16.0858 3.21999C16.0859 3.21995 16.0859 3.21992 16.0859 3.21988C16.6962 2.53827 16.6222 1.49342 15.9282 0.90005C15.2403 0.311938 14.1907 0.379769 13.5868 1.05408Z" fill="white" stroke="#D9D9D9"/>
+								</svg>
+							</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-inputs">
+				<div class="main-inputs-params">
+					<div class="wrapper-input colum">
+						<span class="t-regular t-3 s" >
+							Повреждения
+						</span>
+						<label>
+							<select class="select-no-search" name="damage">
+								<option value="" >Неважно</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+					<div class="wrapper-input">
+						<label>
+							<select class="select-no-search" name="number-owners">
+								<option value="" >Количество собственников</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">11111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+					<div class="wrapper-input">
+						<label>
+							<select class="select-no-search" name="test">
+								<option value="" >Тест до </option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">1111111</option>
+								<option value="">11111111</option>
+								<option value="">1111111</option>
+							</select>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="main-inputs">
+				<div class="main-inputs-params">
+					<div class="main-inputs-dop">
+						<div class="wrapper-input">
+							<div class="check-box">
+								<input type="checkbox" name="with-photo" id="adapted-disabled">
+								<label for="adapted-disabled">Приспособленно для инвалидов</label>
+							</div>
+						</div>
+						<div class="wrapper-input">
+							<div class="check-box">
+								<input type="checkbox" name="with-photo" id="funding-available">
+								<label for="funding-available">Доступно финансирование</label>
+							</div>
+						</div>
+						<div class="wrapper-input">
+							<div class="check-box">
+								<input type="checkbox" name="with-photo" id="trade-in-available">
+								<label for="trade-in-available">Доступен trade in</label>
+							</div>
+						</div>
+						<div class="wrapper-input">
+							<div class="check-box">
+								<input type="checkbox" name="with-photo" id="exchange-possible">
+								<label for="exchange-possible">Возможен обмен</label>
+							</div>
+						</div>
+					</div>
+					<div class="main-inputs-block">
+						<div class="wrapper-input colum">
+							<span class="t-regular t-3 s" >
+								Мощность по ПТС
+							</span>
+							<div>
+								<label class="wrapper-input-left">
+									<input class="t-regular t-3 s" type="number" name="volume-start" placeholder="от, л.с.">
+								</label>
+								<label class="wrapper-input-right">
+									<input class="t-regular t-3 s" type="number" name="volume-end" placeholder="до">
+								</label>
+							</div>
+						</div>
+						<div class="wrapper-input colum">
+							<span class="t-regular t-3 s" >
+								Пробег
+							</span>
+							<div>
+								<label class="wrapper-input-left">
+									<input class="t-regular t-3 s" type="number" name="volume-start" placeholder="от, км">
+								</label>
+								<label class="wrapper-input-right">
+									<input class="t-regular t-3 s" type="number" name="volume-end" placeholder="до">
+								</label>
+							</div>
+						</div>
+						<div class="wrapper-input colum">
+							<span class="t-regular t-3 s" >
+								Продавец
+							</span>
+							<div class="radio">
+								<div class="radio-group">
+									<label>
+										<input type="radio" name="salesman" checked>
+										<span class="t-regular t-3 s">Любой</span>
+									</label>
+								</div>
+								<div class="radio-group">
+									<label>
+										<input type="radio" name="salesman">
+										<span class="t-regular t-3 s">
+											Собственник
+										</span>
+									</label>
+								</div>
+								<div class="radio-group">
+									<label>
+										<input type="radio" name="salesman">
+										<span class="t-regular t-3 s">Компания</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-btn">
+				<div>
+					<button class="reset-btn t-regular t-3 s" type="reset">
+						Сбросить все
+						<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								  d="M7.71255 0.479852C7.45962 0.748178 6.64928 1.63648 5.91182 2.45373C5.17437 3.27099 4.53626 3.90771 4.4936 3.86864C4.45105 3.82956 3.57927 2.9984 2.55647 2.02161C1.53354 1.04482 0.61934 0.207771 0.524751 0.161494C0.30327 0.0531081 0 0.259427 0 0.518619C0 0.628934 0.874218 1.54595 1.98077 2.59662C3.07025 3.63106 3.94739 4.51946 3.9302 4.57101C3.9129 4.62257 3.09341 5.55826 2.10912 6.65034C0.649813 8.26953 0.343008 8.66715 0.447104 8.80466C0.623484 9.03787 0.90847 9.06507 1.14141 8.87113C1.24916 8.78142 2.05902 7.91149 2.94104 6.93784C3.82306 5.9642 4.57977 5.16764 4.62256 5.16764C4.66534 5.16764 5.51335 5.944 6.50703 6.89289C7.57518 7.91301 8.4021 8.61813 8.53009 8.61813C8.79777 8.61813 9.06935 8.36076 8.98402 8.18814C8.94916 8.11761 8.07128 7.25651 7.03336 6.27454L5.14621 4.48901L6.85394 2.62108C9.0468 0.222588 8.96257 0.331075 8.77583 0.143633C8.50925 -0.12378 8.18489 -0.0211788 7.71255 0.479852Z"
+								  fill="black"/>
+						</svg>
+					</button>
+				</div>
+				<div>
+					<button class="reset-btn t-regular t-3 s" type="button">
+						Обычный поиск
+						<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14 7L7.5 0.999999L1 7" stroke="#646464"/>
+						</svg>
+					</button>
+				</div>
+				<div>
+					<button class="btn blue s" type="submit">
+						Показать
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>

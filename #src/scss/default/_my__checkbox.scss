@@ -6,12 +6,12 @@
 		position: relative;
 		padding-left: 35px;
 		@include use-font($I-r, 400);
-		@include use-size(16px, 22px);
+		@include use-size(16px, 19px);
 		color: #646464;
 		display: inline-block;
 		cursor: pointer;
 		& span {
-			//color: $green-3-100;
+			color: #646464;
 		}
 		&:hover {
 			&:after{
@@ -22,7 +22,7 @@
 	& label:before {
 		content: '';
 		position: absolute;
-		top: calc(50% - 7px);
+		top: calc(50% - 5px);
 		left: 5px;
 		width: 13px;
 		height: 8px;
@@ -43,7 +43,7 @@
 		height: 22px;
 		border: 1px solid #D9D9D9;
 		border-radius: 5px;
-		background-color: transparent;
+		background-color: #ffffff;
 	}
 	& input:checked + label:before {
 		border-color: #fff;
