@@ -250,14 +250,17 @@
 			top: 3px;
 			right: 6px;
 			&:hover path {
-				fill: $brown;
+				fill: #ffdb41;
 			}
 			& svg {
 				cursor: pointer;
 			}
 			&.liked {
 				& path {
-					fill: $red;
+					fill: #FFCF00;
+					fill-rule: nonzero;
+					clip-rule: nonzero;
+					background: #FFCF00;
 				}
 			}
 

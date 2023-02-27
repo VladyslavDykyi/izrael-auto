@@ -266,7 +266,7 @@
 		}
 		&-user {
 			margin-top: 20px;
-			display: inline-flex;
+			display: flex;
 			align-items: center;
 			grid-gap: 10px;
 			&:hover .user-name{
@@ -291,7 +291,7 @@
 				margin-bottom: 0;
 			}
 			& a {
-				display: inline-flex;
+				display: flex;
 				align-items: center;
 				grid-gap: 10px;
 				color: $white3;
@@ -336,6 +336,7 @@
 			}
 			& a {
 				color: inherit;
+				display: block;
 				&:hover {
 					color: $blue;
 				}
@@ -380,7 +381,7 @@
 						width: 100%;
 						color: $black_new;
 						padding: 6px 9px;
-						display: inline-block;
+						display: block;
 						background-color: $white3;
 						&:hover {
 							color: $white;

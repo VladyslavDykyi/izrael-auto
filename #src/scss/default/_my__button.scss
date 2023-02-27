@@ -50,6 +50,15 @@
 			background-color: #666666;
 		}
 	}
+	&.red-border {
+		border: 1px solid $red;
+		color: $red;
+		@include use-size(16px, 19px);
+		background-color: transparent;
+		&:hover {
+			border-color: $burgundy;
+		}
+	}
 	&.s {
 		height: 40px;
 	}

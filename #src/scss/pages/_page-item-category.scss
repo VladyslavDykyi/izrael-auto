@@ -13,6 +13,9 @@
 			max-width: calc(25% - 14.25px);
 			height: 97px;
 			border-radius: 7px;
+			@media screen and (max-width: 1024px) {
+				height: auto;
+			}
 			@media screen and (max-width: 620px) {
 				max-width: calc(33.33333% - 14.25px);
 			}
@@ -42,20 +45,30 @@
 				width: 100%;
 				display: flex;
 				align-items: center;
-				justify-content: space-evenly;
+				grid-gap: 10px;
 				overflow: hidden;
 				border-radius: 7px;
 				color: $black_new;
-				padding: 4px;
+				padding: 8px;
 				@media screen and (max-width: 1024px) {
 					flex-direction: column;
+				}
+				& .svg {
+					flex: 0 1 80px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 80px;
+					height: 70px;
 				}
 				& svg {
 					transition: all .2s linear;
 					padding: 0 2px;
 				}
 
-				& span {
+				& span:last-of-type {
+					flex: 0 1 calc(100% - 80px);
+					display: block;
 					max-width: 109px;
 					@media screen and (max-width: 1024px) {
 						text-align: center;

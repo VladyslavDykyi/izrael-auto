@@ -7,6 +7,16 @@
 
 	}
 
+	& .block.category {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		& .block-cart {
+			justify-content: center;
+			& .block-item a span:last-of-type{
+				max-width: 125px;
+			}
+		}
+	}
 	&-city {
 		display: flex;
 		align-items: center;
@@ -14,22 +24,18 @@
 		padding-left: 23px;
 		margin-top: 12px;
 		margin-bottom: 30px;
-
 		& .radio-group {
 			& input {
 				display: none;
-
 				&:checked + label {
 					color: $black_new;
 				}
 			}
-
 			& label {
 				color: $heavy_blue;
 				cursor: pointer;
 			}
 		}
-
 		& .all-city {
 			&-btn {
 				color: $heavy_blue;
@@ -43,7 +49,6 @@
 		align-items: center;
 		grid-gap: 22px;
 		padding-left: 23px;
-
 		& .radio-group {
 			& input {
 				display: none;
@@ -68,11 +73,13 @@
 		box-shadow: 0 4px 4px $grey;
 		border-radius: 21px;
 		padding: 32px 26px;
-
+		@media screen and (max-width: 768px) {
+			border-radius: 7px;
+			padding: 15px 10px;
+		}
 		& .main-inputs {
 
 			& .wrapper-input {
-				flex: 0 1 calc(33.3333% - 10px);
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -84,6 +91,20 @@
 					padding: 2px;
 					background: #D9D9D9;
 					border-radius: 7px;
+					@media screen and (max-width: 425px) {
+						overflow-y: hidden;
+						overflow-x: auto;
+						&::-webkit-scrollbar {
+							width: 4px;
+							height: 8px;
+							border-radius: 4px;
+						}
+						&::-webkit-scrollbar-thumb {
+							border-radius: 4px;
+							background: $dark_grey2;
+							height: 8px;
+						}
+					}
 					&-group {
 						width: 100%;
 						& input {
@@ -105,6 +126,10 @@
 								border-radius: 7px;
 								display: inline-block;
 								text-align: center;
+								@media screen and (max-width: 425px) {
+									font-size: 14px;
+									line-height: 17px;
+								}
 								&:hover {
 									background: #C6C6C6;
 								}
@@ -133,7 +158,7 @@
 
 				&-left {
 					background: #FFFFFF;
-					max-width: 65%;
+					max-width: 50%;
 					border-radius: 7px 0 0 7px;
 
 					& input {
@@ -150,7 +175,7 @@
 
 				&-right {
 					background: #FFFFFF;
-					max-width: 35%;
+					max-width: 50%;
 					position: relative;
 					padding-left: 1px;
 					border-radius: 0 7px 7px 0;
@@ -182,57 +207,32 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				grid-gap: 15px;
 				margin-bottom: 15px;
-
-				& .wrapper-select {
-					flex: 0 1 calc(33.3333% - 10px);
+				@media screen and (max-width: 768px) {
+					flex-direction: column;
 				}
 			}
 
 			&-params {
 				display: flex;
 				align-items: flex-end;
-				justify-content: space-between;
+				grid-gap: 15px;
 				margin-bottom: 15px;
-
-				& .wrapper-select {
-					flex: 0 1 calc(33.3333% - 10px);
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-
-					& label {
-						flex: 0 1 calc(50% - 7.5px);
-					}
+				@media screen and (max-width: 768px) {
+					flex-direction: column;
 				}
-
-				& .wrapper-input {
-					&.colum {
-						flex-direction: column;
-						align-items: flex-start;
-
-						& > span {
-							display: block;
-							text-align: left;
-							padding-left: 11px;
-							padding-bottom: 8px;
-							color: #646464;
-						}
-
-						& > div {
-							display: flex;
-							align-items: center;
-						}
-					}
-				}
-
 				& .wrapper-color {
-					flex: 0 1 calc(66.6666% - 10px);
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
-
+					@media screen and (max-width: 768px) {
+						flex-wrap: wrap;
+						grid-gap: 15px;
+						width: 100%;
+					}
 					&-item {
+						&:last-child,
 						&:first-child {
 							& input:checked + label span {
 								border-color: #D9D9D9;
@@ -256,7 +256,18 @@
 								}
 							}
 						}
+						&:last-child {
+							& span {
+								width: 130px;
+								text-align: center;
+								padding: 2px;
+								height: 29px;
+								background: #D9D9D9;
+								border-radius: 24px;
+								border: 2px solid transparent;
 
+							}
+						}
 						& #color-red_burgundy_orange_pink + label {
 							width: 70px;
 						}
@@ -390,21 +401,16 @@
 					}
 				}
 			}
-
-			&-dop {
-				flex: 0 1 calc(33.3333% - 5px);
-			}
-
 			&-block {
-				flex: 0 1 calc(66.6666% - 5px);
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				flex-wrap: wrap;
-
+				@media screen and (max-width: 768px) {
+					flex-direction: column;
+					grid-gap: 15px;
+				}
 				& .wrapper-input {
-					flex: 0 1 calc(50% - 7.5px);
-
 					&:last-of-type {
 						flex: 0 1 100%;
 						margin-top: 15px;
@@ -417,9 +423,44 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			margin-top: 30px;
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+				grid-gap: 15px;
+			}
+			& .f1-4 {
+				@media screen and (max-width: 768px) {
+					flex: 0 1 calc(30% - 11.25px);
+				}
+				@media screen and (max-width: 580px) {
+					flex: 0 1 calc(43% - 11.25px);
+				}
+				@media screen and (max-width: 425px) {
+					& .btn {
+						font-size: 12px;
+						line-height: 15px;
+					}
+				}
+			}
+			& .f2-3 {
+				@media screen and (max-width: 768px) {
+					flex: 0 1 calc(30% - 11.25px);
+				}
+				@media screen and (max-width: 580px) {
+					flex: 0 1 calc(43% - 11.25px);
+				}
+				@media screen and (max-width: 425px) {
+					flex: 0 1 calc(46% - 11.25px);
+					& .t-3 {
+						font-size: 12px;
 
+					}
+					& .s {
+						line-height: 15px;
+					}
+				}
+			}
 			& div {
-				flex: 0 1 calc(33.3333% - 10px);
 				text-align: center;
 
 				& button {
@@ -436,6 +477,98 @@
 					transform: rotateX(0);
 				}
 			}
+		}
+	}
+	& .wrapper-select,
+	& .wrapper-input {
+		&.colum {
+			flex-direction: column;
+			align-items: flex-start;
+			& > span {
+				display: block;
+				text-align: left;
+				padding-left: 11px;
+				padding-bottom: 8px;
+				color: #646464;
+			}
+			& > div {
+				display: flex;
+				align-items: center;
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+	& .main-inputs-dop {
+		&.colum {
+			flex-direction: column;
+			align-items: flex-start;
+			& > span {
+				display: block;
+				text-align: left;
+				padding-left: 11px;
+				padding-bottom: 8px;
+				color: #646464;
+			}
+			& > div {
+				margin-top: 6px;
+				@media screen and (max-width: 768px) {
+					display: flex;
+					flex-wrap: wrap;
+					& > div {
+						flex: 0 1 calc(50% - 7.5px);
+					}
+				}
+				@media screen and (max-width: 480px) {
+					& > div {
+						flex: 0 1 100%;
+					}
+				}
+			}
+			& .wrapper-input {
+				margin-bottom: 12px;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	& .f2-3 {
+		flex: 0 1 calc(66.66666% - 5px);
+		@media screen and (max-width: 768px) {
+			flex: 0 1 100%;
+			width: 100%;
+		}
+	}
+	& .f1-3 {
+		flex: 0 1 calc(33.33333% - 10px);
+		@media screen and (max-width: 768px) {
+			flex: 0 1 100%;
+			width: 100%;
+		}
+	}
+	& .f1-2 {
+		flex: 0 1 calc(50% - 7.5px);
+		@media screen and (max-width: 768px) {
+			flex: 0 1 100%;
+			width: 100%;
+		}
+	}
+	& .f1-6 {
+		flex: 0 1 calc(16.66667% - 12.5px);
+		@media screen and (max-width: 768px) {
+			flex: 0 1 100%;
+			width: 100%;
+		}
+	}
+	& .f1-4 {
+		flex: 0 1 calc(25% - 11.25px);
+	}
+	& .f1-1 {
+		flex: 0 1 100%;
+		@media screen and (max-width: 768px) {
+			width: 100%;
 		}
 	}
 }
