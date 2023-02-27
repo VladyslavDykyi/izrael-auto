@@ -24,6 +24,9 @@
 		padding-left: 23px;
 		margin-top: 12px;
 		margin-bottom: 30px;
+		@media screen and (max-width: 580px) {
+			flex-wrap: wrap;
+		}
 		& .radio-group {
 			& input {
 				display: none;

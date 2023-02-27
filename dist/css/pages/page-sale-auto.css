@@ -1404,7 +1404,7 @@
 }
 
 .bread {
-  padding-left: 23px;
+  padding-left: 13px;
 }
 
 .bread-list {
@@ -1416,6 +1416,9 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .bread-item {
@@ -1428,10 +1431,6 @@
 
 .bread-item-link:hover {
   color: #141414;
-}
-
-.bread-item:first-child {
-  margin-left: 0;
 }
 
 .bread-item:last-child span {
@@ -2282,6 +2281,12 @@
 }
 
 @media screen and (max-width: 580px) {
+  .block-form-city {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
   .block-form-main .main-btn .f1-4 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 -webkit-calc(43% - 11.25px);
