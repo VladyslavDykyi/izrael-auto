@@ -56,11 +56,13 @@
 			}
 		}
 	}
+
 	&.blog {
 		& .block-cart {
 			grid-gap: 19px;
 			flex-wrap: wrap;
 		}
+
 		& .block-item {
 			flex: 0 1 calc(25% - 14.25px);
 
@@ -68,6 +70,7 @@
 				background-color: $dark_grey-25;
 			}
 		}
+
 		& .image {
 			max-height: 143px;
 			@media screen and (max-width: 768px) {
@@ -77,6 +80,7 @@
 				max-height: 180px;
 				height: 180px;
 			}
+
 			& picture {
 				max-height: 143px;
 				@media screen and (max-width: 420px) {
@@ -84,6 +88,7 @@
 					height: 180px;
 				}
 			}
+
 			& img {
 				max-height: 143px;
 				@media screen and (max-width: 420px) {
@@ -91,11 +96,14 @@
 				}
 			}
 		}
+
 		& .info {
 			padding: 8px;
+
 			& h3 {
 				-webkit-line-clamp: 1;
 			}
+
 			& p {
 				-webkit-line-clamp: 3;
 			}
@@ -256,6 +264,7 @@
 
 	&-link {
 		margin-top: 20px;
+
 		& a {
 			display: block;
 			background: #DEE7ED;
@@ -268,6 +277,7 @@
 
 	&.slider {
 		max-width: none;
+		margin-bottom: 60px;
 	}
 }
 

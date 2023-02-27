@@ -665,7 +665,8 @@
 }
 
 .block.slider {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  margin-top: 25px;
 }
 
 .block.slider .block-item.image {
@@ -1093,6 +1094,7 @@
 
 .block.slider {
   max-width: none;
+  margin-bottom: 60px;
 }
 
 .follow {

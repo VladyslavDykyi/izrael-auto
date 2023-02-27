@@ -78,7 +78,15 @@
 			padding: 15px 10px;
 		}
 		& .main-inputs {
-
+			display: none;
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				display: block;
+			}
+			&.active {
+				display: block;
+			}
 			& .wrapper-input {
 				display: flex;
 				align-items: center;
@@ -468,12 +476,12 @@
 				}
 			}
 
-			& [type="button"] {
+			&-toggle {
 				& svg {
 					transform: rotateX(180deg);
 				}
 
-				&.active {
+				&.active svg {
 					transform: rotateX(0);
 				}
 			}

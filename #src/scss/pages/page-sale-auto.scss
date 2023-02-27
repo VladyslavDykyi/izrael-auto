@@ -8,6 +8,7 @@
 @import "./_page-sale-auto-form";
 @import "./_big-slider";
 @import "./_seo-text";
+@import "./_bread-dots";
 
 .bg-site {
 	padding-bottom: 60px;
@@ -76,8 +77,13 @@
 		}
 	}
 	&-select {
-		max-width: 255px;
+		max-width: 265px;
 		width: 100%;
+		padding: 7px 0;
+		border-bottom: 1px solid $black_new;
+		& .select2-container--search.select2-container--open .select2-selection--single {
+			box-shadow: 0 0 4px #c1c4cd;
+		}
 		@media screen and (max-width: 580px) {
 			max-width: 100%;
 		}
@@ -85,53 +91,88 @@
 }
 .adverts-list {
 	@media screen and (max-width: 768px) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		display: none;
 	}
-	@media screen and (max-width: 580px) {
-		grid-gap: 15px;
+}
+.adverts-list-mob {
+	display: none;
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+}
+.adverts-item-mob {
+	padding: 13px 14px 10px;
+	border-radius: 6px;
+	background-color: $white3;
+	&:hover {
+		background: $lite_grey;
+		border-radius: 5px;
 	}
 }
 .adverts-item {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	grid-template-rows: 40% calc(60% - 7px);
-	grid-gap: 7px 58px;
-	@media screen and (max-width: 768px) {
-		flex: 0 1 50%;
-		grid-template-columns: auto;
-		grid-template-rows: auto;
-		grid-gap: 10px 0;
-	}
-	@media screen and (max-width: 580px) {
-		flex: 0 1 100%;
-		grid-template-columns: auto;
-		grid-template-rows: auto;
-	}
+	display: flex;
 	&-img {
-		grid-row: 1/3;
-		grid-column: 1/2;
+		flex: 0 1 273px;
+		@media screen and (max-width: 1024px) {
+			flex: 0 1 230px;
+		}
+		& a ~ a {
+			display: none;
+		}
+	}
+	&-wrapper {
+		flex: 0 1 calc(100% - 273px);
+		@media screen and (max-width: 1024px) {
+			flex: 0 1 calc(100% - 230px);
+		}
 		@media screen and (max-width: 768px) {
-			grid-row: 2/3;
-			grid-column: 1/2;
+			flex: 0 1 100%;
 		}
 	}
 	&-text {
+		position: relative;
+		flex: 0 1 calc(100% - 235px);
 		margin-top: 4px;
-		grid-row: 1/2;
-		grid-column: 2/3;
+		display: flex;
 		@media screen and (max-width: 768px) {
-			grid-row: 1/2;
-			grid-column: 1/2;
+			flex-direction: column;
+			flex: 0 1 100%;
+		}
+		&-wrapper {
+			flex: 0 1 calc(100% - 235px);
+			@media screen and (max-width: 768px) {
+				flex: 0 1 100%;
+			}
+		}
+	}
+	&-price-wrapper {
+		flex: 0 1 235px;
+		@media screen and (max-width: 768px) {
+			flex: 0 1 100%;
+			margin-top: 14px;
 		}
 	}
 	&-info {
-		grid-row: 2/3;
-		grid-column: 2/3;
+		margin-top: 14px;
+		flex: 0 1 235px;
+		display: flex;
+		align-items: flex-start;
 		@media screen and (max-width: 768px) {
-			grid-row: 3/4;
-			grid-column: 1/2;
+			flex: 0 1 100%;
+		}
+		&-wrapper {
+			flex: 0 1 calc(100% - 235px);
+			@media screen and (max-width: 768px) {
+				flex: 0 1 100%;
+				width: 100%;
+			}
+		}
+		& .adverts-info-dateLocal {
+			flex: 0 1 235px;
+			@media screen and (max-width: 768px) {
+				flex: 0 1 100%;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -140,62 +181,47 @@
 	border-radius: 6px;
 	background-color: $white3;
 	&:hover {
-		background: $white2;
+		background: $lite_grey;
 		border-radius: 5px;
 	}
 	&-img {
 		max-height: 155px;
-		@media screen and (max-width: 580px) {
-			max-height: none;
-		}
 		& picture,
 		& img {
 			width: 215px;
-			max-height: 155px;
-			height: 100%;
+			height: 155px;
 			display: inline-block;
 			border-radius: 6px;
-			@media screen and (max-width: 580px) {
-				max-height: none;
-				height: auto;
+			@media screen and (max-width: 768px) {
+				width: auto;
 			}
 		}
 	}
 	&-text {
-		display: flex;
-		grid-gap: 10px;
-		position: relative;
-		@media screen and (max-width: 768px) {
-			flex-direction: column;
-		}
-		& .adverts-text-name {
-			flex: 0 1 70.916334%;
-			& .name-title {
-				margin-bottom: 14px;
-				display: inline-flex;
-				align-items: center;
-				grid-gap: 3px;
-				& h2 {
-					color: $heavy_blue;
-					&:hover {
-						color: $red;
-					}
-					& > a {
-						color: inherit;
+		& .adverts-item-price-wrapper {
 
-					}
-				}
-				&.withdrawn {
-					& h2 {
-						text-decoration-line: line-through;
-					}
-				}
-			}
-			& > p {
-				color: #7C7C7C;
-			}
 		}
-		& .adverts-text-price {
+		& .adverts-item-favorite {
+			position: absolute;
+			top: 3px;
+			right: 6px;
+			&:hover path {
+				fill: #ffdb41;
+			}
+			& svg {
+				cursor: pointer;
+			}
+			&.liked {
+				& path {
+					fill: #FFCF00;
+					fill-rule: nonzero;
+					clip-rule: nonzero;
+					background: #FFCF00;
+				}
+			}
+
+		}
+		& .adverts-item-price {
 			@media screen and (max-width: 768px) {
 				display: flex;
 				align-items: center;
@@ -245,47 +271,49 @@
 				}
 			}
 		}
-		& .adverts-text-favorite {
-			position: absolute;
-			top: 3px;
-			right: 6px;
-			&:hover path {
-				fill: #ffdb41;
-			}
-			& svg {
-				cursor: pointer;
-			}
-			&.liked {
-				& path {
-					fill: #FFCF00;
-					fill-rule: nonzero;
-					clip-rule: nonzero;
-					background: #FFCF00;
+		&-wrapper {
+			& .name-title {
+				margin-bottom: 11px;
+				display: inline-flex;
+				align-items: center;
+				grid-gap: 3px;
+				& h2 {
+					color: $heavy_blue;
+					&:hover {
+						color: $red;
+					}
+					& > a {
+						color: inherit;
+
+					}
+				}
+				&.withdrawn {
+					& h2 {
+						text-decoration-line: line-through;
+					}
 				}
 			}
-
+			& > p {
+				color: #7C7C7C;
+			}
 		}
+
 	}
 	&-info {
-		display: flex;
-		grid-gap: 10px;
 		@media screen and (max-width: 768px) {
 			flex-direction: column;
 		}
-		& .adverts-info-parameters {
-			flex: 0 1 70.916334%;
-			@media screen and (max-width: 768px) {
-				display: inline-flex;
-				flex-direction: column-reverse;
-				grid-gap: 10px;
-			}
+		&-wrapper {
 			& > p {
-				margin-bottom: 14px;
+				margin-bottom: 7px;
 				-webkit-line-clamp: 2;
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 				color: $black_new;
+				&:last-of-type {
+					margin-bottom: 14px;
+				}
 			}
 			& .label {
 				border-radius: 8px;
@@ -316,10 +344,12 @@
 			}
 		}
 		& .adverts-info-dateLocal {
+			margin-top: 57px;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
 			@media screen and (max-width: 768px) {
+				margin-top: 14px;
 				flex-direction: row;
 				justify-content: space-between;
 			}

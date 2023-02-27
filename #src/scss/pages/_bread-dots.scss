@@ -1,0 +1,28 @@
+.bread {
+	padding-left: 23px;
+	&-list {
+		display: flex;
+		align-items: center;
+	}
+	&-item {
+		margin-left: 10px;
+		&-link {
+			color: #00AFE9;
+			&:hover {
+				color: #141414;
+			}
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			& span {
+				display: none;
+			}
+		}
+		&.active .bread-item-link{
+			color: #141414;
+			pointer-events: none;
+		}
+	}
+}
