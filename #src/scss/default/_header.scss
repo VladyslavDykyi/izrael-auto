@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	&-bg {
 
 		padding: 17px 0;
@@ -161,6 +162,11 @@
 			width: 196px;
 			grid-gap: 10px;
 			@media screen and (max-width: 1250px) {
+				font-size: 0;
+				width: 35px;
+				grid-gap: 0;
+			}
+			&.small {
 				font-size: 0;
 				width: 35px;
 				grid-gap: 0;
