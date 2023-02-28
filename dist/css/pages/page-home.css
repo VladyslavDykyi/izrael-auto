@@ -715,6 +715,101 @@
   -webkit-line-clamp: 1;
 }
 
+.slider-car:hover .nextArrow,
+.slider-car:hover .prevArrow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nextArrow,
+.prevArrow {
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.nextArrow {
+  position: absolute;
+  top: -webkit-calc(50% - 15px);
+  top: calc(50% - 15px);
+  right: 10px;
+  z-index: 10;
+}
+
+.prevArrow {
+  position: absolute;
+  top: -webkit-calc(50% - 15px);
+  top: calc(50% - 15px);
+  left: 10px;
+  z-index: 10;
+}
+
+.nextArrow:before {
+  content: "";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: rgba(254, 254, 254, 0.5);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='26' viewBox='0 0 14 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 25L13 13L1 0.999999' stroke='white'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.prevArrow:before {
+  content: "";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: rgba(254, 254, 254, 0.5);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='26' viewBox='0 0 14 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13 1L1 13L13 25' stroke='white'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
 .seo-text-block {
   position: relative;
   max-height: 278px;

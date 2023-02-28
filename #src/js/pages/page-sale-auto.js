@@ -6,7 +6,9 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		infinite: true,
 		dots: false,
-		arrows: false,
+		arrows: true,
+		prevArrow: '<div class="prevArrow"></div>',
+		nextArrow: '<div class="nextArrow"></div>',
 		responsive: [
 			{
 				breakpoint: 1920,
