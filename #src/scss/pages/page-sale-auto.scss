@@ -112,7 +112,7 @@
 .adverts-item {
 	display: flex;
 	&-img {
-		flex: 0 1 273px;
+		flex: 0 1 244px;
 		@media screen and (max-width: 1024px) {
 			flex: 0 1 230px;
 		}
@@ -121,7 +121,7 @@
 		}
 	}
 	&-wrapper {
-		flex: 0 1 calc(100% - 273px);
+		flex: 0 1 calc(100% - 244px);
 		@media screen and (max-width: 1024px) {
 			flex: 0 1 calc(100% - 230px);
 		}
