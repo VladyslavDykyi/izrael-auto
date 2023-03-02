@@ -7,7 +7,7 @@
 .bg-site {
 	padding-top: 66px;
 }
-.pagination-bg {
+.bread-bg {
 	padding: 20px 0 25px;
 	& .bread {
 		padding-left: 0;
@@ -103,6 +103,15 @@
 					flex: 0 1 100%;
 				}
 			}
+		}
+	}
+	&-content {
+		min-height: 508px;
+		border: 1px solid transparent;
+		& h2 {
+			color: #666666;
+			text-align: center;
+			margin-top: 205px;
 		}
 	}
 }

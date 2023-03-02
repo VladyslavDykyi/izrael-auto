@@ -7,6 +7,12 @@
 	&.l {
 		max-width: 365px;
 	}
+	&.m {
+		max-width: 702px;
+	}
+	&.height-l {
+		height: 325px;
+	}
 	&-title {
 		display: flex;
 		align-items: center;
@@ -22,6 +28,7 @@
 			}
 		}
 		&-close {
+			margin-left: auto;
 			& button {
 				width: 29px;
 				height: 29px;
@@ -37,11 +44,22 @@
 	}
 	&-form {
 		& .wrapper-input {
-
+			margin-bottom: 11px;
 		}
 		&-btn {
 			margin-top: 20px;
 		}
 	}
-
+	&-content {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		& h2 {
+			font-size: 32px;
+			line-height: 39px;
+			color: #015B90;
+			margin-top: 100px;
+			text-align: center;
+		}
+	}
 }
