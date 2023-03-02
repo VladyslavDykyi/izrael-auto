@@ -129,3 +129,27 @@ if (window.innerWidth <= 1024) {
 	});
 // мобілка burger кінець
 }
+
+openDropMenu4();
+
+function openDropMenu4() {
+	const btn = document.querySelector('.head-lk-nav-container > button');
+	const menu = document.querySelector('.head-lk-nav');
+	const toggleActive = () => {
+		menu.classList.toggle('active');
+		btn.classList.toggle('active');
+	}
+	btn.addEventListener('click', e => {
+		e.stopPropagation();
+		toggleActive();
+	});
+	document.addEventListener('click', e => {
+		let target = e.target;
+		let its_menu = target === menu || menu.contains(target);
+		let its_btn = target === btn;
+		let menu_is_active = menu.classList.contains('active');
+		if (!its_menu && !its_btn && menu_is_active) {
+			toggleActive();
+		}
+	});
+}

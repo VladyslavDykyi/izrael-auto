@@ -7,6 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>lk-header</title>
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/lib/select2.min.css">
+	<link rel="stylesheet" href="./css/lib/arcticmodal.min.css">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-default.min.css">
 </head>
@@ -14,10 +16,24 @@
 @@include('./html/_header-fix.html')
 <main class="bg-site">
 	@@include('./html/_lk-header.html')
-
+	<div class="container-lk">
+		<div class="pagination-bg">
+			@@include('./html/_bread-dots.html')
+		</div>
+		@@include('./html/_lk-profile-main.html')
+	</div>
 </main>
 @@include('./html/_footer.html')
+@@include('./html/_popUp-lk.html')
+<div class="bg-mob"></div>
 <!--<script src="./js/lib/jquery.js"></script>-->
+<script src="./js/lib/jquery.min.js"></script>
+<script src="./js/lib/select2.min.js"></script>
+<script src="./js/lib/arcticmodal.min.js"></script>
+
 <script src="./js/default/header-lk.js"></script>
+<script src="./js/pages/lk-select2.js"></script>
+<script src="./js/pages/lk-avatar.js"></script>
+<script src="./js/pages/lk-popUp.js"></script>
 </body>
 </html>

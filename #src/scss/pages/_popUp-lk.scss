@@ -1,0 +1,47 @@
+.popUp {
+	background: #F0F0F0;
+	box-shadow: 0 4px 4px #C1C4CD;
+	border-radius: 21px;
+	padding: 20px;
+	width: 100%;
+	&.l {
+		max-width: 365px;
+	}
+	&-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 12px;
+		& h2 {
+			font-size: 24px;
+			line-height: 29px;
+			color: #141414;
+			@media screen and (max-width: 768px) {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		&-close {
+			& button {
+				width: 29px;
+				height: 29px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				&:hover {
+					transform: scale(1.3);
+				}
+			}
+		}
+	}
+	&-form {
+		& .wrapper-input {
+
+		}
+		&-btn {
+			margin-top: 20px;
+		}
+	}
+
+}

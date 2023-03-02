@@ -2,7 +2,113 @@
 @import "../default/_my__color";
 @import "../default/mixins";
 @import "./_lk-header";
-
+@import "./_bread-dots";
+@import "./_popUp-lk";
 .bg-site {
 	padding-top: 66px;
+}
+.pagination-bg {
+	padding: 20px 0 25px;
+	& .bread {
+		padding-left: 0;
+		& .bread-item:first-child {
+			margin-left: 0;
+		}
+	}
+}
+.container-lk {
+	width: 100%;
+	max-width: 1110px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media screen and (max-width: 768px) {
+		padding: 0 7px;
+	}
+}
+.main {
+	background: #F0F0F0;
+	border-radius: 21px;
+	padding: 28px;
+	margin-bottom: 68px;
+	@media screen and (max-width: 768px) {
+		border-radius: 7px;
+		padding: 14px;
+	}
+	&-title {
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		& h2 {
+			font-size: 24px;
+			line-height: 29px;
+			color: #141414;
+			@media screen and (max-width: 768px) {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		&-right {
+			margin-left: auto;
+			& .reset-password {
+				color: #015B90;
+				cursor: pointer;
+				@media screen and (max-width: 768px) {
+					font-size: 14px;
+					line-height: 17px;
+				}
+			}
+		}
+	}
+	&-form {
+		&-inp {
+			display: flex;
+			flex-wrap: wrap;
+			grid-gap: 24px;
+			justify-content: space-between;
+			margin-bottom: 32px;
+			& .wrapper-select,
+			& .wrapper-input {
+				flex: 0 1 calc(33.33333% - 16px);
+				@media screen and (max-width: 580px) {
+					flex: 0 1 100%;
+				}
+			}
+			& .wrapper-select {
+				& > label > span {
+					@include use-font($I-r, 400);
+					@include use-size(18px, 22px);
+					color: #141414;
+					margin-bottom: 8px;
+					display: inline-block;
+					@media screen and (max-width: 580px) {
+						@include use-size(14px, 18px);
+					}
+				}
+			}
+		}
+		&-check {
+			& .check-box {
+				padding: 2px;
+				margin-bottom: 12px;
+			}
+		}
+		&-btn {
+			margin-top: 40px;
+			display: flex;
+			align-items: center;
+			& .btn {
+				margin-left: auto;
+				flex: 0 1 calc(33.33333% - 16px);
+				@media screen and (max-width: 580px) {
+					flex: 0 1 100%;
+				}
+			}
+		}
+	}
+}
+.select2-container--search.select2-container--open .select2-selection--single {
+	border-bottom: 1px solid transparent;
+}
+.select2-container--search .select2-dropdown {
+	border-bottom: 1px solid transparent;
 }

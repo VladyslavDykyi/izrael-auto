@@ -25,6 +25,16 @@
 //}
 .inp {
 	width: 100%;
+	& label span {
+		@include use-font($I-r, 400);
+		@include use-size(18px, 22px);
+		color: #141414;
+		margin-bottom: 8px;
+		display: inline-block;
+		@media screen and (max-width: 580px) {
+			@include use-size(16px, 18px);
+		}
+	}
 	& input {
 		height: 47px;
 		padding: 14px 17px;
@@ -34,7 +44,7 @@
 		border-radius: 7px;
 		@include use-font($I-r, 400);
 		@include use-size(16px, 19px);
-		color: #191B1F;
+		color: #141414;
 		width: 100%;
 		&::placeholder {
 			@include use-font($I-r, 400);
@@ -55,5 +65,37 @@
 	}
 	&.active .error{
 		display: block;
+	}
+	&.grey {
+		& input {
+			height: 41px;
+			padding: 11px 12px;
+			background: #FEFEFE;
+			border: none;
+			border-radius: 7px;
+			@include use-font($I-r, 400);
+			@include use-size(16px, 19px);
+			color: #141414;
+			width: 100%;
+			&::placeholder {
+				@include use-font($I-r, 400);
+				@include use-size(16px, 19px);
+				color: #666666;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		& .error {
+			@include use-font($I-r, 400);
+			@include use-size(14px, 17px);
+			color: #BF1616;
+			padding-left: 0;
+			margin-top: 4px;
+			display: none;
+		}
+		&.active .error{
+			display: block;
+		}
 	}
 }

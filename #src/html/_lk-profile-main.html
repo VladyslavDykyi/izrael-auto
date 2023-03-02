@@ -1,0 +1,108 @@
+<div class="main">
+	<div class="main-title">
+		<h2 class="t-regular">
+			Личные данные
+		</h2>
+		<div class="main-title-right">
+			<button class="reset-password reset-btn t-regular t-7" type="button">
+				Сменить пароль
+			</button>
+		</div>
+	</div>
+	<form class="main-form" action="#">
+		<div class="main-form-inp">
+			<div class="wrapper-input">
+				<div class="inp grey"><!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Фамилия</span>
+						<input type="text" name="Surname" placeholder="Фамилия" required>
+					</label>
+					<p class="error">Пожалуйста, введите Фамилию</p>
+				</div>
+			</div>
+			<div class="wrapper-input">
+				<div class="inp grey active"><!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Имя</span>
+						<input type="text" name="name" placeholder="Имя" required>
+					</label>
+					<p class="error">Пожалуйста, введите Имя</p>
+				</div>
+			</div>
+			<div class="wrapper-input">
+				<div class="inp grey"><!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Отчество</span>
+						<input type="text" name="middle-name" placeholder="Отчество" required>
+					</label>
+					<p class="error">Пожалуйста, введите Отчество</p>
+				</div>
+			</div>
+			<div class="wrapper-input">
+				<div class="inp grey"><!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Номер телефона</span>
+						<input type="tel" name="tel" placeholder="Номер телефона" required>
+					</label>
+					<p class="error">Пожалуйста, введите Номер телефона</p>
+				</div>
+			</div>
+			<div class="wrapper-input">
+				<div class="inp grey"><!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>E-mail</span>
+						<input type="email" name="email" placeholder="email@gmail.com" required>
+					</label>
+					<p class="error">Пожалуйста, введите адрес электронной почты</p>
+				</div>
+			</div>
+			<div class="wrapper-select">
+				<label>
+					<span>Язык</span>
+					<select class="select-no-search" name="lang">
+						<option value="">
+							Русский
+						</option>
+						<option value="">
+							English
+						</option>
+						<option value="">
+							عرب
+						</option>
+						<option value="">
+							עִברִית
+						</option>
+					</select>
+				</label>
+			</div>
+		</div>
+		<div class="main-title">
+			<h2 class="t-regular">
+				Уведомления
+			</h2>
+		</div>
+		<div class="main-form-check">
+			<div class="check-box blue">
+				<input type="checkbox" name="notifications" id="exchange-possible">
+				<label for="exchange-possible">Уведомления</label>
+			</div>
+			<div class="check-box blue">
+				<input type="checkbox" name="#" id="id1">
+				<label for="id1">Уведомления</label>
+			</div>
+			<div class="check-box blue">
+				<input type="checkbox" name="#" id="id2">
+				<label for="id2">Уведомления</label>
+			</div>
+			<div class="check-box blue">
+				<input type="checkbox" name="#" id="id3">
+				<label for="id3">Уведомления</label>
+			</div>
+		</div>
+		<div class="main-form-btn">
+			<button class="btn blue s" type="submit">
+				Сохранить
+			</button>
+		</div>
+	</form>
+</div>

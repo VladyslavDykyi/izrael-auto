@@ -53,4 +53,23 @@
 		border-color: #646464;
 		background-color:  #646464;
 	}
+	&.blue {
+		& label {
+			color: #141414;
+			& span {
+				color: #646464;
+			}
+		}
+		& label:after {
+			border-color: #141414;
+			background-color: transparent;
+		}
+		& input:checked + label:before {
+			border-color: #FEFEFE;
+		}
+		& input:checked + label:after {
+			border-color: #015B90;
+			background-color:  #015B90;
+		}
+	}
 }

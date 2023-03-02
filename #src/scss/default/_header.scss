@@ -212,13 +212,21 @@
 .drop-list {
 	display: none;
 	position: absolute;
-	background: $white3;
 	z-index: 10;
 	top: 30px;
 	left: -15px;
 	&-item {
+		&:first-of-type a,
+		&:first-of-type span {
+			border-radius: 7px 7px 0 0;
+		}
+		&:last-of-type a,
+		&:last-of-type span {
+			border-radius: 0 0 7px 7px;
+		}
 		& span,
 		& a {
+			background: $white3;
 			width: 100%;
 			color: $black_new;
 			padding: 6px 9px;
@@ -255,7 +263,7 @@
 	}
 	&.active {
 		transform: translateX(0);
-		& + .bg-mob {
+		& ~ .bg-mob {
 			display: block;
 		}
 	}
