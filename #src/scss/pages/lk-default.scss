@@ -4,6 +4,7 @@
 @import "./_lk-header";
 @import "./_bread-dots";
 @import "./_popUp-lk";
+
 .bg-site {
 	padding-top: 66px;
 }
@@ -33,6 +34,10 @@
 	@media screen and (max-width: 768px) {
 		border-radius: 7px;
 		padding: 14px;
+	}
+	@media screen and (max-width: 580px) {
+		padding: 7px;
+		margin: 0 -7px 40px;
 	}
 	&-title {
 		margin-bottom: 20px;
@@ -108,10 +113,18 @@
 	&-content {
 		min-height: 508px;
 		border: 1px solid transparent;
-		& h2 {
+		& .title-non-content {
 			color: #666666;
 			text-align: center;
 			margin-top: 205px;
+		}
+		&-message {
+			background-color: #FEFEFE;
+			padding: 5px;
+			border-radius: 7px;
+			&-form {
+
+			}
 		}
 	}
 }

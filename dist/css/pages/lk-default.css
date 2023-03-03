@@ -499,10 +499,17 @@
   border: 1px solid transparent;
 }
 
-.main-content h2 {
+.main-content .title-non-content {
   color: #666666;
   text-align: center;
   margin-top: 205px;
+}
+
+.main-content-message {
+  background-color: #FEFEFE;
+  padding: 5px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
 }
 
 .select2-container--search.select2-container--open .select2-selection--single {
@@ -713,6 +720,11 @@
 
   .user-info-item a.t-regular.t-3.s {
     font-size: 12px;
+  }
+
+  .main {
+    padding: 7px;
+    margin: 0 -7px 40px;
   }
 
   .main-form-inp .wrapper-select,
