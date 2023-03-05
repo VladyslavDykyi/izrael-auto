@@ -7,7 +7,7 @@
 	align-items: center;
 	padding: 11px 28px 10px;
 	margin-bottom: 2px;
-	background: #FEFEFE;
+	background: $white3;
 	border-radius: 7px 7px 0 0;
 	@media screen and (max-width:580px) {
 		padding: 7px 13px 6px;
@@ -26,13 +26,15 @@
 		&-avatar {
 			width: 30px;
 			height: 30px;
-			border-radius: 50%;
-			background-color: #015b90;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			border-radius: 50%;
+			background-color: $heavy_blue;
 			& picture {
+				display: block;
 				height: 30px;
+				border-radius: 50%;
 			}
 			& img {
 				width: 30px;
@@ -40,19 +42,23 @@
 				border-radius: 50%;
 				object-fit: cover;
 			}
+			& img[src=""] {
+				width: 0;
+				height: 0;
+			}
 			& h2 {
 				color: $white3;
 			}
 		}
 		&-name {
 			& a {
-				color: #141414;
+				color: $black_new;
 			}
 		}
 	}
 }
 .message-main {
-	background: #FEFEFE;
+	background: $white3;
 	border-radius: 0 0 7px 7px;
 	padding: 16px 16px 16px 28px;
 	height: calc(100% - 53px);
@@ -120,15 +126,15 @@
 			flex: 1 1 auto;
 			display: flex;
 			align-items: center;
-			background: #F0F0F0;
+			background: $lite_grey;
 			border-radius: 7px;
 			& .input-message {
 				flex: 1 1 auto;
 				& textarea {
 					width: 100%;
-					background: #F0F0F0;
+					background: $lite_grey;
 					border: none;
-					color: #141414;
+					color: $black_new;
 					padding: 12px 18px 13px;
 					border-radius: 7px;
 					height: 66px;
@@ -169,7 +175,7 @@
 						transform: scale(1.3);
 					}
 					& path {
-						fill: #141414;
+						fill: $black_new;
 					}
 				}
 			}
@@ -184,7 +190,7 @@
 				cursor: pointer;
 				&:hover {
 					& path {
-						fill: #141414;
+						fill: $black_new;
 					}
 				}
 			}
@@ -206,7 +212,7 @@
 	}
 
 	&-text {
-		background-color: #f0f0f0;
+		background-color: $lite_grey;
 		padding: 7px;
 		border-radius: 7px 7px 7px 0;
 		position: relative;
@@ -218,11 +224,11 @@
 			display: block;
 			width: 0;
 			height: 0;
-			border-bottom: 10px solid #f0f0f0;
+			border-bottom: 10px solid $lite_grey;
 			border-left: 10px solid transparent;
 		}
 		& p {
-			color: #141414;
+			color: $black_new;
 		}
 	}
 	&-time {
@@ -235,10 +241,10 @@
 	justify-content: center;
 	margin: 14px 0;
 	& p {
-		background: #F0F0F0;
+		background: $lite_grey;
 		border-radius: 12px;
 		padding: 1px 15px 3px;
-		color: #141414;
+		color: $black_new;
 	}
 }
 .message-my {
@@ -272,7 +278,7 @@
 			border-right: 10px solid transparent;
 		}
 		& p {
-			color: #141414;
+			color: $black_new;
 		}
 	}
 	&-time {
@@ -283,6 +289,6 @@
 	display: inline-flex;
 	align-items: center;
 	grid-gap: 8px;
-	color: #141414;
+	color: $black_new;
 	margin: 7px 0;
 }

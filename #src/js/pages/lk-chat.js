@@ -4,7 +4,7 @@ input.addEventListener('input',handleFiles,false);
 
 function handleFiles() {
 	const fileList = this.files;
-	let i = 0
+	let i = 0;
 	for (; i < fileList.length; i++) {
 		const item = document.createElement('li');
 		item.classList.add('t-regular','t-4','s');

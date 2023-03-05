@@ -36,9 +36,6 @@
   margin-right: 16px;
   width: 46px;
   height: 46px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #015b90;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,6 +48,16 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #015b90;
+}
+
+.message-link-img picture {
+  display: block;
+  height: 46px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .message-link-img img {
@@ -60,6 +67,11 @@
           border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.message-link-img img[src=""] {
+  width: 0;
+  height: 0;
 }
 
 .message-link-img h2 {

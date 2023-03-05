@@ -43,9 +43,6 @@
 .message-header-user-avatar {
   width: 30px;
   height: 30px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #015b90;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,10 +55,16 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #015B90;
 }
 
 .message-header-user-avatar picture {
+  display: block;
   height: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .message-header-user-avatar img {
@@ -71,6 +74,11 @@
           border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.message-header-user-avatar img[src=""] {
+  width: 0;
+  height: 0;
 }
 
 .message-header-user-avatar h2 {
@@ -313,7 +321,7 @@
 }
 
 .message-companion-text {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
   padding: 7px;
   -webkit-border-radius: 7px 7px 7px 0;
           border-radius: 7px 7px 7px 0;
@@ -328,7 +336,7 @@
   display: block;
   width: 0;
   height: 0;
-  border-bottom: 10px solid #f0f0f0;
+  border-bottom: 10px solid #F0F0F0;
   border-left: 10px solid transparent;
 }
 

@@ -126,6 +126,29 @@
 
 			}
 		}
+		& .tab-content {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&-tab-list {
+		display: flex;
+		grid-gap: 19px;
+	}
+	&-tab-item {
+		padding-bottom: 12px;
+		border-bottom: 1px solid transparent;
+		color: #141414;
+		cursor: pointer;
+		&:hover {
+			border-color: #141414;
+		}
+		&.active {
+			border-color: #141414;
+			cursor: auto;
+		}
 	}
 }
 .select2-container--search.select2-container--open .select2-selection--single {
