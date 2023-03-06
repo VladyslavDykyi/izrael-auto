@@ -16,45 +16,14 @@
 	margin-bottom: 20px;
 }
 .adverts-list {
-	max-height: 611.25px;
-	overflow-x: hidden;
-	overflow-y: auto;
 	border-radius: 7px;
-	@media screen and (max-width: 768px) {
-		max-height: 795.398px;
-	}
-	&::-webkit-scrollbar {
-		border-radius: 3px;
-		width: 7px;
-		height: 8px;
-		background-color: $lite_grey;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		height: 8px;
-		background-color: $grey;
-	}
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
 }
 .adverts-list-mob {
 	display: none;
-	overflow-x: hidden;
-	overflow-y: auto;
-	max-height: 795.398px;
 	border-radius: 7px;
-	&::-webkit-scrollbar {
-		border-radius: 3px;
-		width: 7px;
-		height: 8px;
-		background-color: $lite_grey;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		height: 8px;
-		background-color: $grey;
-	}
 	@media screen and (max-width: 768px) {
 		display: block;
 	}
@@ -320,21 +289,7 @@
 	}
 }
 .post-list {
-	overflow-x: hidden;
-	overflow-y: auto;
-	max-height: 668px;
-	border-radius: 7px;
-	&::-webkit-scrollbar {
-		border-radius: 3px;
-		width: 7px;
-		height: 8px;
-		background-color: $lite_grey;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		height: 8px;
-		background-color: $grey;
-	}
+
 }
 .post-item {
 	background-color: $white3;
