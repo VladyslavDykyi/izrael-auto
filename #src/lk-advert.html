@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>lk-header</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/lib/slick.min.css">
+	<link rel="stylesheet" href="./css/default/style.min.css">
+	<link rel="stylesheet" href="./css/pages/lk-default.min.css">
+	<link rel="stylesheet" href="./css/pages/lk-advert.min.css">
+</head>
+<body class="">
+@@include('./html/_header-fix.html')
+<main class="bg-site">
+	@@include('./html/_lk-header.html')
+	<div class="container-lk">
+		<div class="bread-bg">
+			@@include('./html/_bread-dots.html')
+		</div>
+		@@include('./html/_lk-advert.html')
+	</div>
+</main>
+@@include('./html/_footer.html')
+@@include('./html/_popUp-lk.html')
+<div class="bg-mob"></div>
+<script src="./js/lib/jquery.min.js"></script>
+<script src="./js/lib/slick.min.js"></script>
+<script src="./js/default/header-lk.js"></script>
+<script src="./js/pages/lk-favorites.js"></script>
+</body>
+</html>

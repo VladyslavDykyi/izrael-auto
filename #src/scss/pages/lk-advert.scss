@@ -1,0 +1,21 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+@import "../default/mixins";
+@import "../default/_my__pagination";
+
+.pagination {
+	margin: 0;
+}
+.pagination-item.disable .pagination-link:hover,
+.pagination-item.active .pagination-link,
+.pagination-link {
+	background-color: $lite_grey;
+}
+.tab-content {
+	margin-top: 12px;
+	margin-bottom: 20px;
+}
+.main-title-right {
+	max-width: 200px;
+	grid-gap: 10px;
+}
