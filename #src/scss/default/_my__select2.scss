@@ -117,7 +117,7 @@
 		@include use-font($I-r, 400);
 		@include use-size(16px, 19px);
 		color: #646464;
-		padding: 0;
+		max-width: 80%;
 	}
 	& .select2-selection--single .select2-selection__arrow b {
 		border-color: $black_new $black_new transparent transparent;

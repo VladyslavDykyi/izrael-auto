@@ -71,13 +71,6 @@
 			grid-gap: 24px;
 			justify-content: space-between;
 			margin-bottom: 32px;
-			& .wrapper-select,
-			& .wrapper-input {
-				flex: 0 1 calc(33.33333% - 16px);
-				@media screen and (max-width: 580px) {
-					flex: 0 1 100%;
-				}
-			}
 			& .wrapper-select {
 				& > label > span {
 					@include use-font($I-r, 400);
@@ -156,4 +149,42 @@
 }
 .select2-container--search .select2-dropdown {
 	border-bottom: 1px solid transparent;
+}
+.f2-3 {
+	flex: 0 1 calc(66.66666% - 5px);
+	@media screen and (max-width: 768px) {
+		flex: 0 1 100%;
+		width: 100%;
+	}
+}
+.f1-3 {
+	flex: 0 1 calc(33.33333% - 16px);
+	width: calc(33.33333% - 16px);
+	@media screen and (max-width: 768px) {
+		flex: 0 1 100%;
+		width: 100%;
+	}
+}
+.f1-2 {
+	flex: 0 1 calc(50% - 7.5px);
+	@media screen and (max-width: 768px) {
+		flex: 0 1 100%;
+		width: 100%;
+	}
+}
+.f1-6 {
+	flex: 0 1 calc(16.66667% - 12.5px);
+	@media screen and (max-width: 768px) {
+		flex: 0 1 100%;
+		width: 100%;
+	}
+}
+.f1-4 {
+	flex: 0 1 calc(25% - 11.25px);
+}
+.f1-1 {
+	flex: 0 1 100%;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
 }

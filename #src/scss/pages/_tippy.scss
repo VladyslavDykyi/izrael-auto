@@ -1,28 +1,31 @@
 .tippy-box[data-theme~="my"] {
-	border: 1px solid #FEFEFE;
+	border: 1px solid #015B90;
 	box-sizing: border-box;
 	position: relative;
-	background: #FEFEFE;
+	background: #015B90;
+	box-shadow: 0 1px 6px rgba(17, 17, 17, 0.25);
 	border-radius: 7px;
 }
 .tippy-popper {
 	filter: drop-shadow(3px 3px 4px rgba(23, 17, 50, 0.25));
 }
 .tippy-tooltip[data-placement^=left]>.tippy-arrow {
-	border-left-color: #FEFEFE;
+	border-left-color: #015B90;
 	border-width: 16px 0 16px 16px;
 	right: -16px;
 }
 .tippy-tooltip {
-	background: #FEFEFE;
-	left: -20px !important;
+	background: #015B90;
+	box-shadow: 0 1px 6px rgba(17, 17, 17, 0.25);
 }
-
+.tippy-tooltip[data-placement^=top]>.tippy-arrow {
+	border-top-color: #015B90;
+}
 .tippy-content {
-	font-family: $WS-r;
+	font-family: $I-r;
 	font-weight: 400;
 	font-size: 12px;
-	line-height: 18px;
-	color: #573CDA;
+	line-height: 15px;
+	color: #FEFEFE;
 	padding: 10px;
 }

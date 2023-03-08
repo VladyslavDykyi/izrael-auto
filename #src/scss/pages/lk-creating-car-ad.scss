@@ -1,0 +1,223 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+@import "../default/mixins";
+@import "../pages/_tippy";
+
+.lk-title {
+	margin-top: 43px;
+	margin-bottom: 48px;
+	@media screen and (max-width: 1024px) {
+		margin-top: 23px;
+		margin-bottom: 28px;
+	}
+	& > h2 {
+		color: #141414;
+		text-align: center;
+	}
+}
+.container-lk {
+	width: 100%;
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media screen and (max-width: 768px) {
+		padding: 0 7px;
+	}
+}
+.wrapper-select {
+	position: relative;
+}
+.inp-icon-info {
+	position: absolute;
+	top: 0;
+	right: 6px;
+	z-index: 10;
+}
+.wrapper-color {
+	display: flex;
+	align-items: center;
+	grid-gap: 15px;
+	flex-wrap: wrap;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+	&-item {
+		&:first-child {
+			& input:checked + label span {
+				border-color: #D9D9D9;
+				background: #FFFFFF;
+			}
+			& span {
+				width: 119px;
+				text-align: center;
+				padding: 2px;
+				height: 29px;
+				background-color: #D9D9D9;
+				border-radius: 24px;
+				border: 2px solid transparent;
+				& svg {
+					position: absolute;
+					top: calc(50% - 6.5px);
+					left: auto;
+					right: 10px;
+				}
+			}
+		}
+		& input {
+			display: none;
+			&:checked + label svg {
+				display: block;
+			}
+		}
+		& label {
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			& span {
+				width: 29px;
+				height: 29px;
+				display: inline-block;
+				border-radius: 15px;
+				position: relative;
+				border: 1px solid #C6C6C6;
+				& svg {
+					position: absolute;
+					top: calc(50% - 6.5px);
+					left: calc(50% - 8.5px);
+					display: none;
+					& path {
+						stroke: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+.file {
+	&-label {
+		@include use-font($I-m, 500);
+		@include use-size(18px, 22px);
+		color: $black_new;
+		margin-bottom: 13px;
+	}
+	&-dop-text {
+		display: inline-block;
+		@include use-font($I-r, 400);
+		@include use-size(12px, 15px);
+		color: $black_new;
+		margin-bottom: 8px;
+	}
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		grid-gap: 13px;
+	}
+
+	&-item {
+		position: relative;
+		& .img {
+			width: 120px;
+			height: 120px;
+			object-fit: cover;
+			border-radius: 7px;
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&-inp {
+		display: none;
+	}
+	&-field {
+		width: 120px;
+		height: 120px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: #C6C6C6;
+		border: 1px solid #C6C6C6;
+		border-radius: 7px;
+		cursor: pointer;
+		&.none {
+			display: none;
+		}
+		& span {
+			@include use-font($I-r, 400);
+			@include use-size(12px, 15px);
+			color: #141414;
+		}
+	}
+	&-delete {
+		display: none;
+		position: absolute;
+		left:0;
+		bottom:0;
+		right:0;
+		top:0;
+		z-index: 10;
+		background: linear-gradient(0deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.jpg);;
+		border-radius: 7px;
+		width: 120px;
+		height: 120px;
+		align-items: center;
+		justify-content: center;
+		& button {
+			width: 28px;
+			height: 28px;
+			background: transparent;
+			border-radius: 7px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+	}
+}
+.file-item.active:hover .file-delete {
+	display: flex;
+}
+.daterangepicker {
+	@include use-font($I-r, 400);
+}
+.daterangepicker.show-calendar .drp-buttons {
+	display: flex;
+	align-items: center;
+	& .cancelBtn {
+		margin-left: 0;
+	}
+	& .applyBtn {
+		background-color: $heavy_blue;
+		color: $white3;
+	}
+}
+.wrapper-color-main {
+
+}
+.wrapper-color-label {
+	display: flex;
+	grid-gap: 24px;
+	align-items: center;
+	margin-bottom: 20px;
+	& > span {
+		@include use-font($I-r, 400);
+		font-size: 18px;
+		line-height: 22px;
+		color: #141414;
+		display: inline-block;
+	}
+}
+.main-inputs-dop {
+	&-cont {
+		margin-top: 12px;
+		display: flex;
+		align-items: center;
+		grid-gap: 36px;
+		flex-wrap: wrap;
+	}
+}
+.wrapper-btn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}

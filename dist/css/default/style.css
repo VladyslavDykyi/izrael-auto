@@ -469,6 +469,20 @@ input[type='number']::-webkit-inner-spin-button {
 
 .inp {
   width: 100%;
+  position: relative;
+}
+
+.inp .inp-icon-info {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  z-index: 10;
+}
+
+.inp label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 .inp label span {
@@ -479,6 +493,13 @@ input[type='number']::-webkit-inner-spin-button {
   color: #141414;
   margin-bottom: 8px;
   display: inline-block;
+  padding-right: 30px;
+}
+
+.inp label svg {
+  position: absolute;
+  right: 6px;
+  bottom: 8px;
 }
 
 .inp input {
@@ -816,7 +837,7 @@ input[type='number']::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 19px;
   color: #646464;
-  padding: 0;
+  max-width: 80%;
 }
 
 .select2-container--search .select2-selection--single .select2-selection__arrow b {

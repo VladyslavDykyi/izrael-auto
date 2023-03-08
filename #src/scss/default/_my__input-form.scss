@@ -25,14 +25,33 @@
 //}
 .inp {
 	width: 100%;
-	& label span {
-		@include use-font($I-r, 400);
-		@include use-size(18px, 22px);
-		color: #141414;
-		margin-bottom: 8px;
+	position: relative;
+	& .inp-icon-info {
+		position: absolute;
+		top: 0;
+		right: 6px;
+		z-index: 10;
+	}
+
+	& label {
+		position: relative;
 		display: inline-block;
-		@media screen and (max-width: 580px) {
-			@include use-size(16px, 18px);
+		width: 100%;
+		& span {
+			@include use-font($I-r, 400);
+			@include use-size(18px, 22px);
+			color: #141414;
+			margin-bottom: 8px;
+			display: inline-block;
+			padding-right: 30px;
+			@media screen and (max-width: 580px) {
+				@include use-size(16px, 18px);
+			}
+		}
+		& svg {
+			position: absolute;
+			right: 6px;
+			bottom: 8px;
 		}
 	}
 	& input {
