@@ -111,16 +111,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		grid-gap: 13px;
+		@media screen and (max-width: 768px) {
+			grid-gap: 15px;
+		}
 	}
 
 	&-item {
 		position: relative;
+		@media screen and (max-width: 768px) {
+			flex: 0 1 calc(33.33333% - 10px);
+		}
+		@media screen and (max-width: 370px) {
+			flex: 0 1 calc(50% - 7.5px);
+		}
 		& .img {
 			width: 120px;
 			height: 120px;
 			object-fit: cover;
 			border-radius: 7px;
 			display: none;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
 			&.active {
 				display: block;
 			}
@@ -139,6 +151,9 @@
 		border: 1px solid #C6C6C6;
 		border-radius: 7px;
 		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
 		&.none {
 			display: none;
 		}
@@ -162,6 +177,9 @@
 		height: 120px;
 		align-items: center;
 		justify-content: center;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
 		& button {
 			width: 28px;
 			height: 28px;
@@ -214,6 +232,28 @@
 		align-items: center;
 		grid-gap: 36px;
 		flex-wrap: wrap;
+	}
+	&-area {
+		& label {
+			& span {
+				font-family: Inter-Regular,sans-serif;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 22px;
+				color: #141414;
+				margin-bottom: 8px;
+				display: inline-block;
+			}
+			& textarea {
+				width: 100%;
+				min-height: 204px;
+				display: block;
+				border: none;
+				background: #FEFEFE;
+				border-radius: 7px;
+				padding: 11px 12px;
+			}
+		}
 	}
 }
 .wrapper-btn {

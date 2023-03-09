@@ -346,6 +346,27 @@
           flex-wrap: wrap;
 }
 
+.main-inputs-dop-area label span {
+  font-family: Inter-Regular,sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141414;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.main-inputs-dop-area label textarea {
+  width: 100%;
+  min-height: 204px;
+  display: block;
+  border: none;
+  background: #FEFEFE;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  padding: 11px 12px;
+}
+
 .wrapper-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -375,6 +396,38 @@
 
   .wrapper-color {
     width: 100%;
+  }
+
+  .file-list {
+    grid-gap: 15px;
+  }
+
+  .file-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 -webkit-calc(33.33333% - 10px);
+        -ms-flex: 0 1 calc(33.33333% - 10px);
+            flex: 0 1 calc(33.33333% - 10px);
+  }
+
+  .file-item .img {
+    width: 100%;
+  }
+
+  .file-field {
+    width: 100%;
+  }
+
+  .file-delete {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .file-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 -webkit-calc(50% - 7.5px);
+        -ms-flex: 0 1 calc(50% - 7.5px);
+            flex: 0 1 calc(50% - 7.5px);
   }
 }
 
