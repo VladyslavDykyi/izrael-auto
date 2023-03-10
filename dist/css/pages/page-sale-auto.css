@@ -848,22 +848,6 @@
   border: 2px solid transparent;
 }
 
-.block-form-main .main-inputs-params .wrapper-color-item #color-red_burgundy_orange_pink + label {
-  width: 70px;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item #color-yellow_gold_beige + label {
-  width: 70px;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item #color-grey_silver + label {
-  width: 50px;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item #color-blue_dark-blue + label {
-  width: 50px;
-}
-
 .block-form-main .main-inputs-params .wrapper-color-item input {
   display: none;
 }
@@ -899,91 +883,6 @@
 
 .block-form-main .main-inputs-params .wrapper-color-item label span svg path {
   stroke: transparent;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .white {
-  background: #FFFFFF;
-  border: 1px solid #C6C6C6;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .black {
-  background: #000000;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .brown {
-  background: #8A5318;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .purple {
-  background: #702593;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .green {
-  background: #2F8311;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .grey {
-  background: #999999;
-  z-index: 10;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .silver {
-  background: -webkit-gradient(linear, right top, left top, color-stop(-39.58%, #999999), color-stop(110.42%, #FFFFFF));
-  background: -o-linear-gradient(right, #999999 -39.58%, #FFFFFF 110.42%);
-  background: linear-gradient(270deg, #999999 -39.58%, #FFFFFF 110.42%);
-  z-index: 5;
-  left: 20px;
-  position: absolute;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .blue {
-  background: #00AFE9;
-  z-index: 10;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .dark-blue {
-  background: #015B90;
-  z-index: 5;
-  left: 20px;
-  position: absolute;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .yellow {
-  background: #FFE24A;
-  z-index: 10;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .gold {
-  background: -webkit-gradient(linear, right top, left top, color-stop(22.77%, #E0CB61), color-stop(65.07%, #FBEE96), to(#F5E181));
-  background: -o-linear-gradient(right, #E0CB61 22.77%, #FBEE96 65.07%, #F5E181 100%);
-  background: linear-gradient(270deg, #E0CB61 22.77%, #FBEE96 65.07%, #F5E181 100%);
-  z-index: 5;
-  left: 20px;
-  position: absolute;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .beige {
-  background: #F9E2AB;
-  left: 40px;
-  position: absolute;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .red {
-  background: #BF1616;
-  z-index: 10;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .burgundy {
-  background: #FF993C;
-  z-index: 5;
-  left: 20px;
-  position: absolute;
-}
-
-.block-form-main .main-inputs-params .wrapper-color-item label .pink {
-  background: #FC6AC1;
-  left: 40px;
-  position: absolute;
 }
 
 .block-form-main .main-inputs-block {
@@ -1152,6 +1051,31 @@
   -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
+}
+
+.daterangepicker {
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.daterangepicker.show-calendar .drp-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daterangepicker.show-calendar .drp-buttons .cancelBtn {
+  margin-left: 0;
+}
+
+.daterangepicker.show-calendar .drp-buttons .applyBtn {
+  background-color: #015B90;
+  color: #FEFEFE;
 }
 
 .block-item {

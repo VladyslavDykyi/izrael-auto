@@ -279,21 +279,6 @@
 
 							}
 						}
-						& #color-red_burgundy_orange_pink + label {
-							width: 70px;
-						}
-
-						& #color-yellow_gold_beige + label {
-							width: 70px;
-						}
-
-						& #color-grey_silver + label {
-							width: 50px;
-						}
-
-						& #color-blue_dark-blue + label {
-							width: 50px;
-						}
 
 						& input {
 							display: none;
@@ -326,87 +311,6 @@
 										stroke: transparent;
 									}
 								}
-							}
-
-							& .white {
-								background: #FFFFFF;
-								border: 1px solid #C6C6C6;
-							}
-
-							& .black {
-								background: #000000;
-							}
-
-							& .brown {
-								background: #8A5318;
-							}
-
-							& .purple {
-								background: #702593;
-							}
-
-							& .green {
-								background: #2F8311;
-							}
-
-							& .grey {
-								background: #999999;
-								z-index: 10;
-							}
-
-							& .silver {
-								background: linear-gradient(270deg, #999999 -39.58%, #FFFFFF 110.42%);
-								z-index: 5;
-								left: 20px;
-								position: absolute;
-							}
-
-							& .blue {
-								background: #00AFE9;
-								z-index: 10;
-							}
-
-							& .dark-blue {
-								background: #015B90;
-								z-index: 5;
-								left: 20px;
-								position: absolute;
-							}
-
-							& .yellow {
-								background: #FFE24A;
-								z-index: 10;
-							}
-
-							& .gold {
-								background: linear-gradient(270deg, #E0CB61 22.77%, #FBEE96 65.07%, #F5E181 100%);
-								z-index: 5;
-								left: 20px;
-								position: absolute;
-							}
-
-							& .beige {
-								background: #F9E2AB;
-								left: 40px;
-								position: absolute;
-							}
-
-							& .red {
-								background: #BF1616;
-								z-index: 10;
-							}
-
-							& .burgundy {
-								background: #FF993C;
-								z-index: 5;
-								left: 20px;
-								position: absolute;
-							}
-
-							& .pink {
-								background: #FC6AC1;
-								left: 40px;
-								position: absolute;
 							}
 						}
 					}
@@ -565,5 +469,19 @@
 		@media screen and (max-width: 768px) {
 			width: 100%;
 		}
+	}
+}
+.daterangepicker {
+	@include use-font($I-r, 400);
+}
+.daterangepicker.show-calendar .drp-buttons {
+	display: flex;
+	align-items: center;
+	& .cancelBtn {
+		margin-left: 0;
+	}
+	& .applyBtn {
+		background-color: $heavy_blue;
+		color: $white3;
 	}
 }

@@ -5,7 +5,7 @@ function tippyUse() {
 			arrow: true,
 			theme: 'light-blueBorder',
 			duration: 0,
-			delay: [700, 500],
+			delay: [300, 500],
 			dynamicTitle: true,
 		});
 }
