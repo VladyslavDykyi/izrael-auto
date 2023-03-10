@@ -42,27 +42,6 @@
 		width: 100%;
 	}
 	&-item {
-		&:first-child {
-			& input:checked + label span {
-				border-color: #D9D9D9;
-				background: #FFFFFF;
-			}
-			& span {
-				width: 119px;
-				text-align: center;
-				padding: 2px;
-				height: 29px;
-				background-color: #D9D9D9;
-				border-radius: 24px;
-				border: 2px solid transparent;
-				& svg {
-					position: absolute;
-					top: calc(50% - 6.5px);
-					left: auto;
-					right: 10px;
-				}
-			}
-		}
 		& input {
 			display: none;
 			&:checked + label svg {

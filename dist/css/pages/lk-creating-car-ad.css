@@ -83,30 +83,6 @@
           flex-wrap: wrap;
 }
 
-.wrapper-color-item:first-child input:checked + label span {
-  border-color: #D9D9D9;
-  background: #FFFFFF;
-}
-
-.wrapper-color-item:first-child span {
-  width: 119px;
-  text-align: center;
-  padding: 2px;
-  height: 29px;
-  background-color: #D9D9D9;
-  -webkit-border-radius: 24px;
-          border-radius: 24px;
-  border: 2px solid transparent;
-}
-
-.wrapper-color-item:first-child span svg {
-  position: absolute;
-  top: -webkit-calc(50% - 6.5px);
-  top: calc(50% - 6.5px);
-  left: auto;
-  right: 10px;
-}
-
 .wrapper-color-item input {
   display: none;
 }
