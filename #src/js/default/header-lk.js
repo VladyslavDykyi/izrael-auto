@@ -160,9 +160,9 @@ $('#popUpSupport-btn').on('click', e => {
 	e.preventDefault();
 	$('#popUpSupport-thank').arcticmodal();
 	$('#popUpSupport').off('submit');
+	$('#popUpSupport .arcticmodal-close').click();
 	setTimeout(() => {
 		$('#popUpSupport form').submit();
-		$('#popUpSupport .arcticmodal-close').click();
 		$('#popUpSupport-thank').arcticmodal('close');
 	}, 2000);
 });
