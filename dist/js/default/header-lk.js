@@ -153,3 +153,16 @@ function openDropMenu4() {
 		}
 	});
 }
+$('#popUp-support').on('click', () => {
+	$('#popUpSupport').arcticmodal();
+});
+$('#popUpSupport-btn').on('click', e => {
+	e.preventDefault();
+	$('#popUpSupport-thank').arcticmodal();
+	$('#popUpSupport').off('submit');
+	setTimeout(() => {
+		$('#popUpSupport form').submit();
+		$('#popUpSupport .arcticmodal-close').click();
+		$('#popUpSupport-thank').arcticmodal('close');
+	}, 2000);
+});

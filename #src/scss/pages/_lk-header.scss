@@ -54,9 +54,9 @@
 				position: relative;
 			}
 			@media screen and (max-width: 768px) {
-				padding: 0 7px;
+				padding: 0 7px 0 60px;
 			}
-			& button.reset-btn {
+			& > button.reset-btn {
 				display: none;
 				@media screen and (max-width: 1024px) {
 					display: flex;
@@ -286,12 +286,16 @@
 			@media screen and (max-width: 1024px) {
 				background: #184E79;
 				border-bottom: none;
+				& button,
 				& a {
+
 					color: #FEFEFE;
 				}
 			}
 		}
+		& button,
 		& a {
+			cursor: pointer;
 			color: #141414;
 			@media screen and (max-width: 1024px) {
 				display: block;

@@ -36,23 +36,23 @@
   padding: 0 15px;
 }
 
-.head-lk-nav-container button.reset-btn {
+.head-lk-nav-container > button.reset-btn {
   display: none;
 }
 
-.head-lk-nav-container button.reset-btn svg:first-of-type {
+.head-lk-nav-container > button.reset-btn svg:first-of-type {
   display: block;
 }
 
-.head-lk-nav-container button.reset-btn svg:last-of-type {
+.head-lk-nav-container > button.reset-btn svg:last-of-type {
   display: none;
 }
 
-.head-lk-nav-container button.reset-btn.active svg:first-of-type {
+.head-lk-nav-container > button.reset-btn.active svg:first-of-type {
   display: none;
 }
 
-.head-lk-nav-container button.reset-btn.active svg:last-of-type {
+.head-lk-nav-container > button.reset-btn.active svg:last-of-type {
   display: block;
 }
 
@@ -225,7 +225,9 @@
   border-bottom: 1px solid #BF1616;
 }
 
+.lk-menu-item button,
 .lk-menu-item a {
+  cursor: pointer;
   color: #141414;
 }
 
@@ -356,8 +358,16 @@
           transform: scale(1.3);
 }
 
+.popUp-form .wrapper-select,
 .popUp-form .wrapper-input {
   margin-bottom: 11px;
+}
+
+.popUp-form .wrapper-select label > span.t-regular.t-7 {
+  color: #141414;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding-right: 30px;
 }
 
 .popUp-form-btn {
@@ -381,6 +391,7 @@
   line-height: 39px;
   color: #015B90;
   margin-top: 100px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -622,7 +633,7 @@
     position: relative;
   }
 
-  .head-lk-nav-container button.reset-btn {
+  .head-lk-nav-container > button.reset-btn {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -683,10 +694,12 @@
     border-bottom: none;
   }
 
+  .lk-menu-item:hover button,
   .lk-menu-item:hover a {
     color: #FEFEFE;
   }
 
+  .lk-menu-item button,
   .lk-menu-item a {
     display: block;
   }
@@ -711,12 +724,19 @@
   }
 
   .head-lk-nav-container {
-    padding: 0 7px;
+    padding: 0 7px 0 60px;
   }
 
   .popUp-title h2 {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .popUp-content h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   .container-lk {
