@@ -1,3 +1,4 @@
+$(window).on('load', function() {
 $(document).ready(function () {
 	$('.inspection-up-to').daterangepicker({
 		"singleDatePicker": true,
@@ -72,17 +73,6 @@ $(document).ready(function () {
 		]
 	});
 });
-// $('.select-without-searching').select2({
-// 	minimumResultsForSearch: -1,
-// 	theme: "my",
-// });
-$('.select-search').select2({
-	theme: "search",
-});
-$('.select-no-search').select2({
-	minimumResultsForSearch: -1,
-	theme: "search",
-});
 if (window.innerWidth <= 768) {
 	$(document).ready(function () {
 		$('.adverts-item-mob .adverts-item-img-slider').slick({
@@ -129,6 +119,20 @@ btnToggleForm.addEventListener('click',() => {
 		arrayElementForm[i].classList.toggle('active');
 	}
 });
+});
+
+// $('.select-without-searching').select2({
+// 	minimumResultsForSearch: -1,
+// 	theme: "my",
+// });
+// $('.select-search').select2({
+// 	theme: "search",
+// });
+// $('.select-no-search').select2({
+// 	minimumResultsForSearch: -1,
+// 	theme: "search",
+// });
+
 
 
 

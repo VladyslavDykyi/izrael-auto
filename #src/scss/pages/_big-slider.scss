@@ -1,4 +1,23 @@
 
+/*устанавливаем неактивными все слайды в слайдере кроме первого*/
+.slider-car .block-item:nth-child(8) ~ .block-item {
+	//background-color: red;
+	display: none;
+}
+
+/*устанавливаем все слайды в слайдере активными после инициализации slick-slider*/
+div.block-cart.slider-car.slick-initialized .block-item {
+	//background-color: red;
+	display: block;
+}
+.slider-car {
+	min-height: 278px;
+	& .stick-track {
+		display: flex;
+		flex-shrink: 0;
+		overflow: hidden;
+	}
+}
 .block {
 	&-item {
 		background-color: $lite_grey;
@@ -86,6 +105,7 @@
 		}
 		& .block-cart {
 			grid-gap: 18px;
+			display: flex;
 			margin-top: 13px;
 			& .block-item:hover h3{
 				color: $red;

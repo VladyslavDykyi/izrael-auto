@@ -1,12 +1,14 @@
 @import "../default/_my__font";
 @import "../default/_my__color";
 @import "../default/mixins";
+@import "./_big-slider";
 @import "../default/_my__pagination";
+
 @import "./_page-home-first-block";
 @import "./_page-item-search";
 @import "./_page-item-category";
 @import "./_page-sale-auto-form";
-@import "./_big-slider";
+
 @import "./_seo-text";
 @import "./_bread-dots";
 
@@ -83,6 +85,10 @@
 		border-bottom: 1px solid $black_new;
 		& .select2-container--search.select2-container--open .select2-selection--single {
 			box-shadow: 0 0 4px #c1c4cd;
+		}
+		& .select2-container--search .select2-selection--single .select2-selection__rendered {
+			max-width: 100%;
+			padding-left: 0;
 		}
 		@media screen and (max-width: 580px) {
 			max-width: 100%;

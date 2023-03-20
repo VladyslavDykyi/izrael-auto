@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .banner-link {
   -webkit-border-radius: 16px;
           border-radius: 16px;
@@ -570,6 +572,33 @@
   fill: #01264E;
 }
 
+/*устанавливаем неактивными все слайды в слайдере кроме первого*/
+
+.slider-car .block-item:nth-child(8) ~ .block-item {
+  display: none;
+}
+
+/*устанавливаем все слайды в слайдере активными после инициализации slick-slider*/
+
+div.block-cart.slider-car.slick-initialized .block-item {
+  display: block;
+}
+
+.slider-car {
+  min-height: 278px;
+}
+
+.slider-car .stick-track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  overflow: hidden;
+}
+
 .block-item {
   background-color: #F0F0F0;
   display: -webkit-inline-box;
@@ -686,6 +715,10 @@
 
 .block.slider .block-cart {
   grid-gap: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 13px;
 }
 
@@ -1554,6 +1587,6 @@
   }
 }
 
-.webp .first-block-l { background-image: url(../../img/2.webp); }
+.webp .first-block-l{ background-image: url(../../img/2.webp); }
 
-.webp .first-block-r { background: right/cover no-repeat url(../../img/1.webp); }
+.webp .first-block-r{ background: right/cover no-repeat url(../../img/1.webp); }

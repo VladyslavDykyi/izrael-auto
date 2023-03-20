@@ -166,11 +166,13 @@
 			<div class="main-inputs">
 				<div class="main-inputs-car">
 					<div class="wrapper-select colum f1-3">
+						<!-- оновлення 20.03.23, до нижнього span і всіх що нижче можна вставити клас required для виображення червоної зірочки,
+						і у всіх подібних місцях -->
 						<span class="t-regular t-3 s" >
 							Марка
 						</span>
 						<label>
-							<select class="select-search" name="marc">
+							<select class="select-search-mark" name="marc">
 								<option value="" >- -</option>
 								<option value="">1111111</option>
 								<option value="">11111111</option>
@@ -183,7 +185,7 @@
 							Модель
 						</span>
 						<label>
-							<select class="select-search" name="model" disabled>
+							<select class="select-search-model" name="model" disabled>
 								<option value="" >- -</option>
 								<option value="">1111111</option>
 								<option value="">11111111</option>
@@ -194,11 +196,11 @@
 						</label>
 					</div>
 					<div class="wrapper-select colum f1-3">
-						<span class="t-regular t-3 s" >
+						<span class="t-regular t-3 s required" >
 							Поколение
 						</span>
 						<label>
-							<select class="select-search" name="generation">
+							<select class="select-search-generation" name="generation" >
 								<option value="" >- -</option>
 								<option value="">1111111</option>
 								<option value="">1111111</option>
