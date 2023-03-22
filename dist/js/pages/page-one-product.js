@@ -96,4 +96,8 @@ $(window).on('load', function() {
 			]
 		});
 	});
+	const btn = document.querySelector('.product-info-open');
+	btn.addEventListener('click', () => {
+		btn.previousElementSibling.classList.toggle('open');
+	});
 });
