@@ -50,6 +50,20 @@
 			background-color: #666666;
 		}
 	}
+	&.lite-blue {
+		background-color: #DEE7ED;
+		color: #141414;
+		@include use-size(16px, 19px);
+		&:hover {
+			background-color: $light_blue;
+		}
+		&:active {
+			background-color: $light_blue;
+		}
+		&:disabled {
+			background-color: #666666;
+		}
+	}
 	&.red-border {
 		border: 1px solid $red;
 		color: $red;
@@ -58,6 +72,9 @@
 		&:hover {
 			border-color: $burgundy;
 		}
+	}
+	&.xs {
+		height: 47px;
 	}
 	&.s {
 		height: 40px;

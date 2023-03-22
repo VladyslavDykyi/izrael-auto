@@ -353,6 +353,25 @@ input[type='number']::-webkit-inner-spin-button {
   background-color: #666666;
 }
 
+.btn.lite-blue {
+  background-color: #DEE7ED;
+  color: #141414;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.btn.lite-blue:hover {
+  background-color: #ECF2F5;
+}
+
+.btn.lite-blue:active {
+  background-color: #ECF2F5;
+}
+
+.btn.lite-blue:disabled {
+  background-color: #666666;
+}
+
 .btn.red-border {
   border: 1px solid #BF1616;
   color: #BF1616;
@@ -363,6 +382,10 @@ input[type='number']::-webkit-inner-spin-button {
 
 .btn.red-border:hover {
   border-color: #7D0606;
+}
+
+.btn.xs {
+  height: 47px;
 }
 
 .btn.s {
