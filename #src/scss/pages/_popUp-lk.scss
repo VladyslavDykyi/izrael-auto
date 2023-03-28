@@ -43,6 +43,19 @@
 		}
 	}
 	&-form {
+		.rating-area-h2 {
+			text-align: center;
+			margin: 15px 0;
+		}
+		& .rating-area {
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			& label {
+				font-size: 48px;
+			}
+		}
 		& .wrapper-select,
 		& .wrapper-input {
 			margin-bottom: 11px;

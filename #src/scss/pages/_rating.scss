@@ -1,0 +1,59 @@
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+}
+.rate-area > label:active {
+	position: relative;
+}
+/*   вывод  */
+.rating-result {
+	width: 155px;
+	margin: 0 auto;
+}
+.rating-result span {
+	padding: 0;
+	font-size: 25px;
+	margin: 0 3px;
+	line-height: 1;
+	color: #FFCF00;
+}
+.rating-result > span:before {
+	content: '☆';
+}
+.rating-result > span.active:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: #FFCF00;
+}
