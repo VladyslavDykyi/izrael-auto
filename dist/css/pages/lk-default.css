@@ -382,6 +382,7 @@
 
 .popUp-form .rating-area label {
   font-size: 48px;
+  height: 52px;
 }
 
 .popUp-form .wrapper-select,
@@ -898,6 +899,12 @@
     -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .popUp {
+    padding: 10px;
   }
 }
 

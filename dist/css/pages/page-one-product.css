@@ -950,6 +950,7 @@ div.block-cart.slider-car.slick-initialized .block-item {
 
 .popUp-form .rating-area label {
   font-size: 48px;
+  height: 52px;
 }
 
 .popUp-form .wrapper-select,
@@ -2211,6 +2212,13 @@ div.block-cart.slider-car.slick-initialized .block-item {
     grid-gap: 15px;
   }
 
+  .file-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 -webkit-calc(33.33333% - 12.5px);
+        -ms-flex: 0 1 calc(33.33333% - 12.5px);
+            flex: 0 1 calc(33.33333% - 12.5px);
+  }
+
   .file-item .img {
     width: 100%;
   }
@@ -2252,6 +2260,10 @@ div.block-cart.slider-car.slick-initialized .block-item {
 }
 
 @media screen and (max-width: 480px) {
+  .popUp {
+    padding: 10px;
+  }
+
   .product-comment-rating-box {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;

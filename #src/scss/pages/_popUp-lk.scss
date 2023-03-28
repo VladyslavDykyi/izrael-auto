@@ -4,6 +4,9 @@
 	border-radius: 21px;
 	padding: 20px;
 	width: 100%;
+	@media screen and (max-width: 480px) {
+		padding: 10px;
+	}
 	&.l {
 		max-width: 365px;
 	}
@@ -54,6 +57,7 @@
 			flex-direction: row-reverse;
 			& label {
 				font-size: 48px;
+				height: 52px;
 			}
 		}
 		& .wrapper-select,

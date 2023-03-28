@@ -167,62 +167,6 @@ $(window).on('load', function() {
 	btn.addEventListener('click', () => {
 		btn.previousElementSibling.classList.toggle('open');
 	});
-
-});
-$("a[rel=example_group]").fancybox({
-	'transitionIn'		: 'none',
-	'transitionOut'		: 'none',
-	'titlePosition' 	: 'over',
-	'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-		return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
-	}
-});
-$('.btn-comment .btn').on('click', () => {
-	$('#action-comment').arcticmodal();
-});
-$('.action-complain').on('click', () => {
-	$('#action-complain').arcticmodal();
-});
-bindTabs('.product-comment');
-
-
-function bindTabs(container) {
-	if (typeof container === 'string') {
-		container = document.querySelector(container);
-	}
-
-	const titles = container.querySelectorAll('.tabs-item');
-	const contents = container.querySelectorAll('.product-comment-content');
-	for (let i = 0; i < titles.length; i++) {
-		const titleEl = titles[i];
-
-		titleEl.addEventListener('click', () => {
-			deactivate(titles);
-			deactivate(contents);
-			setTimeout(function(){
-				$('.comment-content-photo').slick('refresh');
-				$("a[rel=example_group]").fancybox({
-					'transitionIn'		: 'none',
-					'transitionOut'		: 'none',
-					'titlePosition' 	: 'over',
-					'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-						return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
-					}
-				});
-			},0);
-			titles[i].classList.add('active');
-			contents[i].classList.add('active');
-		});
-	}
-
-	function deactivate(elements) {
-		for (let i = 0; i < elements.length; i++) {
-			const element = elements[i];
-			element.classList.remove('active');
-		}
-	}
-}
-window.addEventListener("DOMContentLoaded", function () {
 	function fileFields(inp) {
 		const avatar = document.querySelectorAll(inp);
 		for (let i = 0; i < avatar.length; i++) {
@@ -253,3 +197,58 @@ window.addEventListener("DOMContentLoaded", function () {
 	}
 	fileFields('.file-inp');
 });
+
+$("a[rel=example_group]").fancybox({
+	'transitionIn'		: 'none',
+	'transitionOut'		: 'none',
+	'titlePosition' 	: 'over',
+	'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+		return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	}
+});
+
+$('.btn-comment .btn').on('click', () => {
+	$('#action-comment').arcticmodal();
+});
+$('.action-complain').on('click', () => {
+	$('#action-complain').arcticmodal();
+});
+bindTabs('.product-comment');
+
+
+function bindTabs(container) {
+	if (typeof container === 'string') {
+		container = document.querySelector(container);
+	}
+
+	const titles = container.querySelectorAll('.tabs-item');
+	const contents = container.querySelectorAll('.product-comment-content');
+	for (let i = 0; i < titles.length; i++) {
+		const titleEl = titles[i];
+
+		titleEl.addEventListener('click', () => {
+			deactivate(titles);
+			deactivate(contents);
+			// setTimeout(function(){
+			// 	$('.comment-content-photo').slick('refresh');
+			// 	$("a[rel=example_group]").fancybox({
+			// 		'transitionIn'		: 'none',
+			// 		'transitionOut'		: 'none',
+			// 		'titlePosition' 	: 'over',
+			// 		'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+			// 			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+			// 		}
+			// 	});
+			// },0);
+			titles[i].classList.add('active');
+			contents[i].classList.add('active');
+		});
+	}
+
+	function deactivate(elements) {
+		for (let i = 0; i < elements.length; i++) {
+			const element = elements[i];
+			element.classList.remove('active');
+		}
+	}
+}
