@@ -167,22 +167,22 @@ $(window).on('load', function() {
 	btn.addEventListener('click', () => {
 		btn.previousElementSibling.classList.toggle('open');
 	});
-	$("a[rel=example_group]").fancybox({
-		'transitionIn'		: 'none',
-		'transitionOut'		: 'none',
-		'titlePosition' 	: 'over',
-		'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
-		}
-	});
-	$('.btn-comment .btn').on('click', () => {
-		$('#action-comment').arcticmodal();
-	});
-	$('.action-complain').on('click', () => {
-		$('#action-complain').arcticmodal();
-	});
-});
 
+});
+$("a[rel=example_group]").fancybox({
+	'transitionIn'		: 'none',
+	'transitionOut'		: 'none',
+	'titlePosition' 	: 'over',
+	'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+		return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	}
+});
+$('.btn-comment .btn').on('click', () => {
+	$('#action-comment').arcticmodal();
+});
+$('.action-complain').on('click', () => {
+	$('#action-complain').arcticmodal();
+});
 bindTabs('.product-comment');
 
 
