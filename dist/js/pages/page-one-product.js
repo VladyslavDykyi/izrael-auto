@@ -1,13 +1,5 @@
 
 	$(document).ready(function () {
-		$('a[rel=example_group]').fancybox({
-			'transitionIn': 'none',
-			'transitionOut': 'none',
-			'titlePosition': 'over',
-			'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
-			}
-		});
 		$('.slider-car').slick({
 			centerMode: true,
 			centerPaging: '50px',
@@ -234,14 +226,6 @@ function bindTabs(container) {
 			deactivate(contents);
 			setTimeout(function(){
 				$('.comment-content-photo').slick('refresh');
-				$('a[rel=example_group]').fancybox({
-					'transitionIn': 'none',
-					'transitionOut': 'none',
-					'titlePosition': 'over',
-					'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
-						return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
-					}
-				});
 			},0);
 			titles[i].classList.add('active');
 			contents[i].classList.add('active');
@@ -255,3 +239,9 @@ function bindTabs(container) {
 		}
 	}
 }
+	Fancybox.bind('[data-fancybox="gallery1"]', {});
+	Fancybox.bind('[data-fancybox="gallery2"]', {});
+	Fancybox.bind('[data-fancybox="gallery3"]', {});
+	Fancybox.bind('[data-fancybox="gallery-tab-1"]', {});
+	Fancybox.bind('[data-fancybox="gallery-tab-2"]', {});
+	Fancybox.bind('[data-fancybox="gallery-tab-3"]', {});
