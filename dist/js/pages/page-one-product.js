@@ -229,17 +229,17 @@ function bindTabs(container) {
 		titleEl.addEventListener('click', () => {
 			deactivate(titles);
 			deactivate(contents);
-			// setTimeout(function(){
-			// 	$('.comment-content-photo').slick('refresh');
-			// 	$("a[rel=example_group]").fancybox({
-			// 		'transitionIn'		: 'none',
-			// 		'transitionOut'		: 'none',
-			// 		'titlePosition' 	: 'over',
-			// 		'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-			// 			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
-			// 		}
-			// 	});
-			// },0);
+			setTimeout(function(){
+				$('.comment-content-photo').slick('refresh');
+				$("a[rel=example_group]").fancybox({
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none',
+					'titlePosition' 	: 'over',
+					'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+						return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+					}
+				});
+			},0);
 			titles[i].classList.add('active');
 			contents[i].classList.add('active');
 		});
