@@ -242,9 +242,5 @@ function bindTabs(container) {
 		}
 	}
 }
-	Fancybox.bind('[data-fancybox="gallery1"]', {});
-	Fancybox.bind('[data-fancybox="gallery2"]', {});
-	Fancybox.bind('[data-fancybox="gallery3"]', {});
-	Fancybox.bind('[data-fancybox="gallery-tab-1"]', {});
-	Fancybox.bind('[data-fancybox="gallery-tab-2"]', {});
-	Fancybox.bind('[data-fancybox="gallery-tab-3"]', {});
+
+
