@@ -1,5 +1,13 @@
 
 	$(document).ready(function () {
+		$('a[rel=example_group]').fancybox({
+			'transitionIn': 'none',
+			'transitionOut': 'none',
+			'titlePosition': 'over',
+			'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+			}
+		});
 		$('.slider-car').slick({
 			centerMode: true,
 			centerPaging: '50px',
@@ -163,6 +171,7 @@
 		});
 
 	});
+
 	const product_info_open = document.querySelector('.product-info-open');
 	product_info_open.addEventListener('click', () => {
 		product_info_open.previousElementSibling.classList.toggle('open');
@@ -204,6 +213,9 @@ $('.btn-comment .btn').on('click', () => {
 $('.action-complain').on('click', () => {
 	$('#action-complain').arcticmodal();
 });
+
+
+
 bindTabs('.product-comment');
 
 
@@ -222,11 +234,11 @@ function bindTabs(container) {
 			deactivate(contents);
 			setTimeout(function(){
 				$('.comment-content-photo').slick('refresh');
-				$("a[rel=example_group]").fancybox({
-					'transitionIn'		: 'none',
-					'transitionOut'		: 'none',
-					'titlePosition' 	: 'over',
-					'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				$('a[rel=example_group]').fancybox({
+					'transitionIn': 'none',
+					'transitionOut': 'none',
+					'titlePosition': 'over',
+					'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
 						return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
 					}
 				});
