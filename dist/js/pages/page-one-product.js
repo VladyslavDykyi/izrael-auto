@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+
 	$(document).ready(function () {
 		$('.slider-car').slick({
 			centerMode: true,
@@ -163,9 +163,9 @@ $(window).on('load', function() {
 		});
 
 	});
-	const btn = document.querySelector('.product-info-open');
-	btn.addEventListener('click', () => {
-		btn.previousElementSibling.classList.toggle('open');
+	const product_info_open = document.querySelector('.product-info-open');
+	product_info_open.addEventListener('click', () => {
+		product_info_open.previousElementSibling.classList.toggle('open');
 	});
 	function fileFields(inp) {
 		const avatar = document.querySelectorAll(inp);
@@ -196,8 +196,8 @@ $(window).on('load', function() {
 		}
 	}
 	fileFields('.file-inp');
-});
 
+$(document).ready(function () {
 $("a[rel=example_group]").fancybox({
 	'transitionIn'		: 'none',
 	'transitionOut'		: 'none',
@@ -206,7 +206,7 @@ $("a[rel=example_group]").fancybox({
 		return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
 	}
 });
-
+});
 $('.btn-comment .btn').on('click', () => {
 	$('#action-comment').arcticmodal();
 });
