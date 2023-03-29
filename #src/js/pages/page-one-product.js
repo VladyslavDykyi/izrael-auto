@@ -205,6 +205,9 @@ $('.btn-comment .btn').on('click', () => {
 $('.action-complain').on('click', () => {
 	$('#action-complain').arcticmodal();
 });
+$('.product-description-contact').on('click', () => {
+	$('#contact').arcticmodal();
+});
 
 
 

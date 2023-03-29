@@ -892,6 +892,11 @@ div.block-cart.slider-car.slick-initialized .block-item {
   margin-bottom: 12px;
 }
 
+.popUp-title .product-description-salesman {
+  margin-bottom: 0;
+  margin-right: 50px;
+}
+
 .popUp-title h2 {
   font-size: 24px;
   line-height: 29px;
@@ -979,6 +984,11 @@ div.block-cart.slider-car.slick-initialized .block-item {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+}
+
+.popUp-content ul li h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .popUp-content h2 {
