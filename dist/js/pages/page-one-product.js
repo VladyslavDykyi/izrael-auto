@@ -62,72 +62,7 @@
 				}
 			]
 		});
-		$('.comment-content-photo').slick({
-			infinite: false,
-			slidesToShow: 8,
-			slidesToScroll: 1,
-			dots: false,
-			prevArrow: '<div class="prevArrow"></div>',
-			nextArrow: '<div class="nextArrow"></div>',
-			responsive: [
-				{
-					breakpoint: 1120,
-					settings: {
-						slidesToShow: 6,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 920,
-					settings: {
-						slidesToShow: 5,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 810,
-					settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 6,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 650,
-					settings: {
-						slidesToShow: 5,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 550,
-					settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 450,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 350,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					}
-				},
-			]
-		});
+		addSlick();
 		/*--- слайдер на карточке товара ---*/
 		$('.product-for').slick({
 			autoplay: false,
@@ -138,29 +73,90 @@
 			fade: false,
 			asNavFor: '.product-nav',
 		});
-		$('.product-nav').slick({
-			slidesToShow: 6,
-			slidesToScroll: 1,
-			asNavFor: '.product-for',
-			focusOnSelect: true,
-			arrows: false,
-			responsive: [
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 425,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					}
-				},
-			]
-		});
+		const elem_nav = $('.product-nav-item').length
+		if (elem_nav === 2) {
+			$('.product-nav').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				asNavFor: '.product-for',
+				focusOnSelect: true,
+				arrows: false,
+			});
+		} else if(elem_nav === 3) {
+			$('.product-nav').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				asNavFor: '.product-for',
+				focusOnSelect: true,
+				arrows: false,
+			});
+		} else if(elem_nav === 4) {
+			$('.product-nav').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				asNavFor: '.product-for',
+				focusOnSelect: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 425,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		} else if(elem_nav === 5) {
+			$('.product-nav').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				asNavFor: '.product-for',
+				focusOnSelect: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 425,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		} else {
+			$('.product-nav').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				asNavFor: '.product-for',
+				focusOnSelect: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 425,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		}
+
 
 	});
 
@@ -197,8 +193,111 @@
 		}
 	}
 	fileFields('.file-inp');
+function addSlick() {
+	const parents_list = document.querySelectorAll('.comment-content-photo');
+	parents_list.forEach(parent => {
+		const childrenCount = parent.children.length;
+		if (childrenCount > 8) {
+			$(parent).slick({
+				infinite: false,
+				slidesToShow: 8,
+				slidesToScroll: 1,
+				dots: false,
+				prevArrow: '<div class="prevArrow"></div>',
+				nextArrow: '<div class="nextArrow"></div>',
+				responsive: [
+					{
+						breakpoint: 1120,
+						settings: {
+							slidesToShow: 6,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 920,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 810,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 6,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 650,
+						settings: {
+							slidesToShow: 5,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 550,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 450,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 400,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		}
+		if (window.innerWidth <= 550 && childrenCount > 3) {
+			console.log(parent)
+			$(parent).slick({
+				infinite: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots: false,
+				prevArrow: '<div class="prevArrow"></div>',
+				nextArrow: '<div class="nextArrow"></div>',
+				responsive: [
+					{
+						breakpoint: 450,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 400,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		}
 
-
+	})
+}
+function refreshSlick() {
+	$('.comment-content-photo.slick-initialized').slick('refresh');
+}
 $('.btn-comment .btn').on('click', () => {
 	$('#action-comment').arcticmodal();
 });
@@ -208,11 +307,11 @@ $('.action-complain').on('click', () => {
 $('.product-description-contact').on('click', () => {
 	$('#contact').arcticmodal();
 });
-
-
+$('.product-description-messages').on('click', () => {
+	$('#product-description-messages').arcticmodal();
+});
 
 bindTabs('.product-comment');
-
 
 function bindTabs(container) {
 	if (typeof container === 'string') {
@@ -227,9 +326,7 @@ function bindTabs(container) {
 		titleEl.addEventListener('click', () => {
 			deactivate(titles);
 			deactivate(contents);
-			setTimeout(function(){
-				$('.comment-content-photo').slick('refresh');
-			},0);
+			setTimeout(refreshSlick,1);
 			titles[i].classList.add('active');
 			contents[i].classList.add('active');
 		});

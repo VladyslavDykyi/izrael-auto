@@ -497,7 +497,7 @@
 					margin-bottom: 22px;
 					display: flex;
 					align-items: center;
-					grid-gap: 8px;
+					grid-gap: 15px;
 					overflow: hidden;
 
 					& .slick-slide {
@@ -511,7 +511,7 @@
 						height: 60px;
 					}
 					& img {
-						width: 100%;
+						width: 99px;
 						height: 60px;
 						border-radius: 6px;
 						object-fit: cover;
