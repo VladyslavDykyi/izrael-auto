@@ -17,7 +17,7 @@
 	&-container {
 		display: grid;
 		grid-gap: 10px 50px;
-		grid-template-columns: calc(65% - 169px) calc(35% - 169px) calc(238px);
+		grid-template-columns: calc(75% - 169px) calc(25% - 169px) calc(238px);
 		@media screen and (max-width: 1024px) {
 			grid-template-columns: calc(81.2% - 144px) calc(15% - 144px) calc(238px);
 			grid-gap: 10px 25px;

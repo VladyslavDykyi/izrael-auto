@@ -1007,8 +1007,8 @@ div.block-cart.slider-car.slick-initialized .block-item {
 .product-container {
   display: grid;
   grid-gap: 10px 50px;
-  grid-template-columns: -webkit-calc(65% - 169px) -webkit-calc(35% - 169px) -webkit-calc(238px);
-  grid-template-columns: calc(65% - 169px) calc(35% - 169px) calc(238px);
+  grid-template-columns: -webkit-calc(75% - 169px) -webkit-calc(25% - 169px) -webkit-calc(238px);
+  grid-template-columns: calc(75% - 169px) calc(25% - 169px) calc(238px);
 }
 
 .product-slider {
