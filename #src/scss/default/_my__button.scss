@@ -50,6 +50,35 @@
 			background-color: #666666;
 		}
 	}
+	&.white-blue {
+		background-color: #F0F0F0;
+		color: #015B90;
+		@include use-size(12px, 15px);
+		&:hover {
+			background-color: #015B90;
+			color: $white3;
+			& path {
+				fill: $white3;
+			}
+		}
+		&:active {
+			background-color: #015B90;
+			color: $white3;
+			& path {
+				fill: $white3;
+			}
+		}
+		&:disabled {
+			background-color: #666666;
+		}
+		&.active {
+			background-color: #015B90;
+			color: $white3;
+			& path {
+				fill: $white3;
+			}
+		}
+	}
 	&.lite-blue {
 		background-color: #DEE7ED;
 		color: #141414;
@@ -84,5 +113,9 @@
 	}
 	&.l {
 		height: 32px;
+	}
+	&.ml {
+		height: 21px;
+		@include use-size(12px, 15px);
 	}
 }

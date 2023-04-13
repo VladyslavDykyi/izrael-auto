@@ -1,9 +1,13 @@
+.arcticmodal-container_i {
+	width: 100%;
+}
 .popUp {
 	background: $lite_grey;
 	box-shadow: 0 4px 4px $grey;
 	border-radius: 21px;
 	padding: 20px;
 	width: 100%;
+	margin: 0 auto;
 	@media screen and (max-width: 480px) {
 		padding: 10px;
 	}
@@ -13,6 +17,10 @@
 	&.m {
 		max-width: 702px;
 	}
+	&.xl {
+		max-width: 842px;
+
+	}
 	&.height-l {
 		height: 325px;
 	}
@@ -21,6 +29,7 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 12px;
+		grid-gap: 10px;
 		& .product-description-salesman {
 			margin-bottom: 0;
 			margin-right: 50px;
@@ -86,6 +95,7 @@
 		display: flex;
 		justify-content: center;
 		height: 100%;
+		width: 100%;
 		& ul li h2 {
 			margin-top: 30px;
 			margin-bottom: 30px;
@@ -103,6 +113,9 @@
 				font-size: 22px;
 				line-height: 29px;
 			}
+		}
+		&-graphics {
+			width: 100%;
 		}
 	}
 }

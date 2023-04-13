@@ -353,6 +353,44 @@ input[type='number']::-webkit-inner-spin-button {
   background-color: #666666;
 }
 
+.btn.white-blue {
+  background-color: #F0F0F0;
+  color: #015B90;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.btn.white-blue:hover {
+  background-color: #015B90;
+  color: #FEFEFE;
+}
+
+.btn.white-blue:hover path {
+  fill: #FEFEFE;
+}
+
+.btn.white-blue:active {
+  background-color: #015B90;
+  color: #FEFEFE;
+}
+
+.btn.white-blue:active path {
+  fill: #FEFEFE;
+}
+
+.btn.white-blue:disabled {
+  background-color: #666666;
+}
+
+.btn.white-blue.active {
+  background-color: #015B90;
+  color: #FEFEFE;
+}
+
+.btn.white-blue.active path {
+  fill: #FEFEFE;
+}
+
 .btn.lite-blue {
   background-color: #DEE7ED;
   color: #141414;
@@ -398,6 +436,12 @@ input[type='number']::-webkit-inner-spin-button {
 
 .btn.l {
   height: 32px;
+}
+
+.btn.ml {
+  height: 21px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .check-box input {
@@ -1107,6 +1151,11 @@ input[type='number']::-webkit-inner-spin-button {
   line-height: 15px;
 }
 
+.t-light.t-2 {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 .footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1724,7 +1773,7 @@ input[type='number']::-webkit-inner-spin-button {
   width: 100%;
 }
 
-.header-mob-lang .lang-drop-mob-item span {
+.header-mob-lang .lang-drop-mob-item a {
   width: 100%;
   color: #141414;
   padding: 6px 9px;
@@ -1732,7 +1781,7 @@ input[type='number']::-webkit-inner-spin-button {
   background-color: #FEFEFE;
 }
 
-.header-mob-lang .lang-drop-mob-item span:hover {
+.header-mob-lang .lang-drop-mob-item a:hover {
   color: #FFFFFF;
   background: #184E79;
 }

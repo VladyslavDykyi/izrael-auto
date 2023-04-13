@@ -80,9 +80,9 @@
 
 .message-link-text {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 -webkit-calc(100% - 118px);
-      -ms-flex: 0 1 calc(100% - 118px);
-          flex: 0 1 calc(100% - 118px);
+  -webkit-flex: 0 1 -webkit-calc(100% - 167px);
+      -ms-flex: 0 1 calc(100% - 167px);
+          flex: 0 1 calc(100% - 167px);
 }
 
 .message-link-text .link-text-name {
@@ -100,9 +100,9 @@
 
 .message-link-time {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 56px;
-      -ms-flex: 0 1 56px;
-          flex: 0 1 56px;
+  -webkit-flex: 0 1 105px;
+      -ms-flex: 0 1 105px;
+          flex: 0 1 105px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

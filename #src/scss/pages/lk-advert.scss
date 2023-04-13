@@ -18,4 +18,300 @@
 .main-title-right {
 	max-width: 200px;
 	grid-gap: 10px;
+	@media screen and (max-width: 580px) {
+		&.red {
+			font-size: 0;
+			max-width: 32px;
+			grid-gap: 0;
+		}
+	}
 }
+.advert-list {
+	@media screen and (max-width: 680px) {
+		display: none;
+	}
+}
+.advert-item {
+	display: flex;
+	grid-gap: 10px;
+	justify-content: space-between;
+	background: #FEFEFE;
+	border-radius: 7px;
+	padding: 16px 18px 17px;
+	margin-bottom: 20px;
+	&-img {
+		flex: 0 1 214px;
+		max-width: 214px;
+		border-radius: 6px;
+		& img {
+			border-radius: 6px;
+			height: 155px;
+			object-fit: cover;
+		}
+	}
+	&-text {
+		flex: 1 1 calc(75% - 264px);
+		&-name {
+			color: #015B90;
+			margin-bottom: 4px;
+		}
+		&-info {
+			color: #666666;
+			margin-bottom: 18px;
+		}
+		&-price {
+			color: #141414;
+			margin-bottom: 34px;
+		}
+		&-duration {
+			color: #141414;
+			margin-bottom: 7px;
+		}
+		&-city {
+			color: #666666;
+			font-style: italic;
+		}
+	}
+	&-info {
+		flex: 0 1 calc(25% - 167px);
+		margin-top: 50px;
+		&-item {
+			display: flex;
+			align-items: center;
+			grid-gap: 9px;
+			margin-bottom: 4px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&-btn {
+		flex: 0 1 167px;
+		position: relative;
+		& .days {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			font-style: italic;
+			color: #666666;
+		}
+		& .up-visitor {
+			&.disable {
+				cursor: auto;
+				background: #666666;
+				&:hover {
+					background: #666666;
+				}
+				&:active {
+					background: #666666;
+				}
+				&:disabled {
+					background: #666666;
+				}
+			}
+		}
+		& .btn-action {
+			max-width: 32px;
+			&-wrapper {
+				margin-top: 6px;
+				display: flex;
+				grid-gap: 6px;
+				align-items: center;
+			}
+			&-remove {
+				color: #01264E;
+			}
+			&-drop {
+				display: none;
+				position: absolute;
+				width: 100%;
+				top: 54px;
+				left: 0;
+				&.active {
+					display: block;
+				}
+				& ul {
+					background: #F0F0F0;
+					border-bottom: 1px solid #F0F0F0;
+					border-radius: 5px;
+					& li {
+						& button {
+
+						}
+						& button,
+						& a {
+							display: block;
+							padding: 6px 0 6px 21px;
+							cursor: pointer;
+							border-radius: 5px;
+							color: #01264E;
+							text-align: left;
+							width: 100%;
+							@include use-size(10px, 15px);
+							&:hover {
+								background: #015B90;
+								color: #FEFEFE;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.advert-mob-list {
+	display: none;
+	@media screen and (max-width: 680px) {
+		display: block;
+		margin: 0 -7px;
+	}
+}
+.advert-mob-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	grid-gap: 12px;
+	background: #FEFEFE;
+	padding: 12px 16px;
+	margin-bottom: 12px;
+	&-img {
+		flex: 0 1 calc(164px);
+		max-width: 164px;
+		border-radius: 6px;
+		@media screen and (max-width: 425px) {
+			flex: 0 1 100%;
+			max-width: 100%;
+		}
+		& img {
+			border-radius: 6px;
+			width: 100%;
+			height: 122px;
+			object-fit: cover;
+			@media screen and (max-width: 425px) {
+				height: auto;
+			}
+		}
+	}
+	&-text {
+		flex: 0 1 calc(100% - 179px);
+		@media screen and (max-width: 425px) {
+			flex: 0 1 100%;
+		}
+		&-name {
+			margin-bottom: 4px;
+			color: #015B90;
+		}
+		&-info {
+			margin-bottom: 12px;
+			color: #666666;
+		}
+		&-price {
+			margin-bottom: 11px;
+			color: #141414;
+		}
+		&-city {
+			margin-bottom: 2px;
+			font-style: italic;
+			color: #666666;
+		}
+		&-days {
+			font-style: italic;
+			color: #666666;
+		}
+	}
+	&-info {
+		flex: 0 1 100%;
+		&-duration {
+			margin-bottom: 12px;
+			color: #141414;
+		}
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		&-item {
+			display: flex;
+			align-items: center;
+			grid-gap: 6px;
+			& svg {
+				width: 24px;
+				height: 24px;
+			}
+			& span {
+				color: #141414;
+			}
+		}
+	}
+	&-btn {
+		flex: 0 1 100%;
+		display: flex;
+		align-items: center;
+		grid-gap: 6px;
+		position: relative;
+		& .mob-up-visitor {
+			flex: 0 1 calc(50% - 3px);
+			&.disable {
+				cursor: auto;
+				background: #666666;
+				&:hover {
+					background: #666666;
+				}
+				&:active {
+					background: #666666;
+				}
+				&:disabled {
+					background: #666666;
+				}
+			}
+		}
+		& .mob-btn-action {
+			flex: 0 1 calc(32px);
+			&-wrapper {
+				flex: 0 1 calc(50% - 3px);
+				display: flex;
+				align-items: center;
+				grid-gap: 6px;
+			}
+			&-drop {
+				display: none;
+				position: absolute;
+				right: 0;
+				bottom: 27px;
+				width: calc(50% - 3px);
+				&.active {
+					display: block;
+				}
+				& ul {
+					background: #F0F0F0;
+					border-bottom: 1px solid #F0F0F0;
+					border-radius: 5px;
+					& li {
+						& button {
+
+						}
+						& button,
+						& a {
+							display: block;
+							padding: 6px 0 6px 21px;
+							cursor: pointer;
+							border-radius: 5px;
+							color: #01264E;
+							text-align: left;
+							width: 100%;
+							@include use-size(10px, 15px);
+							&:hover {
+								background: #015B90;
+								color: #FEFEFE;
+							}
+						}
+					}
+				}
+			}
+			&-remove {
+				flex: 0 1 calc(100% - 38px);
+			}
+		}
+	}
+}
+

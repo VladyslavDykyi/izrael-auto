@@ -380,6 +380,11 @@
   grid-gap: 10px;
   margin-bottom: 8px;
   margin-left: 40px;
+  margin-right: 8px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .message-my + .message-companion {

@@ -286,6 +286,10 @@
   pointer-events: none;
 }
 
+.arcticmodal-container_i {
+  width: 100%;
+}
+
 .popUp {
   background: #F0F0F0;
   -webkit-box-shadow: 0 4px 4px #C1C4CD;
@@ -294,6 +298,7 @@
           border-radius: 21px;
   padding: 20px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .popUp.l {
@@ -302,6 +307,10 @@
 
 .popUp.m {
   max-width: 702px;
+}
+
+.popUp.xl {
+  max-width: 842px;
 }
 
 .popUp.height-l {
@@ -322,6 +331,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 12px;
+  grid-gap: 10px;
 }
 
 .popUp-title .product-description-salesman {
@@ -416,6 +426,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  width: 100%;
 }
 
 .popUp-content ul li h2 {
@@ -430,6 +441,10 @@
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+}
+
+.popUp-content-graphics {
+  width: 100%;
 }
 
 .bg-site {

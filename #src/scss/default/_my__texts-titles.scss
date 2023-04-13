@@ -90,4 +90,7 @@
 	&.t-1 {
 		@include use-size(12px, 15px);
 	}
+	&.t-2 {
+		@include use-size(10px, 12px);
+	}
 }
