@@ -106,10 +106,16 @@
 	&-content {
 		min-height: 508px;
 		border: 1px solid transparent;
+		@media screen and (max-width: 768px) {
+			min-height: 308px;
+		}
 		& .title-non-content {
 			color: #666666;
 			text-align: center;
 			margin-top: 205px;
+			@media screen and (max-width: 768px) {
+				margin-top: 105px;
+			}
 		}
 		&-message {
 			background-color: #FEFEFE;

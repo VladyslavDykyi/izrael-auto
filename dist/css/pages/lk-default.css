@@ -811,6 +811,14 @@
     line-height: 17px;
   }
 
+  .main-content {
+    min-height: 308px;
+  }
+
+  .main-content .title-non-content {
+    margin-top: 105px;
+  }
+
   .f2-3 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 100%;
