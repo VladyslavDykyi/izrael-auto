@@ -220,9 +220,7 @@
   right: 0;
   top: 0;
   z-index: 10;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.4)), to(rgba(17, 17, 17, 0.4))), url(.jpg);
-  background: -o-linear-gradient(bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.jpg);
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.jpg);
+  background: rgba(17, 17, 17, 0.4);
   -webkit-border-radius: 7px;
           border-radius: 7px;
   width: 100%;
@@ -412,9 +410,3 @@
             flex: 0 1 calc(50% - 7.5px);
   }
 }
-
-.webp .file-delete { background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.4)), to(rgba(17, 17, 17, 0.4))), url(.webp); }
-
-.webp .file-delete { background: -o-linear-gradient(bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.webp); }
-
-.webp .file-delete { background: linear-gradient(0deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.webp); }

@@ -1,0 +1,161 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+@import "../default/mixins";
+
+.wrapper-select {
+	position: relative;
+}
+.inp-icon-info {
+	position: absolute;
+	top: 0;
+	right: 6px;
+	z-index: 10;
+}
+.file {
+	&-label {
+		@include use-font($I-m, 500);
+		@include use-size(18px, 22px);
+		color: $black_new;
+		margin-bottom: 13px;
+	}
+	&-dop-text {
+		display: inline-block;
+		@include use-font($I-r, 400);
+		@include use-size(12px, 15px);
+		color: $black_new;
+		margin-bottom: 8px;
+	}
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		grid-gap: 12px;
+		@media screen and (max-width: 768px) {
+			grid-gap: 15px;
+		}
+	}
+
+	&-item {
+		position: relative;
+		flex: 0 1 calc(11.11111% - 10.66667px);
+		@media screen and (max-width: 768px) {
+			flex: 0 1 calc(33.33333% - 10px);
+		}
+		@media screen and (max-width: 370px) {
+			flex: 0 1 calc(50% - 7.5px);
+		}
+		& .img {
+			width: 100%;
+			height: 120px;
+			object-fit: cover;
+			border-radius: 7px;
+			display: none;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&-inp {
+		display: none;
+	}
+	&-field {
+		width: 100%;
+		height: 120px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: #C6C6C6;
+		border: 1px solid #C6C6C6;
+		border-radius: 7px;
+		cursor: pointer;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
+		&.none {
+			display: none;
+		}
+		& span {
+			@include use-font($I-r, 400);
+			@include use-size(12px, 15px);
+			color: #141414;
+			display: block;
+			text-align: center;
+		}
+	}
+	&-delete {
+		display: none;
+		position: absolute;
+		left:0;
+		bottom:0;
+		right:0;
+		top:0;
+		z-index: 10;
+		background:  rgba(17, 17, 17, 0.4);
+		border-radius: 7px;
+		width: 100%;
+		height: 120px;
+		align-items: center;
+		justify-content: center;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
+		& button {
+			width: 28px;
+			height: 28px;
+			background: transparent;
+			border-radius: 7px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+	}
+}
+.file-item.active:hover .file-delete {
+	display: flex;
+}
+.main-inputs-dop {
+	&-cont {
+		margin-top: 12px;
+		display: flex;
+		align-items: center;
+		grid-gap: 36px;
+		flex-wrap: wrap;
+	}
+	&-area {
+		& label {
+			& span {
+				font-family: Inter-Regular,sans-serif;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 22px;
+				color: #141414;
+				margin-bottom: 8px;
+				display: inline-block;
+			}
+			& textarea {
+				width: 100%;
+				min-height: 204px;
+				display: block;
+				border: none;
+				background: #FEFEFE;
+				border-radius: 7px;
+				padding: 11px 12px;
+			}
+		}
+	}
+}
+.wrapper-btn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	grid-gap: 12px;
+	@media screen and (max-width: 768px){
+		flex-wrap: wrap;
+	}
+}
+.main-form-inp{
+ grid-gap: 24px 15px;
+}
