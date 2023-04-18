@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" dir="rtl">
+<html lang="en" >
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="./css/lib/slick.min.css">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/page-home.min.css">
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+	<link rel="stylesheet" href="./css/pages/page-home-rtl.min.css">
 </head>
 <body class="">
 @@include('./html/_header.html')
@@ -24,7 +26,9 @@
 <div class="bg-mob"></div>
 <script src="./js/lib/jquery.js"></script>
 <script src="./js/lib/slick.js"></script>
-<script src="./js/pages/page-home.js"></script>
+<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<!--<script src="./js/pages/page-home-ltr.js"></script>-->
+<script src="./js/pages/page-home-rtl.js"></script>
 <script src="./js/pages/seo-text.js"></script>
 <script src="./js/default/header.js"></script>
 
