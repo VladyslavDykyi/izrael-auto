@@ -9,6 +9,8 @@
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/lib/slick.min.css">
 	<link rel="stylesheet" href="./css/lib/select2.min.css">
+	<!-- оновлення 18.04.23  -->
+	<link rel="stylesheet" href="./css/lib/arcticmodal.min.css">
 	<link rel="stylesheet" href="./css/lib/daterangepicker.min.css">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/page-sale-auto.min.css">
@@ -83,9 +85,50 @@
 </main>
 @@include('./html/_footer.html')
 <div class="bg-mob"></div>
+<div style="display:none;">
+	<div class="popUp m" id="all-city-popUp">
+		<div class="popUp-title">
+			<div>
+				<h2 class="t-medium ">Выберете город</h2>
+			</div>
+			<div class="popUp-title-close box-modal_close arcticmodal-close">
+				<button class="reset-btn t-regular t-7" type="button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M20.781 3.21936C20.8508 3.28903 20.9062 3.3718 20.944 3.46291C20.9818 3.55403 21.0013 3.65171 21.0013 3.75036C21.0013 3.84902 20.9818 3.9467 20.944 4.03781C20.9062 4.12893 20.8508 4.2117 20.781 4.28136L4.28097 20.7814C4.14014 20.9222 3.94913 21.0013 3.74997 21.0013C3.55081 21.0013 3.3598 20.9222 3.21897 20.7814C3.07814 20.6405 2.99902 20.4495 2.99902 20.2504C2.99902 20.0512 3.07814 19.8602 3.21897 19.7194L19.719 3.21936C19.7886 3.14952 19.8714 3.09411 19.9625 3.0563C20.0536 3.01849 20.1513 2.99902 20.25 2.99902C20.3486 2.99902 20.4463 3.01849 20.5374 3.0563C20.6285 3.09411 20.7113 3.14952 20.781 3.21936Z"
+							  fill="#666666"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M3.219 3.21936C3.14915 3.28903 3.09374 3.3718 3.05593 3.46291C3.01812 3.55403 2.99866 3.65171 2.99866 3.75036C2.99866 3.84902 3.01812 3.9467 3.05593 4.03781C3.09374 4.12893 3.14915 4.2117 3.219 4.28136L19.719 20.7814C19.8598 20.9222 20.0508 21.0013 20.25 21.0013C20.4492 21.0013 20.6402 20.9222 20.781 20.7814C20.9218 20.6405 21.0009 20.4495 21.0009 20.2504C21.0009 20.0512 20.9218 19.8602 20.781 19.7194L4.281 3.21936C4.21133 3.14952 4.12857 3.09411 4.03745 3.0563C3.94633 3.01849 3.84865 2.99902 3.75 2.99902C3.65135 2.99902 3.55367 3.01849 3.46255 3.0563C3.37143 3.09411 3.28867 3.14952 3.219 3.21936Z"
+							  fill="#666666"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="popUp-content">
+			<form class="popUp-form" action="#">
+				<div class="popUp-form-select">
+					<label>
+						<select class="select-search-city" multiple name="city">
+							<option value="" >- -</option>
+							<option value="ew">ewqeqw</option>
+							<option value="ee">111ewqeq1111</option>
+						</select>
+					</label>
+				</div>
+				<div class="popUp-form-btn">
+					<button class="btn blue s" type="submit">
+						да
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <script src="./js/lib/jquery.min.js"></script>
 <script src="./js/lib/slick.min.js"></script>
 <script src="./js/lib/select2.min.js"></script>
+<!-- оновлення 18.04.23  -->
+<script src="./js/lib/arcticmodal.min.js"></script>
 <script src="./js/lib/moment.min.js"></script>
 <script src="./js/lib/daterangepicker.min.js"></script>
 <script src="./js/pages/page-sale-auto.min.js"></script>
@@ -104,6 +147,10 @@
 	$('.select-search-model').select2({
 		theme: "search",
 		placeholder: "Модель",
+	});
+	$('.select-search-city').select2({
+		theme: "search",
+		placeholder: "Город",
 	});
 	$('.select-search-generation').select2({
 		theme: "search",

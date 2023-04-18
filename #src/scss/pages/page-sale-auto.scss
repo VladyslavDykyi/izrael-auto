@@ -10,6 +10,7 @@
 @import "./_page-sale-auto-form";
 
 @import "./_seo-text";
+@import "./_popUp-lk";
 @import "./_bread-dots";
 
 .bg-site {
@@ -37,6 +38,21 @@
 				border: 1px solid $black_new;
 				background-color: transparent;
 				&:hover {
+					border-color: transparent;
+					border-bottom-color: $red;
+					background-color: $dark_grey-25;
+					box-shadow: 0 1px 0 $red;
+					& svg {
+						transform: scale(1.7) translate(-13px, 2px);
+						@media screen and (max-width: 768px) {
+							transform: none;
+						}
+						& path {
+							fill: $dark_blue2;
+						}
+					}
+				}
+				&.active {
 					border-color: transparent;
 					border-bottom-color: $red;
 					background-color: $dark_grey-25;
@@ -361,6 +377,18 @@
 			}
 			& p {
 				color: $dark_grey2;
+			}
+		}
+	}
+}
+
+.popUp-form {
+	width: 100%;
+	&-select {
+		& label {
+			display: block;
+			& .select2-container {
+				width: 100%!important;
 			}
 		}
 	}

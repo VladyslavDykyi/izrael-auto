@@ -120,21 +120,6 @@ btnToggleForm.addEventListener('click',() => {
 	}
 });
 });
-
-// $('.select-without-searching').select2({
-// 	minimumResultsForSearch: -1,
-// 	theme: "my",
-// });
-// $('.select-search').select2({
-// 	theme: "search",
-// });
-// $('.select-no-search').select2({
-// 	minimumResultsForSearch: -1,
-// 	theme: "search",
-// });
-
-
-
-
-
-
+$('.all-city-btn').on('click', () => {
+	$('#all-city-popUp').arcticmodal();
+});

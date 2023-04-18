@@ -84,6 +84,7 @@
 	}
 }
 .select2-container--search {
+	& .select2-selection--multiple,
 	& .select2-selection--single {
 		border: none;
 		border-bottom: 1px solid transparent;
@@ -186,5 +187,53 @@
 	}
 	&.select2.select2-container.select2-container--below.select2-container--focus.select2-container--open .select2-selection__arrow b {
 		border-color: $black_new $black_new transparent transparent;
+	}
+	& .select2-selection--multiple {
+		position: relative;
+		padding: 10px 30px 10px 10px;
+		&:after {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			background-repeat: no-repeat;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.15904 0.0596568C2.51104 0.42946 0.418631 2.53913 0.0589502 5.20181C-0.0463091 5.98101 -0.0124694 6.62718 0.175475 7.427C0.663301 9.5026 2.33008 11.2215 4.40673 11.7906C7.57965 12.6601 10.8522 10.83 11.7706 7.67247C12.6279 4.72517 11.0972 1.57891 8.25212 0.440326C7.24846 0.0386817 6.21782 -0.0881487 5.15904 0.0596568ZM6.79537 1.57289C8.96467 1.98447 10.5022 3.82213 10.5022 6.00341C10.5022 8.14185 8.99455 9.98436 6.89462 10.4124C4.11936 10.978 1.50791 8.84057 1.50791 6.00341C1.50791 3.879 3.0063 2.03452 5.08731 1.59716C5.58863 1.4918 6.3136 1.48151 6.79537 1.57289ZM11.6588 10.1329C11.3458 10.5767 10.5775 11.345 10.1338 11.6581L9.78813 11.902L11.6924 13.8086C13.8855 16.0042 13.8828 16.0021 14.5308 15.9999C14.9662 15.9983 15.276 15.8718 15.5739 15.5739C15.8718 15.2759 15.9983 14.966 15.9999 14.5306C16.0021 13.8824 16.0042 13.8851 13.809 11.6917L11.9027 9.78712L11.6588 10.1329Z' fill='%23646464'/%3e%3c/svg%3e");
+			position: absolute;
+			right: 8px;
+			top: calc(50% - 8px);
+		}
+		& .select2-search .select2-search--inline {
+			width: 100%;
+		}
+		& .select2-selection__rendered {
+			display: flex;
+			align-items: center;
+			grid-gap: 8px;
+			flex-wrap: wrap;
+			& li {
+				display: flex;
+				align-items: center;
+				grid-gap: 4px;
+				background-color: $heavy_blue;
+				padding: 4px 4px;
+				border-radius: 4px;
+			}
+			& button {
+				border: none;
+				background: transparent;
+				cursor: pointer;
+				padding: 0;
+				& span {
+					color: $white3;
+					display: block;
+					@include use-size(20px, 0px);
+				}
+			}
+			& span {
+				@include use-font($I-r, 400);
+				@include use-size(16px, 16px);
+				color: $white3;
+			}
+		}
 	}
 }
