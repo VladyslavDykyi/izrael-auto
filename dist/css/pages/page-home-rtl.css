@@ -43,3 +43,8 @@ html {
       -ms-transform: translateX(1000px);
           transform: translateX(1000px);
 }
+
+.header-buttons .icons-bar-item .count {
+  left: auto;
+  right: 11px;
+}
