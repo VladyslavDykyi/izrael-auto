@@ -34,3 +34,22 @@ html {
 	left: auto;
 	right: 11px;
 }
+.first-block-r {
+	right: auto;
+	left: 0;
+	transform: rotateY(180deg);
+}
+.first-block-l {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+.first-block-btn {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+.first-block-content-l>h3.t-3 {
+	color: #fefefe;
+	margin: 8px 73px 24px auto;
+}
