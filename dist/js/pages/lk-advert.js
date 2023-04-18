@@ -60,4 +60,3 @@ if (window.innerWidth <= 680) {
 		});
 	});
 }
-console.log(window)
