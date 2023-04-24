@@ -1,10 +1,13 @@
-const avatar = document.querySelector('.user-avatar-lk-btn input');
-const img = document.querySelector('.user-avatar-lk-img img');
-avatar.addEventListener('input', (e) => {
-	img.src = URL.createObjectURL(avatar.files[0]);
-	img.previousElementSibling.srcset = URL.createObjectURL(avatar.files[0]);
-	img.parentElement.nextElementSibling.textContent = '';
-	setTimeout(()=> {
-		img.parentElement.parentElement.nextElementSibling.submit();
-	},2000);
-});
+const popUpAvatar = document.querySelector("#popUpAvatar");
+const addAvatar = (container) => {
+	const input = container.querySelector('.file input');
+	const nameFile = container.querySelector('.name-img');
+	const avatar = container.querySelector('.user-avatar-lk-img img');
+	input.addEventListener('input', (e) => {
+		avatar.src = URL.createObjectURL(input.files[0]);
+		avatar.previousElementSibling.srcset = URL.createObjectURL(input.files[0])
+		avatar.parentElement.nextElementSibling.textContent = '';
+		nameFile.innerHTML = input.files[0].name;
+	});
+}
+addAvatar(popUpAvatar);

@@ -389,14 +389,6 @@
 				padding-left: 11px;
 				padding-bottom: 8px;
 				color: #646464;
-				&.required {
-					&:after {
-						content: '*';
-						color: #BF1616;
-						@include use-font($I-r, 400);
-						@include use-size(16px, 19px);
-					}
-				}
 			}
 			& > div {
 				display: flex;

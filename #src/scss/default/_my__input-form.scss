@@ -36,7 +36,7 @@
 		position: relative;
 		display: inline-block;
 		width: 100%;
-		& span {
+		& > span:first-child {
 			@include use-font($I-r, 400);
 			@include use-size(18px, 22px);
 			color: #141414;
@@ -124,6 +124,11 @@
 		}
 		&.active .error{
 			display: block;
+		}
+	}
+	&.file {
+		& input {
+			display: none;
 		}
 	}
 }

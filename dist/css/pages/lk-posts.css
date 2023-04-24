@@ -201,6 +201,12 @@
   color: #666666;
 }
 
+.post-item-main img {
+  max-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .post-item-main h2,
 .post-item-main h3,
 .post-item-main h4 {

@@ -73,6 +73,7 @@
 				height: 52px;
 			}
 		}
+		& .wrapper-avatar,
 		& .wrapper-select,
 		& .wrapper-input {
 			margin-bottom: 11px;
@@ -86,6 +87,27 @@
 					padding-right: 30px;
 				}
 			}
+		}
+		& .wrapper-btn {
+			display: flex;
+			align-items: center;
+			grid-gap: 20px;
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+			& .btn {
+				max-width: 200px;
+			}
+			& .name-img {
+				flex: 0 1 calc(100% - 220px);
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+		& .wrapper-avatar {
+			display: flex;
+			justify-content: center;
 		}
 		&-btn {
 			margin-top: 20px;
