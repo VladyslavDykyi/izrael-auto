@@ -95,6 +95,18 @@ nav.head-lk-nav {
   padding: 10px 10px 10px 20px;
 }
 
+.next:before {
+  -webkit-transform: rotate(45deg) translate(2px, -2px);
+      -ms-transform: rotate(45deg) translate(2px, -2px);
+          transform: rotate(45deg) translate(2px, -2px);
+}
+
+.prev:before {
+  -webkit-transform: rotate(225deg) translate(2px, -2px);
+      -ms-transform: rotate(225deg) translate(2px, -2px);
+          transform: rotate(225deg) translate(2px, -2px);
+}
+
 .bread-bg .bread .bread-item:first-child {
   margin-right: 0;
 }
@@ -108,15 +120,36 @@ html {
   direction: rtl;
 }
 
-.inp label > span:first-child {
-  padding-right: 0;
-  padding-left: 30px;
-}
-
-.main-title-right,
-.main-form-btn .btn {
+.main-title-right {
   margin-left: 0;
   margin-right: auto;
+}
+
+.advert-item-btn .btn-action-drop ul li a,
+.advert-item-btn .btn-action-drop ul li button {
+  text-align: right;
+  padding: 6px 21px 6px 0;
+}
+
+.advert-mob-item-btn .mob-btn-action-drop ul li a,
+.advert-mob-item-btn .mob-btn-action-drop ul li button {
+  text-align: right;
+  padding: 6px 21px 6px 0;
+}
+
+.advert-mob-item-btn .mob-btn-action-drop {
+  right: auto;
+  left: 0;
+}
+
+.advert-item-text-price {
+  direction: ltr;
+  text-align: right;
+}
+
+.advert-item-btn .days {
+  right: auto;
+  left: 0;
 }
 
 @media screen and (max-width: 1024px) {

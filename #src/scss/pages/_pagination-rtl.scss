@@ -1,0 +1,6 @@
+.next:before {
+	transform: rotate(45deg) translate(2px,-2px);
+}
+.prev:before {
+	transform: rotate(225deg) translate(2px,-2px);
+}

@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-default.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-advert.min.css">
+	<!-- 25.04.2023 -->
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+	<link rel="stylesheet" href="./css/pages/lk-advert-rtl.min.css">
 </head>
 <body class="">
 @@include('./html/_header-fix.html')
@@ -86,7 +89,7 @@
 	</div>
 </div>
 <div style="display:none;">
-	<div class="popUp xl" id="graphics">
+	<div class="popUp xl graphics-popUp" id="graphics">
 		<div class="popUp-title">
 			<h2 class="t-medium ">Статистика просмотров и лайков</h2>
 			<div class="popUp-title-close box-modal_close arcticmodal-close">
@@ -120,20 +123,10 @@
 <script src="./js/pages/lk-favorites.js"></script>
 <script src="./js/pages/lk-advert.js"></script>
 <script src="./js/pages/lk-select2.js"></script>
-<!-- 24.04.2023 -->
+<!-- 25.04.2023 -->
+<!-- є стандартний або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<script src="./js/pages/lk-select2-rtl.js"></script>
 <script>
-	$('.user-avatar-lk-btn').on('click', () => {
-		$('#popUpAvatar').arcticmodal();
-	});
-	$('.delete-advert').on('click', () => {
-		$('#delete-advert').arcticmodal();
-	});
-	$('.removeFromPublication').on('click', () => {
-		$('#removeFromPublication').arcticmodal();
-	});
-	$('.graphics').on('click', () => {
-		$('#graphics').arcticmodal();
-	});
 	const ctx = document.getElementById('myChart');
 
 	new Chart(ctx, {
@@ -155,6 +148,11 @@
 			]
 		},
 		options: {
+			plugins: {
+				legend: {
+					rtl: true,
+				}
+			},
 			legend: {
 				display: false,
 			},
@@ -165,6 +163,52 @@
 			}
 		}
 	});
+</script>
+<!-- 24.04.2023 -->
+<script>
+	$('.user-avatar-lk-btn').on('click', () => {
+		$('#popUpAvatar').arcticmodal();
+	});
+	$('.delete-advert').on('click', () => {
+		$('#delete-advert').arcticmodal();
+	});
+	$('.removeFromPublication').on('click', () => {
+		$('#removeFromPublication').arcticmodal();
+	});
+	$('.graphics').on('click', () => {
+		$('#graphics').arcticmodal();
+	});
+	// const ctx = document.getElementById('myChart');
+	//
+	// new Chart(ctx, {
+	// 	type: 'bar',
+	// 	data: {
+	// 		labels: ['28.02.2023', '01.03.2023', '02.03.2023', '03.03.2023', '04.03.2023', '06.03.2023',],
+	// 		datasets: [{
+	// 			label: 'Количество просмотров',
+	// 			data: [12, 19, 3, 5, 21, 3],
+	// 			borderWidth: 0,
+	// 			backgroundColor: '#2AA3DE',
+	// 		},
+	// 		{
+	// 			label: 'Количество лайков',
+	// 			data: [12, 1, 4, 5, 3, 31],
+	// 			borderWidth: 0,
+	// 			backgroundColor: '#fd7676',
+	// 		}
+	// 		]
+	// 	},
+	// 	options: {
+	// 		legend: {
+	// 			display: false,
+	// 		},
+	// 		scales: {
+	// 			y: {
+	// 				beginAtZero: true
+	// 			}
+	// 		}
+	// 	}
+	// });
 </script>
 </body>
 </html>

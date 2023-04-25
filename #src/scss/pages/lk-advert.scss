@@ -249,8 +249,14 @@
 		align-items: center;
 		grid-gap: 6px;
 		position: relative;
+		@media screen and (max-width: 580px) {
+			flex-wrap: wrap;
+		}
 		& .mob-up-visitor {
 			flex: 0 1 calc(50% - 3px);
+			@media screen and (max-width: 580px) {
+				flex: 0 1 100%;
+			}
 			&.disable {
 				cursor: auto;
 				background: #666666;
@@ -272,6 +278,9 @@
 				display: flex;
 				align-items: center;
 				grid-gap: 6px;
+				@media screen and (max-width: 580px) {
+					flex: 0 1 100%;
+				}
 			}
 			&-drop {
 				display: none;
@@ -279,6 +288,9 @@
 				right: 0;
 				bottom: 27px;
 				width: calc(50% - 3px);
+				@media screen and (max-width: 580px) {
+					width: calc(70% - 3px);
+				}
 				&.active {
 					display: block;
 				}
@@ -314,4 +326,8 @@
 		}
 	}
 }
-
+.graphics-popUp {
+	@media screen and (max-width: 580px) {
+		height: 300px;
+	}
+}
