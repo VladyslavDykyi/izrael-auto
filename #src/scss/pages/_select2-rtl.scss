@@ -1,0 +1,17 @@
+//.select2-container--search .select2-selection--multiple,
+//.select2-container--search .select2-selection--single {
+//	justify-content: flex-end;
+//}
+//
+.select2-container--search .select2-selection--single .select2-selection__arrow b {
+	right: auto;
+	left: 15px;
+}
+//
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-right: 8px;
+	padding-left: 20px;
+}
+.select2-container--search .select2-selection--multiple, .select2-container--search .select2-selection--single {
+	padding: 10px 10px 10px 20px;
+}

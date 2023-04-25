@@ -1,3 +1,5 @@
+@import "./_header-rtl";
+
 html {
 	direction: rtl;
 }
@@ -10,37 +12,6 @@ html {
 
 .block.category .block-item:hover a svg {
 	transform: scale(1.7) translate(4px, 0px);
-}
-
-.header-buttons-user .drop-list {
-	left: 0;
-	right: auto;
-}
-
-.header-mob-lang .lang-text {
-	text-align: right;
-}
-
-.header-mob-lang .lang-text-ico {
-	right: auto;
-	left: 0;
-	margin-right: 10px;
-}
-
-.header-mob-bar .icons-bar-item a .count {
-	right: auto;
-	left: 0;
-}
-
-.header-mob {
-	left: auto;
-	right: 0;
-	transform: translateX(1000px);
-}
-
-.header-buttons .icons-bar-item .count {
-	left: auto;
-	right: 11px;
 }
 
 .first-block-r {

@@ -1,0 +1,65 @@
+.head-lk-user {
+	padding-left: 0;
+	padding-right: 174px;
+	@media screen and (max-width: 580px) {
+		padding-right: 124px;
+	}
+	@media screen and (max-width: 350px) {
+		padding-right: 90px;
+	}
+}
+
+.lk-menu-item:first-of-type {
+	text-align: left;
+	@media screen and (max-width: 1024px) {
+		text-align: right;
+	}
+}
+
+.user-avatar-lk {
+	right: 0;
+	left: auto;
+}
+
+.user-avatar-lk-btn {
+	left: auto;
+	right: 7px;
+}
+
+.head-lk-nav {
+	padding-left: 0;
+	padding-right: 68px;
+}
+
+nav.head-lk-nav {
+	padding-right: 68px;
+	padding-left: 0;
+}
+
+.mob-section {
+	text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+	.head-lk-nav {
+		right: auto;
+		left: 15px;
+	}
+	.head-lk-nav-container {
+		padding-left: 15px;
+		padding-right: 68px;
+	}
+}
+
+.user-info-list .user-info-item ~ .user-info-item::before {
+	right: 18px;
+	left: auto;
+}
+
+.user-info-list .user-info-item ~ .user-info-item {
+	padding-right: 40px;
+	padding-left: 0;
+	@media screen and (max-width: 580px) {
+		padding-right: 21px;
+	}
+}

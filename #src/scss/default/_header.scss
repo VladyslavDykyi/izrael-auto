@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
+	grid-gap: 10px;
 	&-bg {
 
 		padding: 17px 0;
@@ -71,7 +71,7 @@
 	}
 	&-nav {
 		width: 100%;
-		max-width: 850px;
+		max-width: 950px;
 		@media screen and (max-width: 1024px) {
 			display: none;
 		}

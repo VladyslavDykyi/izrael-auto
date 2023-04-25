@@ -1,0 +1,28 @@
+@import "./_header-rtl";
+@import "./_lk-header-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+
+html {
+	direction: rtl;
+}
+
+.inp label > span:first-child {
+	padding-right: 0;
+	padding-left: 30px;
+}
+
+.bread-bg .bread .bread-item:first-child {
+	margin-right: 0;
+}
+
+.bread-item {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.main-title-right,
+.main-form-btn .btn {
+	margin-left: 0;
+	margin-right: auto;
+}
