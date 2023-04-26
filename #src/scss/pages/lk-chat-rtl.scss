@@ -1,0 +1,40 @@
+@import "./_header-rtl";
+@import "./_lk-header-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_bread-dot-rtl";
+
+html {
+	direction: rtl;
+}
+
+.message-my-text {
+	border-radius: 7px 7px 7px 0;
+}
+
+.message-my-text:after {
+	right: auto;
+	left: -10px;
+	border-right: none;
+	border-left: 10px solid transparent;
+}
+
+.message-companion-text {
+	border-radius: 7px 7px 0 7px;
+}
+
+.message-companion-text:after {
+	left: auto;
+	right: -10px;
+	border-left: none;
+	border-right: 10px solid transparent;
+}
+
+.message-header-back {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.message-header-back svg {
+	transform: rotateY(180deg);
+}

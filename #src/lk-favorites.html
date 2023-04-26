@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-default.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-favorites.min.css">
+	<!-- 25.04.2023 -->
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+	<link rel="stylesheet" href="./css/pages/lk-favorites-rtl.min.css">
 </head>
 <body class="">
 @@include('./html/_header-fix.html')
@@ -34,8 +37,12 @@
 <script src="./js/lib/arcticmodal.min.js"></script>
 <script src="./js/lib/slick.min.js"></script>
 <script src="./js/default/header-lk.js"></script>
-<script src="./js/pages/lk-favorites.js"></script>
+<!--<script src="./js/pages/lk-favorites.js"></script>-->
 <script src="./js/pages/lk-select2.js"></script>
+<!-- 25.04.2023 -->
+<!-- є стандартний або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<script src="./js/pages/lk-select2-rtl.js"></script>
+<script src="./js/pages/lk-favorites-rtl.js"></script>
 <!-- 24.04.2023 -->
 <script>
 	$('.user-avatar-lk-btn').on('click', () => {

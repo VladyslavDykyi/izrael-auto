@@ -1,0 +1,22 @@
+@import "./_header-rtl";
+@import "./_lk-header-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_bread-dot-rtl";
+@import "./_pagination-rtl";
+
+html {
+	direction: rtl;
+}
+.post-item-footer-favorite {
+	margin-left: 0;
+	margin-right: auto;
+}
+.adverts-item-text .adverts-item-favorite {
+	right: auto;
+	left: 6px;
+}
+.adverts-item-text .adverts-item-price p {
+	direction: ltr;
+	text-align: right;
+}
