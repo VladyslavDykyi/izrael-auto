@@ -335,6 +335,10 @@
   cursor: pointer;
 }
 
+.main-login-tab-content .wrapper-btn .reset-password {
+  color: #015B90;
+}
+
 .main-login-tab-content .wrapper-text p {
   color: #666666;
   text-align: center;

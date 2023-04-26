@@ -1,0 +1,12 @@
+@import "./_header-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_bread-dot-rtl";
+
+html {
+	direction: rtl;
+}
+.inp label > span:first-child {
+	padding-right: 0;
+	padding-left: 30px;
+}
