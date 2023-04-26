@@ -1,0 +1,26 @@
+@import "./_header-rtl";
+@import "./_lk-header-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_bread-dot-rtl";
+
+html {
+	direction: rtl;
+}
+.inp label svg,
+.inp .inp-icon-info,
+.inp-icon-info {
+	right: auto;
+	left: 6px;
+}
+.inp label>span:first-child {
+	padding-right: 0;
+	padding-left: 30px;
+}
+.daterangepicker {
+	direction: rtl;
+	text-align: right;
+}
+.daterangepicker .calendar-table .next span {
+	-webkit-transform: rotate(135deg);
+}

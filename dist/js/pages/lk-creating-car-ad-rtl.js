@@ -15,9 +15,11 @@ tippyUse();
 $('.select-no-search').select2({
 	minimumResultsForSearch: -1,
 	theme: "search",
+	dir: 'rtl',
 });
 $('.select-search').select2({
 	theme: "search",
+	dir: 'rtl',
 });
 
 $('.inspection-up-to').daterangepicker({

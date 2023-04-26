@@ -1,0 +1,15 @@
+@import "./_header-rtl";
+@import "./_lk-header-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_bread-dot-rtl";
+
+html {
+	direction: rtl;
+}
+.block.category .block-cart .block-item:hover svg {
+	transform: scale(1.7) translate(4px, 0px);
+	@media screen and (max-width: 768px) {
+		transform: none;
+	}
+}

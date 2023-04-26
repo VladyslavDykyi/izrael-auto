@@ -75,3 +75,11 @@ html {
   color: #fefefe;
   margin: 8px 73px 24px auto;
 }
+
+@media screen and (max-width: 768px) {
+  .block.category .block-item:hover a svg {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}

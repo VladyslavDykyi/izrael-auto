@@ -8,11 +8,13 @@
 	<title>lk-header</title>
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/lib/select2.min.css">
-	<link rel="stylesheet" href="./css/lib/daterangepicker.min.css">
 	<link rel="stylesheet" href="./css/lib/arcticmodal.min.css">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-default.min.css">
 	<link rel="stylesheet" href="./css/pages/lk-add-post.min.css">
+	<!-- 26.04.2023 -->
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+	<link rel="stylesheet" href="./css/pages/lk-add-post-rtl.min.css">
 </head>
 <body class="">
 @@include('./html/_header-fix.html')
@@ -31,14 +33,14 @@
 <div class="bg-mob"></div>
 <script src="./js/lib/jquery.min.js"></script>
 <script src="./js/lib/select2.min.js"></script>
-<script src="./js/lib/propper.min.js"></script>
-<script src="./js/lib/tippy.min.js"></script>
-<script src="./js/lib/moment.min.js"></script>
-<script src="./js/lib/daterangepicker.min.js"></script>
 <script src="./js/lib/arcticmodal.min.js"></script>
 <script src="./js/default/header-lk.js"></script>
-<script src="./js/pages/lk-creating-car-ad.js"></script>
-<script src="./js/pages/lk-select2.js"></script>
+<!--<script src="./js/pages/lk-add-post.js"></script>-->
+<!--<script src="./js/pages/lk-select2.js"></script>-->
+<!-- 26.04.2023 -->
+<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<script src="./js/pages/lk-select2-rtl.js"></script>
+<script src="./js/pages/lk-add-post-rtl.js"></script>
 <!-- 24.04.2023 -->
 <script>
 	$('.user-avatar-lk-btn').on('click', () => {

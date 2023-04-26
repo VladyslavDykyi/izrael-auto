@@ -183,6 +183,8 @@
 .daterangepicker.show-calendar .drp-buttons {
 	display: flex;
 	align-items: center;
+	grid-gap: 10px;
+
 	& .cancelBtn {
 		margin-left: 0;
 	}

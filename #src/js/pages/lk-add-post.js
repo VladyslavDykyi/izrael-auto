@@ -1,34 +1,9 @@
-function tippyUse() {
-	tippy('[data-tippy-content]',
-		{
-			placement: 'top',
-			arrow: true,
-			theme: 'light-blueBorder',
-			duration: 0,
-			delay: [300, 500],
-			dynamicTitle: true,
-		});
-}
-
-tippyUse();
-
 $('.select-no-search').select2({
 	minimumResultsForSearch: -1,
 	theme: "search",
 });
 $('.select-search').select2({
 	theme: "search",
-});
-
-$('.inspection-up-to').daterangepicker({
-	"singleDatePicker": true,
-	"minYear": 2023,
-	"alwaysShowCalendars": true,
-	"startDate": "03/01/2023",
-	"endDate": "03/07/2023",
-	"minDate": "03/07/2023"
-}, function (start, end, label) {
-	console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
 });
 window.addEventListener("DOMContentLoaded", function () {
 	function fileFields(inp) {

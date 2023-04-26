@@ -468,6 +468,9 @@ input[type='number']::-webkit-inner-spin-button {
   color: #646464;
   display: inline-block;
   cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .check-box label span {

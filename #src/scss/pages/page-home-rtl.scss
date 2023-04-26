@@ -12,6 +12,9 @@ html {
 
 .block.category .block-item:hover a svg {
 	transform: scale(1.7) translate(4px, 0px);
+	@media screen and (max-width: 768px) {
+		transform: none;
+	}
 }
 
 .first-block-r {
