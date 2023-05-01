@@ -1,0 +1,50 @@
+@import "./_header-rtl";
+@import "./_bread-dot-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+
+html {
+	direction: rtl;
+}
+
+.block.slider .block-item.image .price {
+	right: 8px;
+	width: max-content;
+	direction: ltr;
+}
+.product-details-item .info > p,
+.product-description-price {
+	text-align: right;
+	direction: ltr;
+}
+.first-block-r {
+	right: auto;
+	left: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-l {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-btn {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-content-l > h3.t-3 {
+	color: #fefefe;
+	margin: 8px 73px 24px auto;
+}
+.product-comment-content .btn-comment,
+.product-description-favorite {
+	right: auto;
+	left: 0;
+}
+.popUp-title .product-description-salesman {
+	margin-right: 0;
+	margin-left: 50px;
+}

@@ -9,7 +9,6 @@
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/lib/slick.min.css">
 	<link rel="stylesheet" href="./css/lib/select2.min.css">
-<!--	<link rel="stylesheet" href="./css/lib/fancybox.min.css">-->
 	<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
@@ -17,6 +16,9 @@
 	<link rel="stylesheet" href="./css/lib/arcticmodal.min.css">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/page-one-product.min.css">
+	<!-- 01.05.2023 -->
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+	<link rel="stylesheet" href="./css/pages/page-one-product-rtl.min.css">
 </head>
 <body class="">
 @@include('./html/_header.html')
@@ -464,14 +466,17 @@
 <script src="./js/lib/jquery.min.js"></script>
 <script src="./js/lib/slick.min.js"></script>
 <script src="./js/lib/select2.min.js"></script>
-<!--<script src="./js/lib/fancybox.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
 <script src="./js/lib/arcticmodal.min.js"></script>
-<script src="./js/pages/page-one-product.min.js"></script>
 <script src="./js/default/header.min.js"></script>
-<script src="./js/pages/lk-select2.min.js"></script>
 <script src="./js/pages/seo-text.js"></script>
+<script src="./js/pages/page-one-product.min.js"></script>
+<!-- 01.05.2023 -->
+<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<!--<script src="./js/pages/page-one-product-ltr.min.js"></script>-->
+<!--<script src="./js/pages/lk-select2.min.js"></script>-->
+<script src="./js/pages/page-one-product-rtl.min.js"></script>
+<script src="./js/pages/lk-select2-rtl.min.js"></script>
 <!-- це для коментарів де всі -->
 <script>
 	Fancybox.bind('[data-fancybox="gallery1"]', {});
