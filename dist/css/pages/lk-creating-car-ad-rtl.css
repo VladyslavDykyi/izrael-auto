@@ -131,6 +131,21 @@ html {
           transform: rotate(135deg);
 }
 
+.check-box label {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.check-box label:after {
+  left: auto;
+  right: 0;
+}
+
+.check-box label:before {
+  left: auto;
+  right: 5px;
+}
+
 @media screen and (max-width: 1024px) {
   .lk-menu-item:first-of-type {
     text-align: right;
