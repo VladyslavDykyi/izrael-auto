@@ -1968,6 +1968,7 @@ div.block-cart.slider-car.slick-initialized .block-item {
 .adverts-item-text .adverts-item-price p {
   margin-bottom: 12px;
   color: #141414;
+  padding-right: 30px;
 }
 
 .adverts-item-text .adverts-item-price .price {

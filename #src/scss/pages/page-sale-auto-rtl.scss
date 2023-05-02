@@ -1,0 +1,105 @@
+@import "./_header-rtl";
+@import "./_bread-dot-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_pagination-rtl";
+
+html {
+	direction: rtl;
+}
+.block.slider .block-item.image .price {
+	right: 8px;
+	width: max-content;
+	direction: ltr;
+}
+
+.first-block-r {
+	right: auto;
+	left: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-l {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-btn {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-content-l > h3.t-3 {
+	color: #fefefe;
+	margin: 8px 73px 24px auto;
+}
+
+.block-form-cars {
+	padding-left: 0;
+	padding-right: 23px;
+}
+.block-form-main .main-inputs .wrapper-input-left,
+.block-form-main .main-inputs .wrapper-input-left input {
+	border-radius: 0 7px 7px 0;
+}
+.block-form-main .main-inputs .wrapper-input-right,
+.block-form-main .main-inputs .wrapper-input-right input {
+	border-radius: 7px 0 0 7px;
+}
+.block-form-main .main-inputs .wrapper-input-right:before {
+	left: auto;
+	right: 0;
+}
+.daterangepicker {
+	direction: rtl;
+	text-align: right;
+}
+.daterangepicker .calendar-table .next span {
+	transform: rotate(135deg);
+}
+.inp label svg {
+	right: auto;
+	left: 6px;
+}
+.daterangepicker .drp-buttons .btn {
+	margin-left: 0;
+	margin-right: 8px;
+}
+.block-form .wrapper-input.colum>span,
+.block-form .wrapper-select.colum>span {
+	padding-left: 0;
+	padding-right: 11px;
+	text-align: right;
+}
+.check-box label {
+	padding-left: 0;
+	padding-right: 35px;
+}
+.check-box label:after {
+	left: auto;
+	right: 0;
+}
+.check-box label:before {
+	right: 5px;
+	left: auto;
+}
+.block.category .block-cart .block-item.active svg,
+.block.category .block-cart .block-item:hover svg {
+	transform: scale(1.7) translate(2px,2px);
+}
+.adverts-item-text .adverts-item-favorite {
+	right: auto;
+	left: 0;
+}
+.adverts-item-text .adverts-item-price p {
+	text-align: right;
+	direction: ltr;
+	padding-right: 0;
+	padding-left: 30px;
+}
+.select2-container--search .select2-selection--multiple:after {
+	right: auto;
+	left: 8px;
+}

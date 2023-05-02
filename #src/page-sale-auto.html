@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="./css/lib/daterangepicker.min.css">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/page-sale-auto.min.css">
+	<!-- 01.05.2023 -->
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+	<link rel="stylesheet" href="./css/pages/page-sale-auto-rtl.min.css">
 </head>
 <body class="">
 @@include('./html/_header.html')
@@ -131,34 +134,69 @@
 <script src="./js/lib/arcticmodal.min.js"></script>
 <script src="./js/lib/moment.min.js"></script>
 <script src="./js/lib/daterangepicker.min.js"></script>
-<script src="./js/pages/page-sale-auto.min.js"></script>
 <script src="./js/default/header.min.js"></script>
+<script src="./js/pages/page-sale-auto.min.js"></script>
 <script src="./js/pages/seo-text.js"></script>
-<!-- оновлення 20.03.23  -->
+<!-- 01.05.2023 -->
+<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<!--<script src="./js/pages/page-sale-auto-ltr.min.js"></script>-->
+<script src="./js/pages/page-sale-auto-rtl.min.js"></script>
+<!--<script>-->
+<!--	$('.select-search').select2({-->
+<!--		theme: "search",-->
+<!--		placeholder: "",-->
+<!--	});-->
+<!--	$('.select-search-mark').select2({-->
+<!--		theme: "search",-->
+<!--		placeholder: "Марка",-->
+<!--	});-->
+<!--	$('.select-search-model').select2({-->
+<!--		theme: "search",-->
+<!--		placeholder: "Модель",-->
+<!--	});-->
+<!--	$('.select-search-city').select2({-->
+<!--		theme: "search",-->
+<!--		placeholder: "Город",-->
+<!--	});-->
+<!--	$('.select-search-generation').select2({-->
+<!--		theme: "search",-->
+<!--		placeholder: "Поколение",-->
+<!--	});-->
+<!--	$('.select-no-search').select2({-->
+<!--		minimumResultsForSearch: -1,-->
+<!--		theme: "search",-->
+<!--	});-->
+<!--</script>-->
 <script>
 	$('.select-search').select2({
 		theme: "search",
 		placeholder: "",
+		dir: 'rtl',
 	});
 	$('.select-search-mark').select2({
 		theme: "search",
 		placeholder: "Марка",
+		dir: 'rtl',
 	});
 	$('.select-search-model').select2({
 		theme: "search",
 		placeholder: "Модель",
+		dir: 'rtl',
 	});
 	$('.select-search-city').select2({
 		theme: "search",
 		placeholder: "Город",
+		dir: 'rtl',
 	});
 	$('.select-search-generation').select2({
 		theme: "search",
 		placeholder: "Поколение",
+		dir: 'rtl',
 	});
 	$('.select-no-search').select2({
 		minimumResultsForSearch: -1,
 		theme: "search",
+		dir: 'rtl',
 	});
 </script>
 

@@ -127,6 +127,8 @@ html {
 
 .daterangepicker .calendar-table .next span {
   -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 @media screen and (max-width: 1024px) {
