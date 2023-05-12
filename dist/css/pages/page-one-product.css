@@ -1983,14 +1983,6 @@ div.block-cart.slider-car.slick-initialized .block-item {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
-  .block-side-bar-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 74px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .first-block {
     height: 475px;
