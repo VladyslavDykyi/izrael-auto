@@ -24,6 +24,25 @@
 			}
 			&.disable {
 				opacity: .4;
+
+				&:hover {
+					background-color: #f0f0f0;
+					border-bottom: 1px solid transparent;
+
+					& a {
+						color: #141414;
+						cursor: auto;
+						& svg {
+							transform: scale(1) translate(0, 0);
+							@media screen and (max-width: 768px) {
+								transform: none;
+							}
+							& path {
+								fill: #141414;
+							}
+						}
+					}
+				}
 			}
 			& a {
 				height: 100%;

@@ -61,6 +61,18 @@
   padding: 10px 10px 10px 20px;
 }
 
+.next:before {
+  -webkit-transform: rotate(45deg) translate(2px, -2px);
+      -ms-transform: rotate(45deg) translate(2px, -2px);
+          transform: rotate(45deg) translate(2px, -2px);
+}
+
+.prev:before {
+  -webkit-transform: rotate(225deg) translate(2px, -2px);
+      -ms-transform: rotate(225deg) translate(2px, -2px);
+          transform: rotate(225deg) translate(2px, -2px);
+}
+
 html {
   direction: rtl;
 }

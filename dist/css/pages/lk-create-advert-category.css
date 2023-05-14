@@ -18,6 +18,26 @@
   opacity: .4;
 }
 
+.block.category .block-item.disable:hover {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid transparent;
+}
+
+.block.category .block-item.disable:hover a {
+  color: #141414;
+  cursor: auto;
+}
+
+.block.category .block-item.disable:hover a svg {
+  -webkit-transform: scale(1) translate(0, 0);
+      -ms-transform: scale(1) translate(0, 0);
+          transform: scale(1) translate(0, 0);
+}
+
+.block.category .block-item.disable:hover a svg path {
+  fill: #141414;
+}
+
 .block.category .block-item a {
   height: 100%;
   width: 100%;
@@ -189,6 +209,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .block.category .block-item.disable:hover a svg {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
   .block.category .block-item:hover a svg {
     -webkit-transform: none;
         -ms-transform: none;

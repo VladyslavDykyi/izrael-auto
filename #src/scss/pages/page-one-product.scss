@@ -9,6 +9,11 @@
 @import "./_seo-text";
 @import "./_rating";
 @import "./_popUp-lk";
+@import "../default/_my__pagination";
+
+.pagination {
+	margin: 0;
+}
 
 .bg-site {
 	padding-bottom: 60px;
@@ -255,6 +260,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			grid-gap: 10px 25px;
+			margin-bottom: 30px;
 		}
 		& .params-item {
 			flex: 0 1 calc(50% - 12.5px);
@@ -642,12 +648,12 @@
 	}
 }
 .comment-see-all a {
-	display: block;
-	background: #dee7ed;
-	color: #141414;
-	border-radius: 10px;
-	padding: 11px;
-	text-align: center;
+	//display: block;
+	//background: #dee7ed;
+	//color: #141414;
+	//border-radius: 10px;
+	//padding: 11px;
+	//text-align: center;
 }
 .banner-big {
 	margin: 60px 0 30px;
