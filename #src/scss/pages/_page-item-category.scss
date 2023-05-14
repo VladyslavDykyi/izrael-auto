@@ -22,24 +22,9 @@
 			@media screen and (max-width: 480px) {
 				max-width: calc(50% - 9.5px);
 			}
-
-			&:last-child {
-				& a {
-					flex-direction: row-reverse;
-					@media screen and (max-width: 1024px) {
-						flex-direction: column-reverse;
-					}
-				}
-				&:hover {
-					& svg {
-						transform: none;
-						& path {
-							fill: $dark_blue2;
-						}
-					}
-				}
+			&.disable {
+				opacity: .4;
 			}
-
 			& a {
 				height: 100%;
 				width: 100%;
@@ -64,15 +49,6 @@
 				& svg {
 					transition: all .2s linear;
 					padding: 0 2px;
-				}
-
-				& span:last-of-type {
-					flex: 0 1 calc(100% - 80px);
-					display: block;
-					max-width: 109px;
-					@media screen and (max-width: 1024px) {
-						text-align: center;
-					}
 				}
 			}
 
