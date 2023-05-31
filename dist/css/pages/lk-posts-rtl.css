@@ -126,6 +126,28 @@ html {
   margin-right: auto;
 }
 
+.advert-item-btn .days {
+  right: auto;
+  left: 0;
+}
+
+.advert-item-btn .days p:first-child {
+  text-align: left;
+}
+
+.advert-mob-item-btn .mob-btn-action-drop ul li a,
+.advert-mob-item-btn .mob-btn-action-drop ul li button,
+.advert-item-btn .btn-action-drop ul li a,
+.advert-item-btn .btn-action-drop ul li button {
+  padding: 6px 21px 6px 0;
+  text-align: right;
+}
+
+.advert-mob-item-btn .mob-btn-action-drop {
+  right: auto;
+  left: 0;
+}
+
 @media screen and (max-width: 1024px) {
   .lk-menu-item:first-of-type {
     text-align: right;

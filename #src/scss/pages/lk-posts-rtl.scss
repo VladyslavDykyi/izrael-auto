@@ -13,3 +13,22 @@ html {
 	margin-left: 0;
 	margin-right: auto;
 }
+
+.advert-item-btn .days {
+	right: auto;
+	left: 0;
+	& p:first-child {
+		text-align: left;
+	}
+}
+.advert-mob-item-btn .mob-btn-action-drop ul li a,
+.advert-mob-item-btn .mob-btn-action-drop ul li button,
+.advert-item-btn .btn-action-drop ul li a,
+.advert-item-btn .btn-action-drop ul li button {
+	padding: 6px 21px 6px 0;
+	text-align: right;
+}
+.advert-mob-item-btn .mob-btn-action-drop {
+	right: auto;
+	left: 0;
+}

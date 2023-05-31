@@ -30,7 +30,32 @@
 @@include('./html/_footer.html')
 <!-- 10.03 -->
 @@include('./html/_popUp-lk-support.html')
+<div style="display:none;">
+	<div class="popUp xl graphics-popUp graphics-p" id="">
+		<div class="popUp-title">
+			<h2 class="t-medium ">Статистика просмотров и лайков</h2>
+			<div class="popUp-title-close box-modal_close arcticmodal-close">
+				<button class="reset-btn t-regular t-7" type="button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M20.781 3.21936C20.8508 3.28903 20.9062 3.3718 20.944 3.46291C20.9818 3.55403 21.0013 3.65171 21.0013 3.75036C21.0013 3.84902 20.9818 3.9467 20.944 4.03781C20.9062 4.12893 20.8508 4.2117 20.781 4.28136L4.28097 20.7814C4.14014 20.9222 3.94913 21.0013 3.74997 21.0013C3.55081 21.0013 3.3598 20.9222 3.21897 20.7814C3.07814 20.6405 2.99902 20.4495 2.99902 20.2504C2.99902 20.0512 3.07814 19.8602 3.21897 19.7194L19.719 3.21936C19.7886 3.14952 19.8714 3.09411 19.9625 3.0563C20.0536 3.01849 20.1513 2.99902 20.25 2.99902C20.3486 2.99902 20.4463 3.01849 20.5374 3.0563C20.6285 3.09411 20.7113 3.14952 20.781 3.21936Z"
+							  fill="#666666"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M3.219 3.21936C3.14915 3.28903 3.09374 3.3718 3.05593 3.46291C3.01812 3.55403 2.99866 3.65171 2.99866 3.75036C2.99866 3.84902 3.01812 3.9467 3.05593 4.03781C3.09374 4.12893 3.14915 4.2117 3.219 4.28136L19.719 20.7814C19.8598 20.9222 20.0508 21.0013 20.25 21.0013C20.4492 21.0013 20.6402 20.9222 20.781 20.7814C20.9218 20.6405 21.0009 20.4495 21.0009 20.2504C21.0009 20.0512 20.9218 19.8602 20.781 19.7194L4.281 3.21936C4.21133 3.14952 4.12857 3.09411 4.03745 3.0563C3.94633 3.01849 3.84865 2.99902 3.75 2.99902C3.65135 2.99902 3.55367 3.01849 3.46255 3.0563C3.37143 3.09411 3.28867 3.14952 3.219 3.21936Z"
+							  fill="#666666"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="popUp-content">
+			<div class="popUp-content-graphics">
+				<canvas id="myChart"></canvas>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="bg-mob"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./js/lib/jquery.min.js"></script>
 <script src="./js/lib/select2.min.js"></script>
 <script src="./js/lib/arcticmodal.min.js"></script>
@@ -39,11 +64,53 @@
 <script src="./js/pages/lk-select2.js"></script>
 <!-- 26.04.2023 -->
 <!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
-<script src="./js/pages/lk-select2-rtl.js"></script>
+<!--<script src="./js/pages/lk-select2-rtl.js"></script>-->
 <!-- 24.04.2023 -->
+<script>
+	const ctx = document.getElementById('myChart');
+
+	new Chart(ctx, {
+		type: 'bar',
+		data: {
+			labels: ['28.02.2023', '01.03.2023', '02.03.2023', '03.03.2023', '04.03.2023', '06.03.2023',],
+			datasets: [{
+				label: 'Количество просмотров',
+				data: [12, 19, 3, 5, 21, 3],
+				borderWidth: 0,
+				backgroundColor: '#2AA3DE',
+			},
+				{
+					label: 'Количество лайков',
+					data: [12, 1, 4, 5, 3, 31],
+					borderWidth: 0,
+					backgroundColor: '#fd7676',
+				}
+			]
+		},
+		options: {
+			plugins: {
+				legend: {
+					rtl: true,
+				}
+			},
+			legend: {
+				display: false,
+			},
+			scales: {
+				y: {
+					beginAtZero: true
+				}
+			}
+		}
+	});
+</script>
+
 <script>
 	$('.user-avatar-lk-btn').on('click', () => {
 		$('#popUpAvatar').arcticmodal();
+	});
+	$('.graphics').on('click', () => {
+		$('.graphics-p').arcticmodal();
 	});
 </script>
 </body>

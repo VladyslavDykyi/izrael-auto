@@ -145,3 +145,16 @@ if (window.innerWidth <= 1024) {
 	});
 // мобілка burger кінець
 }
+const forceFocusFn = function() {
+	// Gets the search input of the opened select2
+	const searchInput = document.querySelector('.select2-container--open .select2-search__field');
+	// If exists
+	if (searchInput)
+		searchInput.focus(); // focus
+};
+
+// Every time a select2 is opened
+$(document).on('select2:open', () => {
+	// We use a timeout because when a select2 is already opened and you open a new one, it has to wait to find the appropiate
+	setTimeout(() => forceFocusFn(), 100);
+});
