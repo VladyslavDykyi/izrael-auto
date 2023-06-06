@@ -15,6 +15,12 @@
 	&.t-3 {
 		@include use-size(20px, 24px);
 	}
+	&.t-4 {
+		@include use-size(14px, 17px);
+	}
+	&.t-5 {
+		@include use-size(16px, 19px);
+	}
 }
 .t-semiBold {
 	@include use-font($I-sb, 600);
@@ -29,6 +35,9 @@
 	}
 	&.t-3 {
 		@include use-size(16px, 19px);
+	}
+	&.t-4 {
+		@include use-size(18px, 22px);
 	}
 }
 .t-medium {

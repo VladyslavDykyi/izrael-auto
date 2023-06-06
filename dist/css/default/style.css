@@ -1129,6 +1129,16 @@ input[type='number']::-webkit-inner-spin-button {
   line-height: 24px;
 }
 
+.t-bold.t-4 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.t-bold.t-5 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .t-semiBold {
   font-family: "Inter-SemiBold", sans-serif;
   font-weight: 600;
@@ -1152,6 +1162,11 @@ input[type='number']::-webkit-inner-spin-button {
 .t-semiBold.t-3 {
   font-size: 16px;
   line-height: 19px;
+}
+
+.t-semiBold.t-4 {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .t-medium {
