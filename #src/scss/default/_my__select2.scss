@@ -40,21 +40,23 @@
 	& .select2-dropdown {
 		border-color:  transparent;
 		padding: 8px 3px 8px 8px;
-		max-height: 188px;
-		overflow: auto;
-		&::-webkit-scrollbar {
-			border-radius: 3px;
-			width: 7px;
-			height: 8px;
-		}
-		&::-webkit-scrollbar-thumb {
-			border-radius: 3px;
-			height: 8px;
-		}
+
 		& .select2-search__field {
 			border-color: transparent;
 		}
-		& .select2-results__option {
+		& .select2-results__options {
+			max-height: 188px;
+			overflow: auto;
+			&::-webkit-scrollbar {
+				border-radius: 3px;
+				width: 7px;
+				height: 8px;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius: 3px;
+				height: 8px;
+				background-color: $grey;
+			}
 			&:hover {
 				border-radius: 3px;
 			}
@@ -141,20 +143,10 @@
 		border-radius: 7px;
 		border: none;
 		padding: 8px 3px 8px 8px;
-		max-height: 188px;
-		overflow: auto;
+
 		border-bottom: 1px solid #BF1616;
 		box-shadow: 0 4px 4px #c1c4cd;
-		&::-webkit-scrollbar {
-			width: 4px;
-			height: 8px;
-			border-radius: 4px;
-		}
-		&::-webkit-scrollbar-thumb {
-			border-radius: 4px;
-			background: #C6C6C6;
-			height: 8px;
-		}
+
 		& .select2-search__field {
 			border: 1px solid $dark_grey;
 			border-radius: 7px;
@@ -166,11 +158,30 @@
 			}
 		}
 	}
+	& .select2-results__options {
+		max-height: 188px;
+		overflow: auto;
+		&::-webkit-scrollbar {
+			border-radius: 3px;
+			width: 7px;
+			height: 8px;
+
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 3px;
+			height: 8px;
+			background-color: $grey;
+		}
+		&:hover {
+			border-radius: 3px;
+		}
+	}
 	& .select2-results__option {
 		@include use-font($I-r, 400);
 		@include use-size(14px, 18px);
 		color: $black_new;
 		padding: 7px 4px;
+
 	}
 	& .select2-container .select2-selection--single .select2-selection__rendered {
 		padding-left: 0;
