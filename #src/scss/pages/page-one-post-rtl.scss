@@ -1,0 +1,44 @@
+@import "./_header-rtl";
+@import "./_bread-dot-rtl";
+@import "./_popup-rtl";
+@import "./_select2-rtl";
+@import "./_pagination-rtl";
+
+html {
+	direction: rtl;
+}
+.first-block-r {
+	right: auto;
+	left: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-l {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+
+.first-block-btn {
+	left: auto;
+	right: 0;
+	transform: rotateY(180deg);
+}
+.first-block-content-l > h3.t-3 {
+	color: #fefefe;
+	margin: 8px 73px 24px auto;
+}
+.product-description-name {
+	padding-right: 0;
+	padding-left: 40px;
+}
+.advert-item-favorite,
+.product-comment-content .btn-comment,
+.product-description-favorite {
+	right: auto;
+	left: 0;
+}
+.product-comment-content .comment-content-item.answer {
+	padding-left: 0;
+	padding-right: 46px;
+}

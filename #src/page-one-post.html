@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Page-home</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/lib/slick.min.css">
+	<link rel="stylesheet" href="./css/lib/select2.min.css">
+	<link rel="stylesheet" href="./css/lib/arcticmodal.min.css">
+	<link rel="stylesheet" href="./css/default/style.min.css">
+	<link rel="stylesheet" href="./css/pages/page-one-post.min.css">
+	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+		<link rel="stylesheet" href="./css/pages/page-one-post-rtl.min.css">
+</head>
+<body class="">
+@@include('./html/_header.html')
+<main class="bg-site">
+	@@include('./html/_page-blog-first-block.html')
+	<div class="container">
+		@@include('./html/_bread-dots.html')
+	</div>
+	<div class="container">
+		@@include('./html/_page-one-post.html')
+	</div>
+	<div class="container">
+		<section class="seo-text">
+			<div class="seo-text-block">
+				<h1>Как правильно подобрать автозапчасти</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac eleifend libero. Ut vehicula elit sed magna feugiat porta. Nullam mollis leo neque, a mattis quam aliquam convallis. Suspendisse aliquet lobortis convallis. Proin quis commodo lacus. Nunc vitae nulla sed massa ornare finibus eget sit amet turpis. Proin hendrerit ut arcu eget tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla eros mi, luctus et ornare vel, imperdiet sed ligula. Fusce egestas neque nec semper consectetur. Proin sagittis arcu vel orci lacinia, id blandit purus varius. Vivamus varius mollis bibendum. Nam orci turpis, sollicitudin vitae iaculis a, sollicitudin eu nunc. Praesent fringilla mauris ac nibh bibendum lacinia.
+					<br><br>
+					Donec vitae justo eu massa bibendum semper. Cras sagittis, mi a finibus cursus, velit neque viverra libero, nec mollis orci nisl nec nunc. Nullam quis ipsum elit. Praesent volutpat porttitor massa sed volutpat. Nam posuere orci ac erat tristique, sed euismod dolor congue. Proin id laoreet ipsum, quis tempus diam. In ut semper neque. Vivamus pretium, felis vitae scelerisque sodales, felis orci imperdiet purus, nec eleifend turpis leo in tortor. Praesent vehicula aliquam augue in blandit. Suspendisse sed pulvinar neque. Nulla laoreet purus sed enim feugiat, et congue lacus lacinia. Etiam congue nibh interdum, convallis enim ut, facilisis mauris. Suspendisse vitae odio in magna bibendum pellentesque. Sed sit amet lacus consequat, posuere diam et, blandit est. Proin suscipit, urna nec porta tempus, risus lacus dignissim nibh, quis molestie dui est faucibus libero. Nulla eu augue condimentum, cursus libero id, maximus velit.
+					Maecenas tempus nisl congue, tristique ligula a, finibus urna. Curabitur mollis metus nec ante tristique semper. Fusce euismod justo ut purus eleifend, eget posuere velit suscipit. Aliquam ac nulla sodales mauris lacinia semper. Nullam in nulla nunc. Vivamus convallis ac enim eget tempus. Pellentesque euismod, odio vel commodo congue, lorem risus varius ipsum, vitae maximus mi sapien ac velit. Pellentesque ac erat sapien. Nam rutrum, tortor a lacinia vestibulum, nunc nisi iaculis libero, vitae pulvinar magna velit sit amet mi. Quisque convallis lobortis venenatis. Donec at dapibus nulla. Quisque quis scelerisque massa, id mollis tortor. Vestibulum quis leo sit amet risus bibendum varius quis pellentesque arcu.
+					In gravida lectus in ipsum malesuada vehicula. Sed congue dapibus auctor. Integer a lacus id leo finibus venenatis id eu velit. Mauris at quam vitae ligula aliquam maximus ut sed diam. In bibendum, lorem scelerisque feugiat fringilla, neque nunc volutpat metus, sed volutpat orci ante id purus. Suspendisse potenti. Fusce porttitor nulla mattis libero malesuada vehicula. Pellentesque condimentum, massa ac placerat congue, urna enim consectetur nulla, sit amet ultricies erat erat nec ante.
+					Sed dignissim vulputate pharetra. Nullam ultrices nunc et lacus rutrum, ut luctus ex semper. Nulla tristique id libero ut semper. In gravida mattis nunc porttitor accumsan. Praesent tempor quam lectus, sit amet rhoncus risus feugiat et. Nunc vel nunc auctor, condimentum elit quis, imperdiet felis. Ut ac dui eu tellus lacinia convallis. Fusce sollicitudin eros in turpis molestie eleifend. Fusce fringilla erat id ullamcorper fermentum.
+				</p>
+				<div></div><!-- цей дів для функції відкривання всього блоку -->
+			</div>
+		</section>
+	</div>
+</main>
+@@include('./html/_footer.html')
+<div class="bg-mob"></div>
+<div style="display:none;">
+	<div class="popUp m" id="action-complain">
+		<div class="popUp-title">
+			<h2 class="t-regular">
+				Пожаловаться
+			</h2>
+			<div class="popUp-title-close box-modal_close arcticmodal-close">
+				<button class="reset-btn t-regular t-7" type="button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M20.781 3.21936C20.8508 3.28903 20.9062 3.3718 20.944 3.46291C20.9818 3.55403 21.0013 3.65171 21.0013 3.75036C21.0013 3.84902 20.9818 3.9467 20.944 4.03781C20.9062 4.12893 20.8508 4.2117 20.781 4.28136L4.28097 20.7814C4.14014 20.9222 3.94913 21.0013 3.74997 21.0013C3.55081 21.0013 3.3598 20.9222 3.21897 20.7814C3.07814 20.6405 2.99902 20.4495 2.99902 20.2504C2.99902 20.0512 3.07814 19.8602 3.21897 19.7194L19.719 3.21936C19.7886 3.14952 19.8714 3.09411 19.9625 3.0563C20.0536 3.01849 20.1513 2.99902 20.25 2.99902C20.3486 2.99902 20.4463 3.01849 20.5374 3.0563C20.6285 3.09411 20.7113 3.14952 20.781 3.21936Z"
+							  fill="#666666"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M3.219 3.21936C3.14915 3.28903 3.09374 3.3718 3.05593 3.46291C3.01812 3.55403 2.99866 3.65171 2.99866 3.75036C2.99866 3.84902 3.01812 3.9467 3.05593 4.03781C3.09374 4.12893 3.14915 4.2117 3.219 4.28136L19.719 20.7814C19.8598 20.9222 20.0508 21.0013 20.25 21.0013C20.4492 21.0013 20.6402 20.9222 20.781 20.7814C20.9218 20.6405 21.0009 20.4495 21.0009 20.2504C21.0009 20.0512 20.9218 19.8602 20.781 19.7194L4.281 3.21936C4.21133 3.14952 4.12857 3.09411 4.03745 3.0563C3.94633 3.01849 3.84865 2.99902 3.75 2.99902C3.65135 2.99902 3.55367 3.01849 3.46255 3.0563C3.37143 3.09411 3.28867 3.14952 3.219 3.21936Z"
+							  fill="#666666"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<form class="popUp-form" action="#">
+			<div class="wrapper-select">
+				<label>
+					<span class="t-regular t-7">Выберите причину</span>
+					<select class="select-no-search">
+						<option value="">
+							423432423
+						</option>
+						<option value="">
+							432432423
+						</option>
+					</select>
+				</label>
+			</div>
+			<div class="wrapper-input">
+				<div class="inp grey">
+					<!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Ваш комментарий</span>
+						<input type="text" name="text-users" placeholder="Коментарий" required>
+					</label>
+					<p class="error">Пожалуйста, введите адрес электронной почты.</p>
+				</div>
+			</div>
+			<div class="popUp-form-btn">
+				<button class="btn blue s" id="btn-action-complain" type="submit">
+					Отправить
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div style="display:none;">
+	<div class="popUp m" id="product-description-messages">
+		<div class="popUp-title">
+			<h2 class="t-regular">
+				Напишите ваше сообщение
+			</h2>
+			<div class="popUp-title-close box-modal_close arcticmodal-close">
+				<button class="reset-btn t-regular t-7" type="button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M20.781 3.21936C20.8508 3.28903 20.9062 3.3718 20.944 3.46291C20.9818 3.55403 21.0013 3.65171 21.0013 3.75036C21.0013 3.84902 20.9818 3.9467 20.944 4.03781C20.9062 4.12893 20.8508 4.2117 20.781 4.28136L4.28097 20.7814C4.14014 20.9222 3.94913 21.0013 3.74997 21.0013C3.55081 21.0013 3.3598 20.9222 3.21897 20.7814C3.07814 20.6405 2.99902 20.4495 2.99902 20.2504C2.99902 20.0512 3.07814 19.8602 3.21897 19.7194L19.719 3.21936C19.7886 3.14952 19.8714 3.09411 19.9625 3.0563C20.0536 3.01849 20.1513 2.99902 20.25 2.99902C20.3486 2.99902 20.4463 3.01849 20.5374 3.0563C20.6285 3.09411 20.7113 3.14952 20.781 3.21936Z"
+							  fill="#666666"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M3.219 3.21936C3.14915 3.28903 3.09374 3.3718 3.05593 3.46291C3.01812 3.55403 2.99866 3.65171 2.99866 3.75036C2.99866 3.84902 3.01812 3.9467 3.05593 4.03781C3.09374 4.12893 3.14915 4.2117 3.219 4.28136L19.719 20.7814C19.8598 20.9222 20.0508 21.0013 20.25 21.0013C20.4492 21.0013 20.6402 20.9222 20.781 20.7814C20.9218 20.6405 21.0009 20.4495 21.0009 20.2504C21.0009 20.0512 20.9218 19.8602 20.781 19.7194L4.281 3.21936C4.21133 3.14952 4.12857 3.09411 4.03745 3.0563C3.94633 3.01849 3.84865 2.99902 3.75 2.99902C3.65135 2.99902 3.55367 3.01849 3.46255 3.0563C3.37143 3.09411 3.28867 3.14952 3.219 3.21936Z"
+							  fill="#666666"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<form class="popUp-form" action="#">
+			<div class="wrapper-input">
+				<div class="inp grey">
+					<!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Ваше сообщение</span>
+						<input type="text" name="text-users" placeholder="сообщение" required>
+					</label>
+					<p class="error">Пожалуйста, введите адрес электронной почты.</p>
+				</div>
+			</div>
+			<div class="popUp-form-btn">
+				<button class="btn blue s" id="product-description-messages-complain" type="submit">
+					Отправить
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div style="display:none;">
+	<div class="popUp m" id="action-comment">
+		<div class="popUp-title">
+			<h2 class="t-regular">
+				Оставить коментарий
+			</h2>
+			<div class="popUp-title-close box-modal_close arcticmodal-close">
+				<button class="reset-btn t-regular t-7" type="button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M20.781 3.21936C20.8508 3.28903 20.9062 3.3718 20.944 3.46291C20.9818 3.55403 21.0013 3.65171 21.0013 3.75036C21.0013 3.84902 20.9818 3.9467 20.944 4.03781C20.9062 4.12893 20.8508 4.2117 20.781 4.28136L4.28097 20.7814C4.14014 20.9222 3.94913 21.0013 3.74997 21.0013C3.55081 21.0013 3.3598 20.9222 3.21897 20.7814C3.07814 20.6405 2.99902 20.4495 2.99902 20.2504C2.99902 20.0512 3.07814 19.8602 3.21897 19.7194L19.719 3.21936C19.7886 3.14952 19.8714 3.09411 19.9625 3.0563C20.0536 3.01849 20.1513 2.99902 20.25 2.99902C20.3486 2.99902 20.4463 3.01849 20.5374 3.0563C20.6285 3.09411 20.7113 3.14952 20.781 3.21936Z"
+							  fill="#666666"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M3.219 3.21936C3.14915 3.28903 3.09374 3.3718 3.05593 3.46291C3.01812 3.55403 2.99866 3.65171 2.99866 3.75036C2.99866 3.84902 3.01812 3.9467 3.05593 4.03781C3.09374 4.12893 3.14915 4.2117 3.219 4.28136L19.719 20.7814C19.8598 20.9222 20.0508 21.0013 20.25 21.0013C20.4492 21.0013 20.6402 20.9222 20.781 20.7814C20.9218 20.6405 21.0009 20.4495 21.0009 20.2504C21.0009 20.0512 20.9218 19.8602 20.781 19.7194L4.281 3.21936C4.21133 3.14952 4.12857 3.09411 4.03745 3.0563C3.94633 3.01849 3.84865 2.99902 3.75 2.99902C3.65135 2.99902 3.55367 3.01849 3.46255 3.0563C3.37143 3.09411 3.28867 3.14952 3.219 3.21936Z"
+							  fill="#666666"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<form class="popUp-form" action="#">
+			<div class="wrapper-input">
+				<div class="inp grey">
+					<!-- якщо потрібна показати помилку, то у цей дів повинен додатись клас active -->
+					<label>
+						<span>Ваш комментарий</span>
+						<input type="text" name="text-users" placeholder="Коментарий" required>
+					</label>
+					<p class="error">Пожалуйста, введите адрес электронной почты.</p>
+				</div>
+			</div>
+			<div class="popUp-form-btn">
+				<button class="btn blue s" id="btn-action-share" type="submit">
+					Отправить
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div style="display:none;">
+	<div class="popUp m" id="action-complain-thank">
+		<div class="popUp-title">
+			<div class="popUp-title-close box-modal_close arcticmodal-close">
+				<button class="reset-btn t-regular t-7" type="button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M20.781 3.21936C20.8508 3.28903 20.9062 3.3718 20.944 3.46291C20.9818 3.55403 21.0013 3.65171 21.0013 3.75036C21.0013 3.84902 20.9818 3.9467 20.944 4.03781C20.9062 4.12893 20.8508 4.2117 20.781 4.28136L4.28097 20.7814C4.14014 20.9222 3.94913 21.0013 3.74997 21.0013C3.55081 21.0013 3.3598 20.9222 3.21897 20.7814C3.07814 20.6405 2.99902 20.4495 2.99902 20.2504C2.99902 20.0512 3.07814 19.8602 3.21897 19.7194L19.719 3.21936C19.7886 3.14952 19.8714 3.09411 19.9625 3.0563C20.0536 3.01849 20.1513 2.99902 20.25 2.99902C20.3486 2.99902 20.4463 3.01849 20.5374 3.0563C20.6285 3.09411 20.7113 3.14952 20.781 3.21936Z"
+							  fill="#666666"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							  d="M3.219 3.21936C3.14915 3.28903 3.09374 3.3718 3.05593 3.46291C3.01812 3.55403 2.99866 3.65171 2.99866 3.75036C2.99866 3.84902 3.01812 3.9467 3.05593 4.03781C3.09374 4.12893 3.14915 4.2117 3.219 4.28136L19.719 20.7814C19.8598 20.9222 20.0508 21.0013 20.25 21.0013C20.4492 21.0013 20.6402 20.9222 20.781 20.7814C20.9218 20.6405 21.0009 20.4495 21.0009 20.2504C21.0009 20.0512 20.9218 19.8602 20.781 19.7194L4.281 3.21936C4.21133 3.14952 4.12857 3.09411 4.03745 3.0563C3.94633 3.01849 3.84865 2.99902 3.75 2.99902C3.65135 2.99902 3.55367 3.01849 3.46255 3.0563C3.37143 3.09411 3.28867 3.14952 3.219 3.21936Z"
+							  fill="#666666"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="popUp-content">
+			<h2 class="t-medium ">Ваша жалоба принята!</h2>
+		</div>
+	</div>
+</div>
+<script src="./js/lib/jquery.min.js"></script>
+<script src="./js/lib/slick.min.js"></script>
+<script src="./js/lib/select2.min.js"></script>
+<script src="./js/lib/arcticmodal.min.js"></script>
+<script src="./js/default/header.min.js"></script>
+<script src="./js/pages/seo-text.js"></script>
+<script src="./js/pages/page-one-post.min.js"></script>
+<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
+<!--<script src="./js/pages/page-one-post-ltr.min.js"></script>-->
+<script src="./js/pages/lk-select2.min.js"></script>
+<script src="./js/pages/page-one-post-rtl.min.js"></script>
+<script src="./js/pages/lk-select2-rtl.min.js"></script>
+</body>
+</html>

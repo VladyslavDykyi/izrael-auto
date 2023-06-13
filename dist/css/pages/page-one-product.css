@@ -1399,6 +1399,18 @@ div.block-cart.slider-car.slick-initialized .block-item {
   color: #666666;
 }
 
+.product-description-date p:last-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10px;
+}
+
 .product-description-action {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2048,9 +2060,9 @@ div.block-cart.slider-car.slick-initialized .block-item {
   right: 0;
   top: 0;
   z-index: 10;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.4)), to(rgba(17, 17, 17, 0.4))), url(.jpg);
-  background: -o-linear-gradient(bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.jpg);
-  background: linear-gradient(0deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.4)), to(rgba(17, 17, 17, 0.4)));
+  background: -o-linear-gradient(bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4));
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4));
   -webkit-border-radius: 7px;
           border-radius: 7px;
   width: 100%;
@@ -2503,9 +2515,3 @@ div.block-cart.slider-car.slick-initialized .block-item {
 .webp .first-block-l{ background-image: url(../../img/2.webp); }
 
 .webp .first-block-r{ background: right/cover no-repeat url(../../img/1.webp); }
-
-.webp .file-delete{ background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.4)), to(rgba(17, 17, 17, 0.4))), url(.webp); }
-
-.webp .file-delete{ background: -o-linear-gradient(bottom, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.webp); }
-
-.webp .file-delete{ background: linear-gradient(0deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(.webp); }
