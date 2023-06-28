@@ -7,6 +7,10 @@
 			flex-wrap: wrap;
 			grid-gap: 19px;
 		}
+		& .block-last {
+			flex-wrap: wrap;
+			grid-gap: 19px;
+		}
 		& .block-item {
 			padding: 0 6px 0 12px;
 			border-radius: 7px;
@@ -19,6 +23,7 @@
 				flex: 0 1 calc(50% - 9.5px);
 			}
 			&:last-child {
+				order: 5;
 				background-color:transparent;
 				&:hover {
 					& path {
@@ -28,6 +33,7 @@
 				}
 			}
 			& div,
+			& button,
 			& a {
 				align-items: center;
 				display: flex;
@@ -45,6 +51,7 @@
 				}
 			}
 			&:hover {
+				& button,
 				& a {
 					color: $red;
 				}

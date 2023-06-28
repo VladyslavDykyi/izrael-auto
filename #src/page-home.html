@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/pages/page-home.min.css">
 	<!-- є ltr або rtl при перемиканні або ініціалізації сторінки підключається той що потрібен-->
-	<link rel="stylesheet" href="./css/pages/page-home-rtl.min.css">
+<!--	<link rel="stylesheet" href="./css/pages/page-home-rtl.min.css">-->
 </head>
 <body class="">
 @@include('./html/_header.html')
@@ -31,7 +31,14 @@
 <script src="./js/pages/page-home-rtl.js"></script>
 <script src="./js/pages/seo-text.js"></script>
 <script src="./js/default/header.js"></script>
-
-
+<!-- 28.06.2023 -->
+<script>
+	const btnWatch = document.querySelector('#watch-all');
+	btnWatch.addEventListener('click',(e) => {
+		e.stopPropagation();
+		console.log(btnWatch);
+		btnWatch.parentElement.parentElement.classList.toggle('active');
+	})
+</script>
 </body>
 </html>

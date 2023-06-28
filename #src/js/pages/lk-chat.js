@@ -12,3 +12,6 @@ function handleFiles() {
 		fileName.append(item);
 	}
 }
+// 28.06.2023
+const messageList = document.querySelector('.message-main-list');
+messageList.scrollTo(0, messageList.scrollHeight);
