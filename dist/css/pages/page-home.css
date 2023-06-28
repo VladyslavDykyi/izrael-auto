@@ -225,13 +225,29 @@
   z-index: -10;
 }
 
+.first-block-btn {
+  position: absolute;
+  width: 100%;
+  height: 406px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-image: url("../../img/Union.svg");
+  background-size: 7.5% 100%;
+  background-repeat: no-repeat;
+  background-position: 65.5% 0;
+}
+
 .first-block-r {
   position: absolute;
   right: 0;
   top: 0;
   width: 39.1%;
   height: 406px;
-  background: right/cover no-repeat url("../../img/1.jpg");
+  background-image: url("../../img/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
   -webkit-clip-path: polygon(18% 0, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(18% 0, 100% 0%, 100% 100%, 0% 100%);
 }
@@ -397,17 +413,6 @@
 
 .first-block-content-r > a.t-7:hover {
   background: rgba(254, 254, 254, 0.3);
-}
-
-.first-block-btn {
-  position: absolute;
-  width: 100%;
-  height: 406px;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  background: url("../../img/Union.svg") no-repeat 65.5%;
-  background-size: 7.5% 100%;
 }
 
 .block.search .block-cart {
@@ -1310,6 +1315,13 @@ div.block-cart.slider-car.slick-initialized .block-item {
             clip-path: polygon(0 0, 100% 0, 100% 62%, 0 100%);
   }
 
+  .first-block-btn {
+    height: 475px;
+    background-size: 120% 31%;
+    background-repeat: no-repeat;
+    background-position: 50% 62%;
+  }
+
   .first-block-r {
     height: 260px;
     width: 100%;
@@ -1390,12 +1402,6 @@ div.block-cart.slider-car.slick-initialized .block-item {
     padding: 5px;
     font-size: 16px;
     line-height: 19px;
-  }
-
-  .first-block-btn {
-    height: 475px;
-    background: url("../../img/unitmob.svg") no-repeat 0 62%;
-    background-size: 100% 34%;
   }
 
   .block.search .block-item div,
@@ -1588,4 +1594,4 @@ div.block-cart.slider-car.slick-initialized .block-item {
 
 .webp .first-block-l{ background-image: url(../../img/2.webp); }
 
-.webp .first-block-r{ background: right/cover no-repeat url(../../img/1.webp); }
+.webp .first-block-r{ background-image: url(../../img/1.webp); }
